@@ -1,0 +1,99 @@
+@import url(http://fonts.googleapis.com/css?family=Oleo+Script);
+@import url(http://fonts.googleapis.com/css?family=Ruluko);
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#content {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+#nav {
+  margin: 50px 0 40px;
+}
+
+#title {
+  color: #F52F4F;
+  font-family: 'Oleo Script', cursive;
+  font-size: 50px;
+}
+
+#accountsContainer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#checkingAccount, #savingsAccount {
+  display: inline-block;
+  width: 38%;
+  margin: 20px;
+}
+
+h1 {
+  font-family: helvetica, sans-serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin: 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.account {
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  padding: 30px 20px;
+}
+
+.balance {
+  background-color: #E3E3E3;
+  font-family: helvetica, sans-serif;
+  font-size: 50px;
+  letter-spacing: 3px;
+  padding: 45px 0;
+  margin-bottom: 20px;
+}
+
+input {
+  font-size: 12px;
+}
+
+input[type="text"] {
+  display: inline-block;
+  border: solid 1px #676767;
+  padding: 15px;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #676767;
+}
+
+input[type="button"] {
+  border: solid 2px #FFFFFF;
+  background-color: #F52F4F;
+  padding: 15px;
+  margin: 15px 5px 0;
+  color: #FFFFFF;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+input[type="button"]:hover {
+  border: solid 2px #F52F4F;
+  background-color: #FFFFFF;
+  color: #F52F4F;
+}
+
+.clear {
+  clear: both;
+}
+
+.zero {
+  background-color: #F52F4F;
+  color: #FFFFFF;
+}
