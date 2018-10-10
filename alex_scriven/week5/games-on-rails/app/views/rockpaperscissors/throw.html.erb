@@ -1,0 +1,10 @@
+<h2>Here is the game result </h2>
+<h2>I picked <%= @computer_throw %></h2>
+<h2>You picked <%= @human_throw %></h2>
+
+<div class="throwImageDiv">
+  <h2>The game result is:</h2>
+  <h3>"<%= @result %>"</h3>
+  <%= image_tag @throw_result_image, alt: "Game Result", class:"throwImage"%>
+  <p>Happy peace be upon you :) </p>
+</div>

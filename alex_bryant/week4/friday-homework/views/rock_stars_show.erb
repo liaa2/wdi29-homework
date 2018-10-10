@@ -1,0 +1,17 @@
+<% alive = "Still rockin'"
+   if !@star.alive
+     alive = "R.I.P. #{@star.first_name}"
+   end
+  %>
+  <div class="bs-component">
+    <div class="jumbotron">
+      <div>
+      <h1 class="display-3"><%= @star.first_name %> <%= @star.last_name %></h1>
+      <a href="/rock_stars/<%= @star.id %>/edit" role="button" type="button" class="btn btn-secondary custom-btn">Update</a>
+      <a href="/rock_stars/<%= @star.id %>/delete" role="button" type="button" class="btn btn-danger">Delete</a></div>
+      <img src="<%= @star.image_url %>" alt="<%= @star.first_name %> <%= @star.last_name %>">
+      <p class="lead">Rock Band: <a href="/rock_bands/<%= @star.rock_band.id %>"><%= @star.rock_band.name %></a></p>
+      <p class="lead">Instruments: <%= @star.instruments %> </p>
+      <p class="lead"> <%= alive %> </p>
+    </div>
+  </div>

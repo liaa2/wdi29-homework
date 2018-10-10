@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guitars and Manufacturers</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+  <h1>Guitars and their Manufacturers</h1>
+  <nav>
+    <%= link_to "Guitars Index", guitars_path %> |
+    <%= link_to "Manufacturers Index", manufacturers_path %> |
+    <%= link_to "New Guitar", new_guitar_path %> |
+    <%= link_to "New Manufacturer", new_manufacturer_path %>
+  </nav>
+  <hr>
+  <body>
+    <%= yield %>
+  </body>
+</html>

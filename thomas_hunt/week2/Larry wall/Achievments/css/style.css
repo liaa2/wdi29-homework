@@ -1,0 +1,128 @@
+
+
+li {
+margin:  0px;
+background-color: rgba(66, 161, 244,0.5);
+color: white;
+padding: 20px;
+width: 100%;
+list-style: none;
+border-style: inset;
+
+}
+
+ul {
+  display: inline;
+
+}
+
+.wallMain {
+float: right;
+width: 319px;
+}
+
+
+h1  {
+  display: inline;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  font-family: "kanit", sans-serif;
+}
+
+h3 {
+  display: inline-block;
+  color: white;
+  display: inline;
+  font-family: "Kanit", sans-serif;
+}
+
+h4 {
+  text-transform: uppercase; 
+}
+
+.aboutLarry {
+  height: 400px;
+  width: 319px;
+  border: 1px solid black;
+  float: right;
+  display: inline;
+  top: auto;
+  overflow: auto;
+
+}
+
+body {
+  background-image: url(https://i.imgur.com/Nbi7bYI.jpg)
+}
+
+footer {
+
+  margin: auto 0;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background-color: rgba(66, 161, 244,0.2);
+  color: white;
+  padding: 20px;
+  width: 100%;
+  list-style: none;
+  border-style: inset;
+
+
+}
+
+article {
+  display: inline-block;
+  border-style: inset;
+  margin-top: 20px;
+  padding: 20px;
+
+  font-family: "kanit", sans-serif;
+}
+
+.clearfix {
+overflow: auto;
+
+}
+
+.larryImage {
+  float: right;
+  height: 300px;
+
+}
+
+
+a {
+  margin: 0;
+  text-decoration: none;
+  color: white;
+  padding: 20px 20px;
+  font-family: "kanit", sans-serif;
+  text-transform: uppercase;
+  display: inline;
+}
+
+a:hover{
+  opacity: 0.2;
+  background-color: blue;
+  ;
+
+
+}
+
+h4 {
+  display: inline;
+}
+
+
+.pfoot {
+
+  float: right;
+  padding-right: 50px;
+  font-family: "kanit", sans-serif;
+
+}
+
+
+/* Fade text in */

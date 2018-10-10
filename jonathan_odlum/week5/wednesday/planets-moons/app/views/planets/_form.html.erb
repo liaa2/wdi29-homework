@@ -1,0 +1,27 @@
+<%= form_for @planet do |f| %>
+  <fieldset>
+    <%= f.text_field :name %>
+    <%= f.label :name %>
+  </fieldset>
+  <fieldset>
+    <%= f.text_field :orbit %>
+    <%= f.label :orbit %>
+  </fieldset>
+  <fieldset>
+    <%= f.text_field :temperature %>
+    <%= f.label :temperature %>
+  </fieldset>
+  <fieldset>
+    <%= f.text_field :year %>
+    <%= f.label :year %>
+  </fieldset>
+  <fieldset>
+    <%= f.text_field :day %>
+    <%= f.label :day %>
+  </fieldset>
+  <fieldset>
+    <%= f.text_field :image %>
+    <%= f.label :image, "Image URL"%>
+  </fieldset>
+  <%= f.submit %>
+<% end %>

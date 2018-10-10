@@ -1,0 +1,21 @@
+
+<div class="inlineBlock">
+<h1 class="title"><%= @food['name'] %></h1>
+<a class="editDelete" href="/food/<%=@food['id']%>/edit">Edit</a>
+<a class="editDelete" href="/food/<%=@food['id']%>/delete">Delete</a>
+</div>
+
+<hr>
+
+<div>
+  <div>
+    <p>Origin: <%= @food['country'] %> <img id="flag" src="<%= @food['country_img'] %>" alt="<%= @food['country'] %>"></p>
+    <p>Main Ingredient: <%= @food['main_ingredient'] %></p>
+    <p>Description: <%= @food['description'] %></p>
+    <p>Score: <%= @food['score'] %></p>
+    <p>Is it edible?: <%= @food['edible'] == 1 ? 'Yes' : 'No' %></p>
+  </div>
+  <div class="insideFlex">
+    <img id="foodImg" src="<%= @food['image_url'] %>" alt="<%= @food['name'] %>">
+  </div>
+</div>

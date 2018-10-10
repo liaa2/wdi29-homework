@@ -1,0 +1,29 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Description (excerpt)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @languages.each_with_index do |lang, i|
+        type = "danger" if i%10 == 0
+        type = "default" if i%10 == 1
+        type = "primary" if i%10 == 2
+        type = "secondary" if i%10 == 3
+        type = "success" if i%10 == 4
+        type = "active" if i%10 == 5
+        type = "warning" if i%10 == 6
+        type = "info" if i%10 == 7
+        type = "light" if i%10 == 8
+        type = "dark" if i%10 == 9
+           %>
+      <tr class="table-<%= type %>">
+        <th scope="row">
+          <%= link_to "#{lang.name}", language_path(lang.id) %>
+        </th>
+        <td><%= lang.description[0, 300] + "..." %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

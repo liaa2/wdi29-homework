@@ -43,17 +43,17 @@ const Cat = function(x,y){
   this.updateImage();
 }
 Cat.prototype.moveTowards = function(tuple, currentPos){
-  const speed = currentPos.getVector(tuple);
-  const movement = new Tuple(speed.x/100, speed.y/100);
+  const distanceToMouse = currentPos.getVector(tuple);
+  console.log(distanceToMouse.getLength());
+  const movement = new Tuple(distanceToMouse.x/100, distanceToMouse.y/100);
   this.catPos.add(movement.x, movement.y);
   this.updateImage();
 }
 Cat.prototype.updateImage = function(){
-  const positionX = Math.round(this.catPos.x);
-  const positionY = Math.round(this.catPos.y);
+  const position = new Tuple( Math.round(this.catPos.x) , Math.round(this.catPos.y) );
   this.img.css({
-    top: `${positionY - this.imgOffset.y}px`,
-    left: `${positionX - this.imgOffset.x}px`,
+    top: `${position.y - this.imgOffset.y}px`,
+    left: `${position.x - this.imgOffset.x}px`,
   })
 }
 Cat.prototype.act = function(tuple){
@@ -62,6 +62,14 @@ Cat.prototype.act = function(tuple){
   if (distance > 50){
     this.moveTowards(tuple, currentPos);
   }
+}
+Cat.prototype.step = function(distance){
+  //min 2, max 5 steps per second.
+  const stepsPerSecond = -(distance/150) + 16/3;
+  const framesForStep = 1000/5 * stepsPerSecond;
+  const footDown = 10;
+
+  //Step cycle: x% foot down, 100-x% in air.
 }
 Cat.prototype.explode = function(){
   //create rainbow-splat.
@@ -80,10 +88,11 @@ onmousemove = function(e){
   mousePos.setXY(e.clientX, e.clientY);
 }
 
+let run;
 $(document).ready(function(){
   test = new Cat(250,250);
   $('body').append(test.img);
-  let run = setInterval(mainLoop, 5);
+  run = setInterval(mainLoop, 5);
 })
 
 

@@ -1,0 +1,54 @@
+<div class="spaced">
+  <div>
+    <h3><%= @language.name %></h3>
+    <%= button_to "Update", language_edit_path(@language.id),
+    :class => "btn btn-success update-button", :method => :get %>
+<%= button_to "Delete", language_destroy_path(@language.id),
+    :class => "btn btn-primary", :method => :get %>
+  </div>
+  <br>
+  <div>
+    <p><strong>Description:</strong> <%= @language.description %></p>
+    <p><strong>Standardisation:</strong> <%= @language.standardized %></p>
+    <p><strong>Paradigms:</strong> <%= @language.other_paradigms %></p>
+  </div>
+  <div>
+    <div class="side-by-side">
+      <table id="smaller-table" class="table table-hover">
+        <tbody>
+          <tr class="table-<%= @color_classes[0] %>">
+            <th scope="row">Imperative</th>
+          </tr>
+          <tr class="table-<%= @color_classes[1] %>">
+            <th scope="row">Object Oriented</th>
+          </tr>
+          <tr class="table-<%= @color_classes[2] %>">
+            <th scope="row">Functional</th>
+          </tr>
+          <tr class="table-<%= @color_classes[3] %>">
+            <th scope="row">Procedural</th>
+          </tr>
+          <tr class="table-<%= @color_classes[4] %>">
+            <th scope="row">Generic</th>
+          </tr>
+          <tr class="table-<%= @color_classes[5] %>">
+            <th scope="row">Reflective</th>
+          </tr>
+          <tr class="table-<%= @color_classes[6] %>">
+            <th scope="row">Event Driven</th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="side-by-side">
+      <div class="card border-secondary mb-3" style="max-width: 60%;">
+        <div class="card-header">Example Hello World Program</div>
+        <div class="card-body program-text">
+          <% @program_with_line_breaks.each do |line| %>
+            <p class="card-text"><%= line %></p>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

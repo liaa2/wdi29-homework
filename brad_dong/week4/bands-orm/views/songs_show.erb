@@ -1,0 +1,12 @@
+<!-- #show individual song -->
+
+<h2>Song name: <%= @song.name %></h2>
+
+<p>Band: </p>
+<hr>
+
+<a href="/songs/<%= @song.id%>/edit">Add new song</a>
+<a href="/songs/<%= @song.id %>/delete">Delete this song</a>
+
+<hr>
+<a href="/bands/<%= @song.band.id %>">Edit this song</a>

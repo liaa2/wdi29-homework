@@ -1,0 +1,14 @@
+<h2><%= @moon.name %></h2>
+<h3><%= @moon.planet.name %></h3>
+
+<% unless @moon.img_url.nil? %>
+<img src="<%= @moon.img_url %>">
+<% end %>
+<h3>FUN FACT:</h3>
+<p>
+  Orbits <%= @moon.planet.name %> in aproximately <%= @moon.period %> earth days<br>
+  Discovered by <%= @moon.discoverer %> in the year <%= @moon.discovery_year %>.
+</p>
+
+<a href="/moons/<%= @moon.id %>/edit">Edit Moon</a> ------
+<a href="/moons/<%= @moon.id %>/delete">Delete</a>

@@ -1,0 +1,10 @@
+
+body{
+  background-color: orange;
+}
+
+.image{
+  display: block;
+  margin: auto;
+  max-width: 80vw
+}

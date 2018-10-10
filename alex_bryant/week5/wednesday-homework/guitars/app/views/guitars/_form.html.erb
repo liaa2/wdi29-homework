@@ -1,0 +1,23 @@
+<%= form_for @guitar do |f| %>
+  <fieldset>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :guitar_type %>
+    <%= f.text_field :guitar_type %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :price %>
+    <%= f.text_field :price %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :image %>
+    <%= f.text_field :image %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :manufacturer_id, 'Manufacturer' %>
+    <%= f.collection_select :manufacturer_id, Manufacturer.all, :id, :name, prompt: "Please Choose a manufacturer" %>
+  </fieldset>
+  <%= f.submit %>
+<% end %>

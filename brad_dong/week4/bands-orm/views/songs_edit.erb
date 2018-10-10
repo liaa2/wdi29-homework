@@ -1,0 +1,10 @@
+<h2>Edit song: <%= @song['name'] %></h2>
+
+
+<form class="" action="/song/<%= @song.id %>" method="post">
+
+  Name: <input type="text" name="" value="<%= @song.name %>">
+
+  Band_id: <input type="text" name="" value="<%= @song.band_id %>">
+
+</form>

@@ -1,0 +1,30 @@
+<h2>Edit Disgruntled Customer: <%= @customer.name %></h2>
+
+<form action="/customers/<%= @customer.id %>" method="post">
+  <div class="form_item">
+    <label>Name:</label>
+    <input type="text" name="name" value="<%= @customer.name %>" />
+  </div>
+
+  <div class="form_item">
+    <label>City:</label>
+    <input type="text" name="city" value="<%= @customer.city %>" />
+  </div>
+
+  <div class="form_item">
+    <label>State:</label>
+    <input type="text" name="state" value="<%= @customer.state %>" />
+  </div>
+
+  <div class="form_item">
+    <label>Disgruntled Rating:</label>
+    <input type="text" name="disgruntled_rating" value="<%= @customer.disgruntled_rating %>" />
+  </div>
+
+  <div class="form_item">
+    <label>Image URL:</label>
+    <input type="text" name="image_url" value="<%= @customer.image_url %>" />
+  </div>
+
+  <input type="submit" value="Update Customer" />
+</form>

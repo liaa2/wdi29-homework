@@ -1,0 +1,17 @@
+
+<h2>All of the mountains!</h2>
+
+
+<h3>Here they are:</h3>
+<ul>
+  <% @mountains.each do |mountain| %>
+  <li>
+    Name: <%= mountain.name %>
+  </li>
+    <% if mountain.image.present? %>
+    <a href="<%= mountain_path(mountain) %>">
+    <%= image_tag mountain.image, class: "mountainImg" %>
+    </a>
+    <% end %>
+  <% end %>
+</ul>

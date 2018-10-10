@@ -1,0 +1,32 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: helvetica;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+  margin-right: 3%;
+}
+
+img {
+  max-width: 400px;
+  max-height: 300px;
+}
+
+.index_sneaker {
+  max-width: 150px;
+  max-height: 100px;
+}
+
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  grid-auto-rows: auto auto auto;
+  justify-content: center;
+}
+
+.grid-item {
+  padding: 2px;
+  text-align: center;
+}

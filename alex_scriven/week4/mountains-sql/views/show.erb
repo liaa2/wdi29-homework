@@ -1,0 +1,10 @@
+
+<h1>Everything you needed to know about <%= @mountain['name'] %></h1>
+<h2>Want to <a href="/mountains/<%= @mountain['id'] %>/edit">UPDATE</a> this entry?</h2>
+<h2 class="deleteText">Want to <a href="/mountains/<%= @mountain['id'] %>/delete">DELETE</a> this entry?</h2>
+<div class="mountainImageDiv">
+  <img src="<%= @mountain['image'] %>" alt="<%= @mountain['name'] %>" class="mountainImage">
+<h3>Name: <%= @mountain['name'] %></h3>
+<h3>Country: <%=  @mountain['country']%></h3>
+<h3>Elevation: <%= @mountain['elevation']  %></h3>
+</div>

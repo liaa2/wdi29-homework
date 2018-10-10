@@ -1,0 +1,14 @@
+<h2><%= @moon['name'] %></h2>
+
+<% unless @moon['img_url'].nil? %>
+<img src="<%= @moon['img_url'] %>">
+<% end %>
+<h3>FACTS:</h3>
+<p>
+  <strong> Orbits </strong> <%= @moon['planet'] %> in ~<%= @moon['period'] %> days.<br>
+  <strong> Discovered by </strong> <%= @moon['discoverer'] %><br>
+  <strong> In the year </strong> <%= @moon['discovery_year'] %>
+</p>
+
+<a href="/moons/<%= @moon['id'] %>/edit">Edit Moon</a> ------
+<a href="/moons/<%= @moon['id'] %>/delete">Delete</a>

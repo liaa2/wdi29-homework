@@ -1,0 +1,14 @@
+<h2> Edit <%= @dish.name %> </h2>
+
+<form action="/dishes/<%= @dish.id %>" method="post">
+  <h4>Name: </h4><input type="text" name="name" value="<%= @dish.name %>"><br>
+  <h4>Origin: </h4><input type="text" name="origin" value="<%= @dish.origin  %>"><br>
+  <h4>Flag Image URL: </h4><input type="text" name="flag_url" value="<%= @dish.flag_url %>"><br>
+  <h4>Main Ingredients: </h4><input type="text" name="ingredient" value="<%= @dish.ingredient %>"><br>
+  <h4>Description: </h4><input type="text" name="description" value="<%= @dish.description %>"><br>
+  <h4>Rating / 5: </h4><input type="text" name="rating" value="<%= @dish.rating %>"><br>
+  <h4>Image URL: </h4><input type="text" name="image_url" value="<%= @dish.image_url %>"><br>
+  <br>
+  <input type="submit" value="Edit Dish">
+
+</form>

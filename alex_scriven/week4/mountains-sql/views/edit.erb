@@ -1,0 +1,25 @@
+<h1>Editing the entry for: "<%= @entry['name'] %>"</h1>
+
+
+<form class="form-style-9" action="/mountains/<%= @entry['id'] %>" method="post">
+<ul>
+<li>
+    <input type="text" name="name" class="field-style field-split " value="<%= @entry['name'] %>"/>
+</li>
+<li>
+    <input type="text" name="country" class="field-style field-split align-left" value="<%= @entry['country'] %>"/>
+</li>
+<li>
+<input type="text" name="elevation" class="field-style field-split align-none" value="<%= @entry['elevation'] %>"/>
+</li>
+<li>
+<input type="text" name="image" class="field-style field-split align-none"  value="<%= @entry['image'] %>"/>
+</li>
+<li>
+<input type="submit" value="Update Entry" />
+</li>
+</ul>
+<div class="formIMGDIV">
+  <img class="formIMG" src="https://media.giphy.com/media/yoJC2K6rCzwNY2EngA/giphy.gif" alt="">
+</div>
+</form>

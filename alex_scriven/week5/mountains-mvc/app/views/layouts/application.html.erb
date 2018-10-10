@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MountainsMvc</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <h1>The mountain viewer</h1>
+    <div class="mainMountain">
+    <img src="http://images.entertainment.ie/images_content/rectangle/620x372/Icelandic-Mountain-Vodka.jpg" class="mainMountainImg" alt="The mountain">
+    </div>
+    <hr>
+    <nav>
+      <h2>
+      <a href="/mountains">Listings</a>
+      <a href="/mountains/new">Create New</a>
+      </h2>
+    </nav>
+    <hr>
+
+    <%= yield %>
+  </body>
+</html>

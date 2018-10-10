@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Foods</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <ul class="navList">
+        <li class="navElements"><a class="navLinks" href="/food">Home</a></li>
+        <li class="navElements"><a class="navLinks"  href="/food/new">Add</a></li>
+        <li class="navElements"><a class="navLinks"  href=#>About</a></li>
+      </ul>
+    </nav>
+    <div class="mainContainer">
+      <div class="gridContainer">
+        <div>
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

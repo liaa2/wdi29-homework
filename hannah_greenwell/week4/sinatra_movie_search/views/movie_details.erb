@@ -1,0 +1,38 @@
+
+<div class="container clearfix">
+  <h2><%= @movie_details['original_title'] %></h2>
+
+  <img src="<%= @img_base + @movie_details['poster_path'] %>" />
+
+  <div class="overview">
+    <p class="header">Overview</p>
+    <p><%= @movie_details['overview'] %></p>
+
+    <div class="details_container">
+      <div class="details_box">
+        <p class="header">Genres</p>
+        <% @movie_details['genres'].each do |genre| %>
+        <li>
+          <%= genre['name'] %>
+        </li>
+        <% end %>
+      </div>
+
+      <div class="details_box">
+        <p class="header">Release Date</p>
+        <p><%= @movie_details['release_date'] %></p>
+      </div>
+
+      <div class="details_box">
+        <p class="header">Runtime</p>
+        <p><%= @movie_details['runtime'] %> mins</p>
+      </div>
+
+      <div class="details_box">
+        <p class="header">Country</p>
+        <p><%= @movie_details['production_countries'][0]['name'] %></p>
+      </div>
+    </div><!-- details_container -->
+
+  </div>
+</div><!-- container -->

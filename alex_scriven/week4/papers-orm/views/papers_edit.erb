@@ -1,0 +1,10 @@
+<h2>Edit paper: <%= @paper["title"] %> </h2>
+
+<form action="/papers/<%= @paper['id'] %>" method="post">
+  Title: <input type="text" name="title" value="<%= @paper['title'] %>"><br>
+  Year: <input type="text" name="year" value="<%= @paper['year'] %>"><br>
+  Citations: <input type="text" name="citations" value="<%= @paper['citations'] %>"><br>
+  Web Link: <input type="text" name="web_link" value="<%= @paper['web_link'] %>"><br>
+  Author ID: <input type="text" name="author_id" value="<%= @paper['author_id'] %>"><br>
+  <input type="submit" value="Update Paper">
+</form>

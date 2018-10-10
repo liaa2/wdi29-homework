@@ -1,0 +1,59 @@
+<% checked = "checked"
+   not_checked = ""
+   if !@star.alive
+     checked = ""
+     not_checked = "checked"
+   end
+  %>
+<form action="/rock_stars/<%= @star.id %>" method="post">
+  <fieldset>
+    <legend>Edit rock star details</legend>
+    <div class="form-group">
+      <label for="first_name">First Name:</label>
+      <input id="first_name" name="first_name" type="text" class="form-control" value="<%= @star.first_name %>" placeholder="E.g. John">
+    </div>
+    <div class="form-group">
+      <label for="last_name">Last Name:</label>
+      <input id="last_name" name="last_name" type="text" class="form-control" value="<%= @star.last_name %>" placeholder="E.g. Lennon">
+    </div>
+    <div class="form-group">
+      <label for="instruments">Instruments:</label>
+      <input id="instruments" name="instruments" type="text" class="form-control" value="<%= @star.instruments %>" placeholder="E.g. Vocals, Guitar, Piano">
+    </div>
+    <fieldset class="form-group">
+      <legend>Alive:</legend>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="alive" id="optionsRadios1" value="1" <%= checked %>>
+          Yes
+        </label>
+      </div>
+      <div class="form-check">
+      <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="alive" id="optionsRadios2" value="0" <%= not_checked %>>
+          No
+        </label>
+      </div>
+    </fieldset>
+    <div class="form-group">
+      <label for="image_url">Image URL:</label>
+      <input id="image_url" name="image_url" type="text" class="form-control" value="<%= @star.image_url %>" placeholder="E.g. http://ultimateclassicrock.com/files/2014/10/Beatles-.jpg?w=980&q=75">
+    </div>
+    <div class="form-group">
+      <label>Band:</label>
+      <select id="rock_band_id" name="rock_band_id" class="custom-select">
+        <% selected = ""
+          @bands.each_with_index do |band, i|
+            if @star.rock_band.id == band.id
+              selected = "selected"
+            else
+              selected = ""
+            end %>
+        <option type="select" value="<%= band.id %>" <%= selected %>><%= band.name %></option>
+        <% end %>
+      </select>
+    </div>
+    </fieldset>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>

@@ -1,0 +1,17 @@
+
+<h2>
+  <%= @site.name %>
+</h2>
+
+<a href="/sites/<%= @site.id %>/edit">Edit This Site</a> |
+<a href="/sites/<%= @site.id %>/delete">Delete This Site</a>
+
+<p>Built Year: <%= @site.built_year %></p>
+<p>Architect: <%= @site.architect %></p>
+
+<p>
+  City:
+  <a href="/cities/<%= @site.city.id %>">
+    <%= @site.city.name %>
+  </a>
+</p>

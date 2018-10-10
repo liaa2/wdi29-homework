@@ -1,0 +1,13 @@
+<h2><%= @planet.name %></h2>
+<h3>'<%= @planet.nick_name %>'</h3>
+
+<% unless @planet.img_url.nil? %>
+<img src="<%= @planet.img_url %>">
+<% end %>
+<h3>FUN FACT:</h3>
+<p>
+  Orbits The Sun in aproximately <%= @planet.period %> earth days<br>
+</p>
+
+<a href="/planets/<%= @planet.id %>/edit">Edit Planet</a> ------
+<a href="/planets/<%= @planet.id %>/delete">Delete</a>

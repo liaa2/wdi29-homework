@@ -1,0 +1,11 @@
+<h2>Edit Book<%= @book.title %></h2>
+
+<form action="<%= book_path(@book.id) %>" method="post"><br/>
+Title: <input type="text" name="title" value="<%= @book.title %>"><br/>
+Author: <input type="text" name="author" value="<%= @book.author %>"><br/>
+Published Year:<input type="text" name="published_year" value="<%= @book.published_year%>"><br/>
+Image:<input type="text" name="image" value="<%= @book.image %>"><br/>
+<br>
+<input type="submit" value="Update">
+
+</form>

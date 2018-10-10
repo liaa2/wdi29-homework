@@ -1,0 +1,8 @@
+<h3><%= link_to @guitar.manufacturer.name, manufacturer_path(@guitar.manufacturer.id) %> <%= @guitar.name %></h3>
+<%= link_to "Update Guitar", edit_guitar_path(@guitar.id) %> | <%= link_to "Delete Guitar", "/guitars/#{@guitar.id}", method: "delete" %><br>
+
+Type: <%= @guitar.guitar_type %><br>
+Price: $<%= @guitar.price %><br>
+<br><br>
+
+<%= image_tag(@guitar.image, alt: @guitar.name) %>

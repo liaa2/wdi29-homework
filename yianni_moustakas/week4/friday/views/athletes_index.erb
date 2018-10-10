@@ -1,0 +1,11 @@
+<h2>Athletes</h2>
+
+<ul>
+  <% @athletes.each do |athlete| %>
+  <li>
+    <a href="/athletes/<%= athlete.id %>"><%= athlete.full_name %></a>
+  </li>
+  <img class=".img-circle" src="<%= athlete.self_image %>" alt="<%= athlete.full_name %>">
+  <img class=".img-circle" src="<%= athlete.club_image %>" alt="<%= athlete.full_name %>">
+  <% end %>
+</ul>

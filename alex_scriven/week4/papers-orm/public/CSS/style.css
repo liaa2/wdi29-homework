@@ -1,0 +1,16 @@
+body {
+  background-color: lightblue;
+}
+
+h1, h2, h3,nav  {
+  text-align: center;
+}
+.kitty{
+  text-align: center;
+  margin: 0 auto;
+}
+.mainAuth{
+  text-align: center;
+  width: 20%;
+  margin: 0 auto;
+}

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  discovery: 1
+  discoverer: MyText
+  image: MyText
+  period: 1.5
+  planet_id: 1
+
+two:
+  name: MyText
+  discovery: 1
+  discoverer: MyText
+  image: MyText
+  period: 1.5
+  planet_id: 1

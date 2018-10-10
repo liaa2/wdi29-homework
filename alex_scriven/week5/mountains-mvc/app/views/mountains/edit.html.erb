@@ -1,0 +1,11 @@
+<h2>Edit the entry for <%= @mountain.name %></h2>
+
+<form action="<%= mountain_path %>" method="post">
+
+  Name: <input type="text" value="<%= @mountain.name %>" name="name">
+  Image URL: <input type="text" value="<%= @mountain.image %>" name="image">
+  Country: <input type="text" value="<%= @mountain.country %>" name="country">
+  Elevation: <input type="text" value="<%= @mountain.elevation %>" name="elevation">
+  Pointyness: <input type="text" value="<%= @mountain.pointyness %>" name="pointyness">
+  <input type="submit" value="Update!">
+</form>

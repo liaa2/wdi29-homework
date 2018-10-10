@@ -1,0 +1,11 @@
+<h2>Add Medicine</h2>
+
+<form action="<%= medicines_path %>" method="post">
+  <p>Name: <input type="text" name="name"></p>
+  <p>IUPAC Name: <input type="text" name="iupac"></p>
+  <p>Molar Mass (g/mol): <input type="text" name="molar_mass"></p>
+  <p>Used to treat: <input type="text" name="uses"></p>
+  <p>Image of common brand: <input type="text" name="image"></p>
+
+  <input type="submit" value="Add Medicine">
+</form>

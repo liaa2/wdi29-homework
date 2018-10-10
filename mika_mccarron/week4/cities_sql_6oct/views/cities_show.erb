@@ -1,0 +1,9 @@
+<h2>
+  <%= @city.name %>
+</h2>
+
+<a href="/cities/<%= @city.id %>/edit">Edit This City</a>
+<a href="/cities/<%= @city.id %>/delete">Delete This City</a>
+
+<p>Country: <%= @city.country %></P>
+<img src="<%= @city.image_url %>" alt=<%= @city.name %>

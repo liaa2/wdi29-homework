@@ -1,0 +1,21 @@
+body {
+  background-color: lightgrey;
+  margin: 10px;
+}
+
+.guitar-logo {
+  max-height: 80px;
+}
+
+img {
+  max-width: 300px;
+  margin: 20px;
+}
+
+.main-content {
+  margin: 10px;
+}
+
+.main-img {
+  max-height: 100px;
+}

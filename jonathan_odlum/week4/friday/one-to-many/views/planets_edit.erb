@@ -1,0 +1,9 @@
+<h2>Edit This Planet</h2>
+<form action="/planets/<%= @planet.id %>" method="POST">
+  <input type="text" name="name" value="<%= @planet.name %>"> -- Name<br />
+  <input type="text" name="nick_name" value="<%= @planet.nick_name %>"> -- Nickname<br />
+  <input type="text" name="period" value="<%= @planet.period %>"> -- Period<br />
+  <input type="text" name="img_url" value="<%= @planet.img_url %>"> -- Image url
+  <br />
+  <input type="submit" value="Update Planet"/>
+</form>

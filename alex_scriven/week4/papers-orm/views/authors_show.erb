@@ -1,0 +1,25 @@
+<h2>The 'Show Page' for
+<%= @author["name"] %>
+</h2>
+<a href="/authors/<%= @author['id'] %>/edit">Edit This Author | </a>
+<a href="/authors/<%= @author['id'] %>/delete">DELETE This Author </a>
+<p>Name: <%= @author.name %></p>
+<p>Age: <%= @author.age %></p>
+<p>country: <%= @author.country %></p>
+<p>Alive: <%= @author.alive %></p>
+<p>website: <a href="<%= @author.website %>"> Linked Here</a> </p>
+
+<h3>This Authors' Papers Are</h3>
+<ul>
+  <% @author.papers.each do |paper| %>
+    <li>Paper Title: <%= paper.title %>
+      <ul>
+      <li>Paper Year: <%= paper.year %></li>
+      <li>Paper Citations: <%= paper.citations %></li>
+      <li>Paper link: <a href="<%= paper.web_link %>">here</a> </li>
+      </ul>
+    </li>
+  <% end %>
+</ul>
+
+<img src="<%= @author["profile_pic"] %>" alt="<%= @author["name"] %>">

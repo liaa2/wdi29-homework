@@ -1,0 +1,13 @@
+<h2> Edit <%= @restaurant.name %> </h2>
+
+<form action="/restaurants/<%= @restaurant.id %>" method="post">
+  <h4>Name: </h4><input type="text" name="name" value="<%= @restaurant.name %>"><br>
+  <h4>Location: </h4><input type="text" name="location" value="<%= @restaurant.location  %>"><br>
+  <h4>Rating / 5: </h4><input type="text" name="rating" value="<%= @restaurant.rating %>"><br>
+  <h4>Cost Rating / 5: </h4><input type="text" name="cost" value="<%= @restaurant.cost %>"><br>
+  <h4>Dish ID: </h4><input type="text" name="dish_id" value="<%= @restaurant.dish_id %>"><br>
+
+  <br>
+  <input type="submit" value="Edit Restaurant">
+
+</form>

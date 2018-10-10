@@ -1,0 +1,11 @@
+<h2>Edit <%= @medicine.name %></h2>
+
+<form action="<%= medicine_path(@medicine.id) %>" method="post">
+  <p>Name: <input type="text" name="name" value="<%= @medicine.name %>"></p>
+  <p>IUPAC Name: <input type="text" name="iupac" value="<%= @medicine.iupac %>"></p>
+  <p>Molar Mass (g/mol): <input type="text" name="molar_mass" value="<%= @medicine.molar_mass %>"></p>
+  <p>Used to treat: <input type="text" name="uses" value="<%= @medicine.uses %>"></p>
+  <p>Image of common brand: <input type="text" name="image" value="<%= @medicine.image %>"></p>
+
+  <input type="submit" value="Edit Medicine">
+</form>

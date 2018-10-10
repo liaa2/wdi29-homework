@@ -1,0 +1,23 @@
+<%= form_for @future do |f| %>
+
+  <fieldset>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :year %>
+    <%= f.text_field :year %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :location %>
+    <%= f.text_field :location %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :image, 'Image URL' %>
+    <%= f.text_field :image %>
+  </fieldset>
+
+  <%= f.submit %>
+
+
+<% end %>

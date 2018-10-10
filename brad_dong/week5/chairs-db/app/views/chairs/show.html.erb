@@ -1,0 +1,20 @@
+<h2>This chair is <%= @chair.name %></h2>
+
+
+<nav>
+  <a href="/chairs/<%= @chair.id %>/edit">Edit this chair</a>
+
+  <a href="/chairs/<%= @chair.id %>/delete">Delete this chair</a>
+
+</nav>
+<% if @chair.image.present? %>
+  <%= image_tag @chair.image, alt: @chair.name %>
+<% end %>
+
+<p>
+
+  Legs: <%= @chair.legs %><br>
+  Material: <%= @chair.material %><br>
+  Recliner: <%= @chair.recliner %>
+
+</p>

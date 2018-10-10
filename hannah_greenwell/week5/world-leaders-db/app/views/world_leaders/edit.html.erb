@@ -1,0 +1,18 @@
+<h2>Edit World Leader: <%= @world_leader.name %></h2>
+
+<form action="<%= leader_path(@world_leader.id) %>" method="post">
+  <label>Name:</label>
+  <input type="text" name="name" value="<%= @world_leader.name %>"><br>
+  <label>Country:</label>
+  <input type="text" name="country" value="<%= @world_leader.country %>"><br>
+  <label>Years in Office:</label>
+  <input type="text" name="years_in_office" value="<%= @world_leader.years_in_office %>"><br>
+  <label>Alive:</label>
+  <input type="text" name="alive" value="<%= @world_leader.alive %>"><br>
+  <label>Image:</label>
+  <input type="text" name="image" value="<%= @world_leader.image %>"><br>
+  <label>Quote:</label>
+  <input type="text" name="quote" value="<%= @world_leader.quote %>"><br>
+
+  <input type="submit" value="Edit Leader">
+</form>

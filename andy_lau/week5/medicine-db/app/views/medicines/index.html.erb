@@ -1,0 +1,6 @@
+
+<ul>
+<% @medicines.each do |medicine| %>
+  <li><a href="<%= medicine_path(medicine.id) %>"><%= medicine.name %></a></li>
+<% end %>
+</ul>

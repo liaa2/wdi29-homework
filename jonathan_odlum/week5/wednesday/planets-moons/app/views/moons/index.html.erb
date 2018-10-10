@@ -1,0 +1,11 @@
+<h2>The Moons</h2>
+
+<% @moons.each do |moon| %>
+  <ul>
+    <li>
+      <%= link_to moon.name, moon_path(moon.id) %> orbiting <%= moon.planet.name %>
+    </li>
+  </ul>
+<% end %>
+
+<%= link_to 'New Moon', new_moon_path %>

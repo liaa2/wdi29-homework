@@ -1,0 +1,34 @@
+<div class="spaced">
+  <form action="<%= language_path(@language.id) %>" method="post">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Enter language name" value="<%= @language.name %>">
+    </div>
+    <div class="form-group">
+      <label for="description">Description:</label>
+      <textarea class="form-control" id="description" name="description" rows="4"><%= @language.description %></textarea>
+    </div>
+    <div class="form-group">
+      <label for="sample_hello_world">Sample Hello World Program:</label>
+      <textarea class="form-control" id="sample_hello_world" name="sample_hello_world" rows="4"><%= @language.sample_hello_world %></textarea>
+    </div>
+    <div class="form-group">
+      <label for="imperative">Imperative: </label> <input class="margin-right" type="checkbox" id="imperative"  name="imperative" <%= @checked[0] %>>
+      <label for="object_oriented">Object Oriented: </label> <input class="margin-right" type="checkbox" id="object_oriented" name="object_oriented"  <%= @checked[1] %>>
+      <label for="functional">Functional: </label> <input class="margin-right" type="checkbox" id="functional"  name="functional" <%= @checked[2] %>>
+      <label for="procedural">Procedural: </label> <input class="margin-right" type="checkbox" id="procedural"  name="procedural" <%= @checked[3] %>>
+      <label for="generic">Generic: </label> <input class="margin-right" type="checkbox" id="generic"  name="generic" <%= @checked[4] %>>
+      <label for="reflective">Reflective: </label> <input class="margin-right" type="checkbox" id="reflective"  name="reflective" <%= @checked[5] %>>
+      <label for="event_driven">Event Driven: </label> <input class="margin-right" type="checkbox" id="event_driven"  name="event_driven" <%= @checked[6] %>>
+    </div>
+    <div class="form-group">
+      <label for="other_paradigms">Other Paradigms:</label>
+      <input type="text" class="form-control" id="other_paradigms" name="other_paradigms" placeholder="E.g. aspect-oriented" value="<%= @language.other_paradigms %>">
+    </div>
+    <div class="form-group">
+      <label for="standardized">Standardised:</label>
+      <input type="text" class="form-control" id="standardized" name="standardized" placeholder="E.g. ISO standard 12345" value="<%= @language.standardized %>">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

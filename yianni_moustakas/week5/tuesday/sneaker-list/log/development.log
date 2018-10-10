@@ -1,0 +1,2074 @@
+  [1m[35m (100.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (1.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-10-09 05:59:19.900663"], ["updated_at", "2018-10-09 05:59:19.900663"]]
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateSneakers (20181009060000)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateSneakers (20181009060000)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20181009060000_create_sneakers.rb:3
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "sneakers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "brand" varchar, "silhouette" varchar, "colorway" varchar, "description" varchar, "heat_rating" integer, "release_date" integer, "image_url" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181009060000_create_sneakers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181009060000"]]
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mSneaker Create (0.9ms)[0m  [1m[32mINSERT INTO "sneakers" ("brand", "silhouette", "colorway", "description", "heat_rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brand", "Nike"], ["silhouette", "Air Jordan 1"], ["colorway", "SBB"], ["description", "Shattered Backboard"], ["heat_rating", 8], ["release_date", 2014], ["created_at", "2018-10-09 06:18:20.924281"], ["updated_at", "2018-10-09 06:18:20.924281"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mSneaker Create (0.6ms)[0m  [1m[32mINSERT INTO "sneakers" ("brand", "silhouette", "colorway", "description", "heat_rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brand", "adidas"], ["silhouette", "Yeezy 700"], ["colorway", "Waverunner"], ["description", "adidas x Yeezy collab"], ["heat_rating", 7], ["release_date", 2017], ["created_at", "2018-10-09 06:18:20.928758"], ["updated_at", "2018-10-09 06:18:20.928758"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mSneaker Create (0.5ms)[0m  [1m[32mINSERT INTO "sneakers" ("brand", "silhouette", "colorway", "description", "heat_rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brand", "New Balance"], ["silhouette", "574"], ["colorway", "Grey DSM"], ["description", "Ronnie Fieg x Dover Street Market x New Balance"], ["heat_rating", 10], ["release_date", 2016], ["created_at", "2018-10-09 06:18:20.932893"], ["updated_at", "2018-10-09 06:18:20.932893"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mSneaker Create (0.5ms)[0m  [1m[32mINSERT INTO "sneakers" ("brand", "silhouette", "colorway", "description", "heat_rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brand", "Nike"], ["silhouette", "React Element 87"], ["colorway", "Red, Blue and Cream"], ["description", "Nike x UNDERCOVER"], ["heat_rating", 7], ["release_date", 2018], ["created_at", "2018-10-09 06:18:20.936719"], ["updated_at", "2018-10-09 06:18:20.936719"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+Started GET "/" for 127.0.0.1 at 2018-10-09 17:30:01 +1100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/yiannimoustakas/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/yiannimoustakas/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/yiannimoustakas/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (7.1ms)
+Completed 200 OK in 36ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 17:30:10 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  Rendered sneakers/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 426ms (Views: 414.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-09 17:36:02 +1100
+Started GET "/" for 127.0.0.1 at 2018-10-09 17:36:12 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  Rendered sneakers/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 63ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  Rendered sneakers/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 43ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-09 20:57:23 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (4.7ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (233.2ms)
+Completed 500 Internal Server Error in 281ms (ActiveRecord: 7.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Sneaker:0x00007fb1ecd53ab8>):
+    4:   <% @sneakers.each do |sneaker| %>
+    5:   <li>
+    6:     <a href="">
+    7:       <%= sneaker.name %>
+    8:     </a>
+    9:   </li>
+   10:   <% end %>
+  
+app/views/sneakers/index.html.erb:7:in `block in _app_views_sneakers_index_html_erb___686806980431019168_70201105828760'
+app/views/sneakers/index.html.erb:4:in `_app_views_sneakers_index_html_erb___686806980431019168_70201105828760'
+Started GET "/" for 127.0.0.1 at 2018-10-09 20:57:45 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.6ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 162ms (Views: 146.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-09 20:58:02 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 267ms (Views: 250.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-09 20:58:10 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 77ms (Views: 68.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-09 20:59:24 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (1.7ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (42.9ms)
+Completed 200 OK in 364ms (Views: 335.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-09 21:06:49 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.7ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 186ms (Views: 162.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-09 21:07:04 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 47ms (Views: 40.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-09 21:13:40 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.8ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 93ms (Views: 74.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-09 21:13:42 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 61ms (Views: 53.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-09 21:14:37 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.5ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (617.7ms)
+Completed 500 Internal Server Error in 647ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `sneaker_path' for #<#<Class:0x00007fb1ede57940>:0x00007fb1f08501c0>
+Did you mean?  sneakers_path):
+    3: <ul>
+    4:   <% @sneakers.each do |sneaker| %>
+    5:   <li>
+    6:     <a href="/sneaker/<%= sneaker_path(sneaker.id) %>">
+    7:       <%= sneaker.brand %> <%= sneaker.silhouette %> <%= sneaker.colorway %>
+    8:     </a>
+    9:   </li>
+  
+app/views/sneakers/index.html.erb:6:in `block in _app_views_sneakers_index_html_erb___686806980431019168_70201110594920'
+app/views/sneakers/index.html.erb:4:in `_app_views_sneakers_index_html_erb___686806980431019168_70201110594920'
+Started GET "/" for 127.0.0.1 at 2018-10-09 21:14:38 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.5ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (253.8ms)
+Completed 500 Internal Server Error in 283ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `sneaker_path' for #<#<Class:0x00007fb1ede57940>:0x00007fb1ecb07480>
+Did you mean?  sneakers_path):
+    3: <ul>
+    4:   <% @sneakers.each do |sneaker| %>
+    5:   <li>
+    6:     <a href="/sneaker/<%= sneaker_path(sneaker.id) %>">
+    7:       <%= sneaker.brand %> <%= sneaker.silhouette %> <%= sneaker.colorway %>
+    8:     </a>
+    9:   </li>
+  
+app/views/sneakers/index.html.erb:6:in `block in _app_views_sneakers_index_html_erb___686806980431019168_70201078478340'
+app/views/sneakers/index.html.erb:4:in `_app_views_sneakers_index_html_erb___686806980431019168_70201078478340'
+Started GET "/" for 127.0.0.1 at 2018-10-09 21:15:05 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 158ms (Views: 142.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sneaker//sneakers.1" for 127.0.0.1 at 2018-10-09 21:15:07 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/sneaker/sneakers.1"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-10-09 21:16:29 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.9ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 77ms (Views: 62.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/sneaker//sneakers.1" for 127.0.0.1 at 2018-10-09 21:16:30 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/sneaker/sneakers.1"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-10-09 21:16:46 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.8ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 71ms (Views: 61.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/sneaker//sneakers.1" for 127.0.0.1 at 2018-10-09 21:16:47 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/sneaker/sneakers.1"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-10-09 21:17:06 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 46ms (Views: 39.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sneaker//sneakers/1" for 127.0.0.1 at 2018-10-09 21:17:08 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/sneaker/sneakers/1"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-10-09 21:17:40 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 66ms (Views: 56.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-09 21:17:41 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 38ms (Views: 31.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sneakers//sneakers/1" for 127.0.0.1 at 2018-10-09 21:17:42 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/sneakers/sneakers/1"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/sneakers/1" for 127.0.0.1 at 2018-10-09 21:18:19 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (1.1ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:12
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (191.1ms)
+Completed 500 Internal Server Error in 241ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `sneaker_edit_path' for #<#<Class:0x00007fb1eddafda8>:0x00007fb1efe55fa8>
+Did you mean?  sneaker_path
+               sneakers_path):
+    1: <h2><%= @sneaker.brand %> <%= @sneaker.silhouette %> <%= @sneaker.colorway %></h2>
+    2: 
+    3: <%= link_to "Edit This Shoe", sneaker_edit_path(@sneaker.id) %> | <%= link_to "Scrap This Sneaker", sneaker_destroy_path(@sneaker.id) %>
+    4: 
+    5: <p><strong>Colorway:</strong><%= @sneaker.colorway %></p>
+    6: <p><strong>Description:</strong><%= @sneaker.description %></p>
+  
+app/views/sneakers/show.html.erb:3:in `_app_views_sneakers_show_html_erb__2266692369086108366_70201105365100'
+Started GET "/" for 127.0.0.1 at 2018-10-09 21:19:35 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (2.0ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 110ms (Views: 85.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/sneakers/1" for 127.0.0.1 at 2018-10-09 21:19:37 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:12
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (253.1ms)
+Completed 500 Internal Server Error in 280ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `sneaker_edit_path' for #<#<Class:0x00007fb1eddafda8>:0x00007fb1edd75388>
+Did you mean?  sneaker_path
+               sneakers_path):
+    1: <h2><%= @sneaker.brand %> <%= @sneaker.silhouette %> <%= @sneaker.colorway %></h2>
+    2: 
+    3: <%= link_to "Edit This Shoe", sneaker_edit_path(@sneaker.id) %> | <%= link_to "Scrap This Sneaker", sneaker_destroy_path(@sneaker.id) %>
+    4: 
+    5: <p><strong>Colorway:</strong><%= @sneaker.colorway %></p>
+    6: <p><strong>Description:</strong><%= @sneaker.description %></p>
+  
+app/views/sneakers/show.html.erb:3:in `_app_views_sneakers_show_html_erb__2266692369086108366_70201088126700'
+Started GET "/sneakers/1" for 127.0.0.1 at 2018-10-09 21:20:08 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (0.7ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:12
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (256.1ms)
+Completed 500 Internal Server Error in 295ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `sneaker_edit_path' for #<#<Class:0x00007fb1eddafda8>:0x00007fb1efd79d78>
+Did you mean?  sneaker_path
+               sneakers_path):
+    1: <h2><%= @sneaker.brand %> <%= @sneaker.silhouette %> <%= @sneaker.colorway %></h2>
+    2: 
+    3: <!-- <%= link_to "Edit This Shoe", sneaker_edit_path(@sneaker.id) %> | <%= link_to "Scrap This Sneaker", sneaker_destroy_path(@sneaker.id) %> -->
+    4: 
+    5: <p><strong>Colorway:</strong><%= @sneaker.colorway %></p>
+    6: <p><strong>Description:</strong><%= @sneaker.description %></p>
+  
+app/views/sneakers/show.html.erb:3:in `_app_views_sneakers_show_html_erb__2266692369086108366_70201104913220'
+Started GET "/" for 127.0.0.1 at 2018-10-09 21:20:23 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 70ms (Views: 61.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sneakers/1" for 127.0.0.1 at 2018-10-09 21:20:24 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:12
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 61ms (Views: 49.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sneakers/2" for 127.0.0.1 at 2018-10-09 21:20:36 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:12
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 54ms (Views: 41.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sneakers/3" for 127.0.0.1 at 2018-10-09 21:20:39 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:12
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 50ms (Views: 40.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sneakers/4" for 127.0.0.1 at 2018-10-09 21:20:41 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:12
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 52ms (Views: 42.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-09 21:23:50 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (1.9ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (173.5ms)
+Completed 200 OK in 293ms (Views: 148.7ms | ActiveRecord: 115.2ms)
+
+
+Started GET "/sneakers/1" for 127.0.0.1 at 2018-10-09 21:23:52 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:12
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 58ms (Views: 45.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sneakers/1/edit" for 127.0.0.1 at 2018-10-09 21:23:56 +1100
+  
+AbstractController::ActionNotFound (The action 'edit' could not be found for SneakersController):
+  
+actionpack (5.2.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/sneakers/1" for 127.0.0.1 at 2018-10-09 21:23:59 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (0.6ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:12
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 43ms (Views: 34.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sneakers/1" for 127.0.0.1 at 2018-10-09 21:46:14 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (1.0ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:12
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 125ms (Views: 101.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/sneakers/1" for 127.0.0.1 at 2018-10-09 21:48:39 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (2.4ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:12
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 245ms (Views: 213.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/sneakers/1" for 127.0.0.1 at 2018-10-09 21:49:09 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:12
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 249ms (Views: 237.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sneakers/1" for 127.0.0.1 at 2018-10-09 21:49:27 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (0.5ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:12
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 80ms (Views: 68.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sneakers/1" for 127.0.0.1 at 2018-10-09 21:50:06 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (1.4ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:12
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 155ms (Views: 132.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/sneakers/1" for 127.0.0.1 at 2018-10-09 21:50:17 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:12
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 106ms (Views: 95.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sneakers/1" for 127.0.0.1 at 2018-10-09 21:51:28 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (1.5ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:12
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 116ms (Views: 88.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 21:51:33 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.6ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 67ms (Views: 57.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 21:52:26 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 163ms (Views: 153.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 21:52:44 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (1.4ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 132ms (Views: 114.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 21:53:06 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 153ms (Views: 145.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 21:53:35 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 77ms (Views: 68.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:00:39 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.7ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 111ms (Views: 98.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:08:02 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (1.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 131ms (Views: 113.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/sneakers/1" for 127.0.0.1 at 2018-10-09 22:08:04 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (0.8ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 75ms (Views: 51.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/sneakers/1/edit" for 127.0.0.1 at 2018-10-09 22:08:06 +1100
+Processing by SneakersController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant SneakersController::Planet):
+  
+app/controllers/sneakers_controller.rb:35:in `edit'
+Started GET "/sneakers/1" for 127.0.0.1 at 2018-10-09 22:08:36 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (0.8ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 84ms (Views: 53.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/sneakers/1" for 127.0.0.1 at 2018-10-09 22:08:37 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 48ms (Views: 40.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sneakers/1/edit" for 127.0.0.1 at 2018-10-09 22:08:38 +1100
+Processing by SneakersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:35
+  Rendering sneakers/edit.html.erb within layouts/application
+  Rendered sneakers/edit.html.erb within layouts/application (34.3ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Sneaker:0x00007fb1edb8df98>):
+    1: <h2>Edit Sneaker: <%= @sneaker.name %></h2>
+    2: 
+    3: <form action="<%= sneaker_path(@sneaker.id) %>" method="post">
+    4:   Brand: <input type="text" name="brand" value="<%= @sneaker.brand %>"><br>
+  
+app/views/sneakers/edit.html.erb:1:in `_app_views_sneakers_edit_html_erb___567686505748434637_70201087097400'
+Started GET "/sneakers/1" for 127.0.0.1 at 2018-10-09 22:09:32 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 75ms (Views: 64.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sneakers/1" for 127.0.0.1 at 2018-10-09 22:09:33 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 45ms (Views: 35.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sneakers/1/edit" for 127.0.0.1 at 2018-10-09 22:09:34 +1100
+Processing by SneakersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (2.0ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:35
+  Rendering sneakers/edit.html.erb within layouts/application
+  Rendered sneakers/edit.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 47ms (Views: 36.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:09:39 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.7ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 53ms (Views: 42.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/sneakers/new" for 127.0.0.1 at 2018-10-09 22:09:40 +1100
+Processing by SneakersController#new as HTML
+  Rendering sneakers/new.html.erb within layouts/application
+  Rendered sneakers/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 50ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:09:43 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 56ms (Views: 43.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sneakers/4" for 127.0.0.1 at 2018-10-09 22:09:47 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 58ms (Views: 49.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sneakers/4/edit" for 127.0.0.1 at 2018-10-09 22:10:48 +1100
+Processing by SneakersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:35
+  Rendering sneakers/edit.html.erb within layouts/application
+  Rendered sneakers/edit.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 60ms (Views: 49.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/sneakers/4" for 127.0.0.1 at 2018-10-09 22:10:51 +1100
+Processing by SneakersController#update as HTML
+  Parameters: {"brand"=>"Nike", "silhouette"=>"React Element 87", "colorway"=>"Red, Blue and Cream", "description"=>"Nike x UNDERCOVER", "heat_rating"=>"7", "release_date"=>"2018", "image_url"=>"https://stockx.imgix.net/Nike-React-Element-87-Undercover-Light-Beige-Chalk.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90", "id"=>"4"}
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:39
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:40
+  [1m[36mSneaker Update (2.7ms)[0m  [1m[33mUPDATE "sneakers" SET "image_url" = ?, "updated_at" = ? WHERE "sneakers"."id" = ?[0m  [["image_url", "https://stockx.imgix.net/Nike-React-Element-87-Undercover-Light-Beige-Chalk.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90"], ["updated_at", "2018-10-09 11:10:51.977746"], ["id", 4]]
+  ↳ app/controllers/sneakers_controller.rb:40
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:40
+Redirected to http://localhost:3000/sneakers/4
+Completed 302 Found in 50ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/sneakers/4" for 127.0.0.1 at 2018-10-09 22:10:52 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 78ms (Views: 68.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sneakers/4" for 127.0.0.1 at 2018-10-09 22:11:27 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 92ms (Views: 82.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:11:39 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.5ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 68ms (Views: 56.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sneakers/1" for 127.0.0.1 at 2018-10-09 22:11:41 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 54ms (Views: 44.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sneakers/1/edit" for 127.0.0.1 at 2018-10-09 22:11:57 +1100
+Processing by SneakersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:35
+  Rendering sneakers/edit.html.erb within layouts/application
+  Rendered sneakers/edit.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 55ms (Views: 45.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/sneakers/1" for 127.0.0.1 at 2018-10-09 22:12:01 +1100
+Processing by SneakersController#update as HTML
+  Parameters: {"brand"=>"Nike", "silhouette"=>"Air Jordan 1", "colorway"=>"SBB", "description"=>"Shattered Backboard", "heat_rating"=>"8", "release_date"=>"2014", "image_url"=>"https://stockx.imgix.net/Air-Jordan-1-Retro-Shattered-Backboard-Product.jpg?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90", "id"=>"1"}
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:39
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:40
+  [1m[36mSneaker Update (1.1ms)[0m  [1m[33mUPDATE "sneakers" SET "image_url" = ?, "updated_at" = ? WHERE "sneakers"."id" = ?[0m  [["image_url", "https://stockx.imgix.net/Air-Jordan-1-Retro-Shattered-Backboard-Product.jpg?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90"], ["updated_at", "2018-10-09 11:12:01.115151"], ["id", 1]]
+  ↳ app/controllers/sneakers_controller.rb:40
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:40
+Redirected to http://localhost:3000/sneakers/1
+Completed 302 Found in 13ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/sneakers/1" for 127.0.0.1 at 2018-10-09 22:12:01 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 81ms (Views: 32.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:12:10 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 47ms (Views: 38.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sneakers/2" for 127.0.0.1 at 2018-10-09 22:12:12 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 54ms (Views: 44.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sneakers/2/edit" for 127.0.0.1 at 2018-10-09 22:12:35 +1100
+Processing by SneakersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:35
+  Rendering sneakers/edit.html.erb within layouts/application
+  Rendered sneakers/edit.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 52ms (Views: 42.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/sneakers/2" for 127.0.0.1 at 2018-10-09 22:12:38 +1100
+Processing by SneakersController#update as HTML
+  Parameters: {"brand"=>"adidas", "silhouette"=>"Yeezy 700", "colorway"=>"Waverunner", "description"=>"adidas x Yeezy collab", "heat_rating"=>"7", "release_date"=>"2017", "image_url"=>"https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2018/09/adidas-Yeezy-Wave-Runner-700-Solid-Grey-2018-1100x552.png", "id"=>"2"}
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:39
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:40
+  [1m[36mSneaker Update (0.8ms)[0m  [1m[33mUPDATE "sneakers" SET "image_url" = ?, "updated_at" = ? WHERE "sneakers"."id" = ?[0m  [["image_url", "https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2018/09/adidas-Yeezy-Wave-Runner-700-Solid-Grey-2018-1100x552.png"], ["updated_at", "2018-10-09 11:12:38.335506"], ["id", 2]]
+  ↳ app/controllers/sneakers_controller.rb:40
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:40
+Redirected to http://localhost:3000/sneakers/2
+Completed 302 Found in 13ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/sneakers/2" for 127.0.0.1 at 2018-10-09 22:12:38 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 85ms (Views: 76.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:12:42 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 56ms (Views: 46.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sneakers/3" for 127.0.0.1 at 2018-10-09 22:12:43 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 43ms (Views: 35.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sneakers/3/edit" for 127.0.0.1 at 2018-10-09 22:13:02 +1100
+Processing by SneakersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:35
+  Rendering sneakers/edit.html.erb within layouts/application
+  Rendered sneakers/edit.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 54ms (Views: 42.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/sneakers/3" for 127.0.0.1 at 2018-10-09 22:13:05 +1100
+Processing by SneakersController#update as HTML
+  Parameters: {"brand"=>"New Balance", "silhouette"=>"574", "colorway"=>"Grey DSM", "description"=>"Ronnie Fieg x Dover Street Market x New Balance", "heat_rating"=>"10", "release_date"=>"2016", "image_url"=>"https://stockx.imgix.net/New-Balance-574-Sport-Ronnie-Fieg-X-DSM-Grey.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90", "id"=>"3"}
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:39
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:40
+  [1m[36mSneaker Update (0.8ms)[0m  [1m[33mUPDATE "sneakers" SET "image_url" = ?, "updated_at" = ? WHERE "sneakers"."id" = ?[0m  [["image_url", "https://stockx.imgix.net/New-Balance-574-Sport-Ronnie-Fieg-X-DSM-Grey.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90"], ["updated_at", "2018-10-09 11:13:05.427341"], ["id", 3]]
+  ↳ app/controllers/sneakers_controller.rb:40
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:40
+Redirected to http://localhost:3000/sneakers/3
+Completed 302 Found in 15ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/sneakers/3" for 127.0.0.1 at 2018-10-09 22:13:05 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 63ms (Views: 55.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:13:11 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 57ms (Views: 47.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sneakers/new" for 127.0.0.1 at 2018-10-09 22:13:58 +1100
+Processing by SneakersController#new as HTML
+  Rendering sneakers/new.html.erb within layouts/application
+  Rendered sneakers/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 74ms (Views: 64.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sneakers" for 127.0.0.1 at 2018-10-09 22:14:49 +1100
+Processing by SneakersController#create as HTML
+  Parameters: {"brand"=>"Nike", "silhouette"=>"Air Jordan 1", "colorway"=>"Off-White Chicago", "description"=>"O/W Chicago \"The Ten\"", "heat_rating"=>"10", "release_date"=>"2017", "image_url"=>"https://stockx.imgix.net/Air-Jordan-1-Retro-High-Off-White-Chicago-Product.jpg?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90"}
+  [1m[35m (1.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:9
+  [1m[36mSneaker Create (4.6ms)[0m  [1m[32mINSERT INTO "sneakers" ("brand", "silhouette", "colorway", "heat_rating", "release_date", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brand", "Nike"], ["silhouette", "Air Jordan 1"], ["colorway", "Off-White Chicago"], ["heat_rating", 10], ["release_date", 2017], ["image_url", "https://stockx.imgix.net/Air-Jordan-1-Retro-High-Off-White-Chicago-Product.jpg?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90"], ["created_at", "2018-10-09 11:14:49.988327"], ["updated_at", "2018-10-09 11:14:49.988327"]]
+  ↳ app/controllers/sneakers_controller.rb:9
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:9
+Redirected to http://localhost:3000/sneakers
+Completed 302 Found in 41ms (ActiveRecord: 10.7ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:14:50 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.5ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 147ms (Views: 138.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sneakers/5" for 127.0.0.1 at 2018-10-09 22:14:51 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 58ms (Views: 47.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sneakers/new" for 127.0.0.1 at 2018-10-09 22:14:59 +1100
+Processing by SneakersController#new as HTML
+  Rendering sneakers/new.html.erb within layouts/application
+  Rendered sneakers/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 75ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sneakers" for 127.0.0.1 at 2018-10-09 22:15:58 +1100
+Processing by SneakersController#create as HTML
+  Parameters: {"brand"=>"adidas", "silhouette"=>"Yung-1", "colorway"=>"Frieza", "description"=>"Dragon Ball Z x adidas", "heat_rating"=>"7", "release_date"=>"2018", "image_url"=>"https://stockx.imgix.net/adidas-Yung-1-Dragon-Ball-Z-Frieza.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:9
+  [1m[36mSneaker Create (2.1ms)[0m  [1m[32mINSERT INTO "sneakers" ("brand", "silhouette", "colorway", "heat_rating", "release_date", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brand", "adidas"], ["silhouette", "Yung-1"], ["colorway", "Frieza"], ["heat_rating", 7], ["release_date", 2018], ["image_url", "https://stockx.imgix.net/adidas-Yung-1-Dragon-Ball-Z-Frieza.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90"], ["created_at", "2018-10-09 11:15:58.762592"], ["updated_at", "2018-10-09 11:15:58.762592"]]
+  ↳ app/controllers/sneakers_controller.rb:9
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:9
+Redirected to http://localhost:3000/sneakers
+Completed 302 Found in 17ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:15:58 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.7ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 100ms (Views: 93.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/sneakers/6" for 127.0.0.1 at 2018-10-09 22:16:01 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 77ms (Views: 64.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sneakers/new" for 127.0.0.1 at 2018-10-09 22:16:13 +1100
+Processing by SneakersController#new as HTML
+  Rendering sneakers/new.html.erb within layouts/application
+  Rendered sneakers/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 96ms (Views: 82.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sneakers" for 127.0.0.1 at 2018-10-09 22:16:48 +1100
+Processing by SneakersController#create as HTML
+  Parameters: {"brand"=>"Nike", "silhouette"=>"Air Zoom Streak", "colorway"=>"Supreme Flames", "description"=>"Supreme x Nike", "heat_rating"=>"6.5", "release_date"=>"2018", "image_url"=>"https://stockx-360.imgix.net/Nike-Zoom-Streak-Spectrum-Plus-Supreme-White/Images/Nike-Zoom-Streak-Spectrum-Plus-Supreme-White/Lv2/img36.jpg?auto=format,compress&w=1117&q=90"}
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:9
+  [1m[36mSneaker Create (1.1ms)[0m  [1m[32mINSERT INTO "sneakers" ("brand", "silhouette", "colorway", "heat_rating", "release_date", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brand", "Nike"], ["silhouette", "Air Zoom Streak"], ["colorway", "Supreme Flames"], ["heat_rating", 6], ["release_date", 2018], ["image_url", "https://stockx-360.imgix.net/Nike-Zoom-Streak-Spectrum-Plus-Supreme-White/Images/Nike-Zoom-Streak-Spectrum-Plus-Supreme-White/Lv2/img36.jpg?auto=format,compress&w=1117&q=90"], ["created_at", "2018-10-09 11:16:48.212036"], ["updated_at", "2018-10-09 11:16:48.212036"]]
+  ↳ app/controllers/sneakers_controller.rb:9
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:9
+Redirected to http://localhost:3000/sneakers
+Completed 302 Found in 20ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:16:48 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 56ms (Views: 49.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sneakers/7" for 127.0.0.1 at 2018-10-09 22:16:50 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 50ms (Views: 40.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sneakers/new" for 127.0.0.1 at 2018-10-09 22:16:52 +1100
+Processing by SneakersController#new as HTML
+  Rendering sneakers/new.html.erb within layouts/application
+  Rendered sneakers/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 55ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:17:00 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 76ms (Views: 65.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:18:08 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (2.2ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (33.9ms)
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 2.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `image_url' for nil:NilClass):
+     5:   <li>
+     6:     <a href="<%= sneaker_path(sneaker.id) %>">
+     7:       <%= sneaker.brand %> <%= sneaker.silhouette %> <%= sneaker.colorway %>
+     8:       <%= image_tag @sneaker.image_url, alt: @sneaker.silhouette, class: 'sneaker' %>
+     9:     </a>
+    10:   </li>
+    11:   <% end %>
+  
+app/views/sneakers/index.html.erb:8:in `block in _app_views_sneakers_index_html_erb___686806980431019168_70201078540320'
+app/views/sneakers/index.html.erb:4:in `_app_views_sneakers_index_html_erb___686806980431019168_70201078540320'
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:18:24 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.5ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (10.7ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `image_url' for nil:NilClass):
+     6:     <a href="<%= sneaker_path(sneaker.id) %>">
+     7:       <%= sneaker.brand %> <%= sneaker.silhouette %> <%= sneaker.colorway %>
+     8:     </a>
+     9:     <%= image_tag @sneaker.image_url, alt: @sneaker.silhouette, class: 'sneaker' %>
+    10:   </li>
+    11:   <% end %>
+    12: </ul>
+  
+app/views/sneakers/index.html.erb:9:in `block in _app_views_sneakers_index_html_erb___686806980431019168_70201105102220'
+app/views/sneakers/index.html.erb:4:in `_app_views_sneakers_index_html_erb___686806980431019168_70201105102220'
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:18:49 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 67ms (Views: 59.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:18:59 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 52ms (Views: 43.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:19:33 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.6ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 133ms (Views: 124.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:19:44 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.5ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:4
+  Rendered sneakers/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 72ms (Views: 64.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:21:46 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (2.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:5
+  Rendered sneakers/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 229ms (Views: 210.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:22:40 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (1.7ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:5
+  Rendered sneakers/index.html.erb within layouts/application (80.7ms)
+Completed 200 OK in 216ms (Views: 204.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:23:18 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:5
+  Rendered sneakers/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 90ms (Views: 82.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:24:36 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (2.6ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 123ms (Views: 102.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:24:38 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 59ms (Views: 51.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:24:57 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 84ms (Views: 75.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:25:25 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:5
+  Rendered sneakers/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 88ms (Views: 79.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:25:28 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.6ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:5
+  Rendered sneakers/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 56ms (Views: 49.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:25:30 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:5
+  Rendered sneakers/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 100ms (Views: 91.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:25:45 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:5
+  Rendered sneakers/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 74ms (Views: 65.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:26:11 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:5
+  Rendered sneakers/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 80ms (Views: 73.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:26:23 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (1.6ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:5
+  Rendered sneakers/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 208ms (Views: 194.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:27:01 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.8ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:5
+  Rendered sneakers/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 270ms (Views: 258.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:28:31 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (1.8ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:5
+  Rendered sneakers/index.html.erb within layouts/application (37.8ms)
+Completed 200 OK in 256ms (Views: 229.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:28:36 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.7ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:5
+  Rendered sneakers/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 121ms (Views: 112.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:29:21 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (8.8ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:5
+  Rendered sneakers/index.html.erb within layouts/application (30.3ms)
+Completed 200 OK in 255ms (Views: 227.3ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:30:51 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (1.8ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:5
+  Rendered sneakers/index.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 140ms (Views: 120.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/sneakers/1" for 127.0.0.1 at 2018-10-09 22:30:53 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (0.5ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 76ms (Views: 61.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sneakers/1" for 127.0.0.1 at 2018-10-09 22:31:20 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 78ms (Views: 67.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sneakers/1" for 127.0.0.1 at 2018-10-09 22:31:30 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 121ms (Views: 110.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:31:35 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.7ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:5
+  Rendered sneakers/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 70ms (Views: 62.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/sneakers/2" for 127.0.0.1 at 2018-10-09 22:31:37 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 69ms (Views: 56.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:31:44 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:5
+  Rendered sneakers/index.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 103ms (Views: 83.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:32:36 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (2.6ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (36.5ms)
+Completed 200 OK in 203ms (Views: 175.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:32:52 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 124ms (Views: 115.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:33:20 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 95ms (Views: 88.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sneakers/new" for 127.0.0.1 at 2018-10-09 22:34:28 +1100
+Processing by SneakersController#new as HTML
+  Rendering sneakers/new.html.erb within layouts/application
+  Rendered sneakers/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 158ms (Views: 141.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sneakers" for 127.0.0.1 at 2018-10-09 22:35:10 +1100
+Processing by SneakersController#create as HTML
+  Parameters: {"brand"=>"Vans", "silhouette"=>"Old Skool", "colorway"=>"Yacht Club", "description"=>"Vans Old Skool GR", "heat_rating"=>"5", "release_date"=>"2018", "image_url"=>"https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/8/0/803431_01.jpg"}
+  [1m[35m (1.9ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:9
+  [1m[36mSneaker Create (2.0ms)[0m  [1m[32mINSERT INTO "sneakers" ("brand", "silhouette", "colorway", "heat_rating", "release_date", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brand", "Vans"], ["silhouette", "Old Skool"], ["colorway", "Yacht Club"], ["heat_rating", 5], ["release_date", 2018], ["image_url", "https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/8/0/803431_01.jpg"], ["created_at", "2018-10-09 11:35:10.435814"], ["updated_at", "2018-10-09 11:35:10.435814"]]
+  ↳ app/controllers/sneakers_controller.rb:9
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:9
+Redirected to http://localhost:3000/sneakers
+Completed 302 Found in 46ms (ActiveRecord: 8.7ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:35:10 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.5ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 116ms (Views: 108.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sneakers/new" for 127.0.0.1 at 2018-10-09 22:35:32 +1100
+Processing by SneakersController#new as HTML
+  Rendering sneakers/new.html.erb within layouts/application
+  Rendered sneakers/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 121ms (Views: 105.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sneakers" for 127.0.0.1 at 2018-10-09 22:36:15 +1100
+Processing by SneakersController#create as HTML
+  Parameters: {"brand"=>"Nike", "silhouette"=>"Air Jordan 11", "colorway"=>"Concord", "description"=>"Air Jordan 11 Concord", "heat_rating"=>"8.5", "release_date"=>"2011", "image_url"=>"https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/6/3/63611742997-air-jordan-11-retro-concord-2011-release-white-black-dark-concord-011518_1.jpg"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:9
+  [1m[36mSneaker Create (0.9ms)[0m  [1m[32mINSERT INTO "sneakers" ("brand", "silhouette", "colorway", "heat_rating", "release_date", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brand", "Nike"], ["silhouette", "Air Jordan 11"], ["colorway", "Concord"], ["heat_rating", 8], ["release_date", 2011], ["image_url", "https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/6/3/63611742997-air-jordan-11-retro-concord-2011-release-white-black-dark-concord-011518_1.jpg"], ["created_at", "2018-10-09 11:36:15.222906"], ["updated_at", "2018-10-09 11:36:15.222906"]]
+  ↳ app/controllers/sneakers_controller.rb:9
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:9
+Redirected to http://localhost:3000/sneakers
+Completed 302 Found in 17ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:36:15 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (1.0ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 79ms (Views: 71.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/sneakers/new" for 127.0.0.1 at 2018-10-09 22:36:57 +1100
+Processing by SneakersController#new as HTML
+  Rendering sneakers/new.html.erb within layouts/application
+  Rendered sneakers/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 69ms (Views: 60.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sneakers" for 127.0.0.1 at 2018-10-09 22:38:09 +1100
+Processing by SneakersController#create as HTML
+  Parameters: {"brand"=>"adidas", "silhouette"=>"Human Race NMD TR", "colorway"=>"Teal Pharrell", "description"=>"PW HUMAN RACE NMD TR \"PHARRELL\"", "heat_rating"=>"7.5", "release_date"=>"2018", "image_url"=>"https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/8/0/802617_01_1.jpg"}
+  [1m[35m (0.9ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:9
+  [1m[36mSneaker Create (2.6ms)[0m  [1m[32mINSERT INTO "sneakers" ("brand", "silhouette", "colorway", "heat_rating", "release_date", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brand", "adidas"], ["silhouette", "Human Race NMD TR"], ["colorway", "Teal Pharrell"], ["heat_rating", 7], ["release_date", 2018], ["image_url", "https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/8/0/802617_01_1.jpg"], ["created_at", "2018-10-09 11:38:09.044799"], ["updated_at", "2018-10-09 11:38:09.044799"]]
+  ↳ app/controllers/sneakers_controller.rb:9
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:9
+Redirected to http://localhost:3000/sneakers
+Completed 302 Found in 30ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:38:09 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 74ms (Views: 65.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sneakers/new" for 127.0.0.1 at 2018-10-09 22:38:29 +1100
+Processing by SneakersController#new as HTML
+  Rendering sneakers/new.html.erb within layouts/application
+  Rendered sneakers/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 113ms (Views: 103.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sneakers" for 127.0.0.1 at 2018-10-09 22:39:11 +1100
+Processing by SneakersController#create as HTML
+  Parameters: {"brand"=>"adidas", "silhouette"=>"Yeezy Boost 350", "colorway"=>"Frozen Yellow", "description"=>"adidas x Yeezy Boost 350", "heat_rating"=>"8", "release_date"=>"2016", "image_url"=>"https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/8/0/802388_01.jpg"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:9
+  [1m[36mSneaker Create (1.1ms)[0m  [1m[32mINSERT INTO "sneakers" ("brand", "silhouette", "colorway", "heat_rating", "release_date", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brand", "adidas"], ["silhouette", "Yeezy Boost 350"], ["colorway", "Frozen Yellow"], ["heat_rating", 8], ["release_date", 2016], ["image_url", "https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/8/0/802388_01.jpg"], ["created_at", "2018-10-09 11:39:11.500179"], ["updated_at", "2018-10-09 11:39:11.500179"]]
+  ↳ app/controllers/sneakers_controller.rb:9
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:9
+Redirected to http://localhost:3000/sneakers
+Completed 302 Found in 13ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:39:11 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.5ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 90ms (Views: 80.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sneakers/new" for 127.0.0.1 at 2018-10-09 22:39:31 +1100
+Processing by SneakersController#new as HTML
+Started GET "/sneakers/new" for 127.0.0.1 at 2018-10-09 22:39:31 +1100
+Processing by SneakersController#new as HTML
+  Rendering sneakers/new.html.erb within layouts/application
+  Rendered sneakers/new.html.erb within layouts/application (6.2ms)
+  Rendering sneakers/new.html.erb within layouts/application
+  Rendered sneakers/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 226ms (Views: 210.4ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 399ms (Views: 374.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sneakers" for 127.0.0.1 at 2018-10-09 22:40:13 +1100
+Processing by SneakersController#create as HTML
+  Parameters: {"brand"=>"Nike", "silhouette"=>"Air Jordan 3", "colorway"=>"Black Cement OG", "description"=>"Air Jordan 3 Black Cement OG", "heat_rating"=>"10", "release_date"=>"2012", "image_url"=>"https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/8/0/803111_01.jpg"}
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:9
+  [1m[36mSneaker Create (1.3ms)[0m  [1m[32mINSERT INTO "sneakers" ("brand", "silhouette", "colorway", "heat_rating", "release_date", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brand", "Nike"], ["silhouette", "Air Jordan 3"], ["colorway", "Black Cement OG"], ["heat_rating", 10], ["release_date", 2012], ["image_url", "https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/8/0/803111_01.jpg"], ["created_at", "2018-10-09 11:40:13.475351"], ["updated_at", "2018-10-09 11:40:13.475351"]]
+  ↳ app/controllers/sneakers_controller.rb:9
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:9
+Redirected to http://localhost:3000/sneakers
+Completed 302 Found in 24ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:40:13 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.5ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 63ms (Views: 54.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:46:58 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (1.7ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 133ms (Views: 116.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:47:14 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.7ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 97ms (Views: 87.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:47:55 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.8ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (11.3ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.8ms)
+
+
+  
+SyntaxError (/Users/yiannimoustakas/wdi/wdi29-homework/yianni_moustakas/week5/tuesday/sneaker-list/app/views/layouts/application.html.erb:14: syntax error, unexpected keyword_class, expecting ')'
+..., alt: "Flight Club Logo" class: "logo" );@output_buffer.saf...
+...                          ^~~~~):
+  
+app/views/layouts/application.html.erb:14: syntax error, unexpected keyword_class, expecting ')'
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:48:26 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (1.8ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 119ms (Views: 99.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:48:41 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.5ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 60ms (Views: 51.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:49:52 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (9.7ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (52.7ms)
+Completed 200 OK in 369ms (Views: 326.5ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/sneakers/1" for 127.0.0.1 at 2018-10-09 22:49:54 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (2.3ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 65ms (Views: 52.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:49:56 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.7ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 131ms (Views: 121.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/sneakers/5" for 127.0.0.1 at 2018-10-09 22:50:20 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 50ms (Views: 42.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-09 22:50:23 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.8ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 67ms (Views: 60.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/sneakers/1" for 127.0.0.1 at 2018-10-10 08:53:50 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (1.1ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 144ms (Views: 112.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-10 08:53:54 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.5ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 91ms (Views: 82.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sneakers/5" for 127.0.0.1 at 2018-10-10 08:54:13 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSneaker Load (0.7ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 86ms (Views: 73.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/sneakers/5/edit" for 127.0.0.1 at 2018-10-10 08:54:14 +1100
+Processing by SneakersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSneaker Load (0.6ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:35
+  Rendering sneakers/edit.html.erb within layouts/application
+  Rendered sneakers/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 85ms (Views: 71.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-10 08:54:17 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.7ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 83ms (Views: 76.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/sneakers/new" for 127.0.0.1 at 2018-10-10 08:54:18 +1100
+Processing by SneakersController#new as HTML
+  Rendering sneakers/new.html.erb within layouts/application
+  Rendered sneakers/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 57ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-10 08:54:19 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 68ms (Views: 57.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sneakers/2" for 127.0.0.1 at 2018-10-10 08:55:49 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSneaker Load (1.5ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 217ms (Views: 179.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-10 08:56:03 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (2.9ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 80ms (Views: 68.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-10 09:57:11 +1100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/yiannimoustakas/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.8ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (32.4ms)
+Completed 200 OK in 488ms (Views: 470.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/sneakers/4" for 127.0.0.1 at 2018-10-10 10:03:21 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSneaker Load (0.7ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 102ms (Views: 57.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/sneakers/4/edit" for 127.0.0.1 at 2018-10-10 10:03:23 +1100
+Processing by SneakersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:35
+  Rendering sneakers/edit.html.erb within layouts/application
+  Rendered sneakers/edit.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 55ms (Views: 43.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/sneakers/4" for 127.0.0.1 at 2018-10-10 10:03:37 +1100
+Processing by SneakersController#update as HTML
+  Parameters: {"brand"=>"Nike", "silhouette"=>"React Element 87", "colorway"=>"UNDERCOVER Red & Blue", "description"=>"Nike x UNDERCOVER", "heat_rating"=>"7", "release_date"=>"2018", "image_url"=>"https://stockx.imgix.net/Nike-React-Element-87-Undercover-Light-Beige-Chalk.png?fit=fill&bg=FFFFFF&w=1400&h=1000&auto=format,compress&trim=color&q=90", "id"=>"4"}
+  [1m[36mSneaker Load (1.8ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:39
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:40
+  [1m[36mSneaker Update (2.3ms)[0m  [1m[33mUPDATE "sneakers" SET "colorway" = ?, "updated_at" = ? WHERE "sneakers"."id" = ?[0m  [["colorway", "UNDERCOVER Red & Blue"], ["updated_at", "2018-10-09 23:03:37.788060"], ["id", 4]]
+  ↳ app/controllers/sneakers_controller.rb:40
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:40
+Redirected to http://localhost:3000/sneakers/4
+Completed 302 Found in 19ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/sneakers/4" for 127.0.0.1 at 2018-10-10 10:03:37 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 57ms (Views: 48.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-10 10:03:41 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 53ms (Views: 44.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sneakers/1" for 127.0.0.1 at 2018-10-10 10:07:55 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (4.3ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 92ms (Views: 68.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/sneakers/1/edit" for 127.0.0.1 at 2018-10-10 10:08:05 +1100
+Processing by SneakersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:35
+  Rendering sneakers/edit.html.erb within layouts/application
+  Rendered sneakers/edit.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 77ms (Views: 60.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-10 10:08:08 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.8ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 253ms (Views: 230.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/sneakers/2" for 127.0.0.1 at 2018-10-10 10:08:09 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 54ms (Views: 43.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-10 10:08:11 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (1.2ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 84ms (Views: 77.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/sneakers/8" for 127.0.0.1 at 2018-10-10 10:08:13 +1100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:28
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 57ms (Views: 48.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sneakers/8/delete" for 127.0.0.1 at 2018-10-10 10:08:19 +1100
+Processing by SneakersController#destroy as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSneaker Load (0.5ms)[0m  [1m[34mSELECT  "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:55
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:56
+  [1m[36mSneaker Destroy (6.0ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = ?[0m  [["id", 8]]
+  ↳ app/controllers/sneakers_controller.rb:56
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sneakers_controller.rb:56
+Redirected to http://localhost:3000/sneakers
+Completed 302 Found in 19ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-10 10:08:19 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (0.6ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 88ms (Views: 78.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sneakers/new" for 127.0.0.1 at 2018-10-10 10:08:32 +1100
+Processing by SneakersController#new as HTML
+  Rendering sneakers/new.html.erb within layouts/application
+  Rendered sneakers/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 93ms (Views: 78.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sneakers" for 127.0.0.1 at 2018-10-10 10:08:36 +1100
+Processing by SneakersController#index as HTML
+  Rendering sneakers/index.html.erb within layouts/application
+  [1m[36mSneaker Load (1.7ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/sneakers/index.html.erb:6
+  Rendered sneakers/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 131ms (Views: 113.8ms | ActiveRecord: 1.7ms)
+
+

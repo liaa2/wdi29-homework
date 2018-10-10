@@ -1,0 +1,18 @@
+<h2><%= @planet.name %></h2>
+<nav>
+  <%= link_to 'Edit', edit_planet_path %> ||
+  <%= link_to 'delete', planet_path(@planet.id), method: 'delete' %>
+</nav>
+<p><strong>Orbit Distance:</strong> <%= @planet.orbit %> AUs</p>
+<p><strong>Average Temperature:</strong> <%= @planet.temperature %>˚C</p>
+<p><strong>Day Length:</strong> <%= @planet.day %> hours</p>
+<p><strong>Year Length:</strong> <%= @planet.year %> Solar-Days</p>
+
+<%= image_tag @planet.image, alt: @planet.name, class: 'planetImage' %>
+<!-- <h4>Moons:</h4> -->
+<br>
+<% @planet.moons.each do |moon| %>
+  <a href="<%= moon_path(moon.id) %>" title="<%= moon.name %>">
+    <%= image_tag moon.image, alt: moon.name, class: 'moonIcon'%>
+  </a>
+<% end %>

@@ -1,0 +1,19 @@
+<header>
+  <h1 class ="mainTitle title">Some Good Food</h1>
+  <h5 class="subtitle title">and some not so good food...</h5>
+</header>
+<div class="listGrid">
+
+    <% @result.each do |food| %>
+    <div>
+      <div class="listItems">
+        <a class="foodLinks" href="/food/<%= food['id'] %>"> <%= food['name'] %></a>
+      </div>
+      <a class="foodLinks" href="/food/<%= food['id'] %>">
+        <div class="backgroundImage" style="background-image: url(<%= food['image_url'] %>)">
+        </div>
+      </a>
+    </div>
+    <% end %>
+
+</div>

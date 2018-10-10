@@ -1,0 +1,18 @@
+<h3><%= @manufacturer.name %></h3>
+
+<%= link_to "Update Manufacturer", edit_manufacturer_path(@manufacturer.id) %> | <%= link_to "Delete Manufacturer", "/manufacturers/#{@manufacturer.id}", method: "delete" %><br>
+
+Country: <%= @manufacturer.country %><br>
+Founded: <%= @manufacturer.founded %><br>
+<br>
+
+Guitars:
+<ul>
+<% @manufacturer.guitars.each do |guitar| %>
+  <li>
+    <%= link_to guitar.name, guitar_path(guitar.id) %>
+  </li>
+<% end %>
+</ul>
+
+<%= image_tag(@manufacturer.image, alt: @manufacturer.name) %>

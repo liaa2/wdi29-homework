@@ -1,0 +1,23 @@
+<h2> All Poodles</h2>
+
+
+
+<ul>
+<% @result.each do |standardpoodle| %>
+    <li>
+<a href="/standardpoodles/<%= standardpoodle['id'] %>">
+    <%= standardpoodle['name']%>
+      (
+        <%= standardpoodle['age'] %>
+        <%= standardpoodle['temperment'] %>
+        )
+    </li>
+<% end %>
+</ul>
+
+
+
+
+<!-- ????
+<p>Award: <%= @standardpoodle['alive'] %></p>
+<p>Alive: <%= @animal['age'] %></p> -->

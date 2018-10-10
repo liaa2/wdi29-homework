@@ -1,0 +1,13 @@
+body {
+  background-color: rgb(57, 236, 155);
+  font: Arial;
+}
+
+.imgRsp {
+  height: 10vh;
+}
+
+.rspResult {
+  margin: 0;
+  font-size: 5em;
+}

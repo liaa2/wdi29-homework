@@ -1,0 +1,12 @@
+<h2>Chair index</h2>
+
+<ul>
+
+    <% @chairs.each do |chair| %>
+      <li>
+        <a href="/chairs/<%= chair.id %>"><%= chair.name %></a>
+      </li>
+    <% end %>
+
+
+</ul>

@@ -1,0 +1,12 @@
+<h2>All World Leaders</h2>
+
+<ul>
+  <% @world_leaders.each do |world_leader| %>
+    <li>
+      <a href="<%= leader_path(world_leader.id) %>">
+        <%= world_leader.name %>
+        (<%= world_leader.country %>)
+      </a>
+    </li>
+  <% end %>
+</ul>

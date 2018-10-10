@@ -1,0 +1,35 @@
+<div class="container clearfix">
+  <% if @world_leader.image.present? %>
+    <%= image_tag @world_leader.image, alt: @world_leader.name, class: "leader_image" %>
+  <% end %>
+
+  <div class="details">
+    <h2>World Leader: <%= @world_leader.name %></h2>
+
+    <p>Country: <%= @world_leader.country %></p>
+    <p>In Office: <%= @world_leader.years_in_office %></p>
+
+    <p>Alive:
+      <% case @world_leader.alive %>
+      <% when nil %>
+        ¯\_(ツ)_/¯
+      <% when true %>
+        Yeah they're still kicking about.
+      <% when false %>
+        Rest their dear soul.
+      <% end %>
+    </p>
+
+    <p>Quote: "<%= @world_leader.quote %>"</p>
+  </div>
+
+  <div class="update">
+    <a href="<%= leader_edit_path(@world_leader.id) %>">Edit This Leader</a> |
+    <a href="<%= leader_destroy_path %>">Delete This Leader</a>
+  </div>
+
+</div>
+
+<% if @world_leader.name == "Kang" %>
+  <marquee>ALL HAIL PRESIDENT KANG!</marquee>
+<% end %>

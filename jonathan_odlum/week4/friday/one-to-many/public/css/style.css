@@ -1,0 +1,16 @@
+body{
+  color: white;
+  background-image: url("https://i.ytimg.com/vi/T40NSkd7Olc/maxresdefault.jpg");
+}
+
+img{
+  max-width: 200px;
+}
+
+a{
+  color: grey;
+}
+
+a:visited{
+  color: hotpink;
+}

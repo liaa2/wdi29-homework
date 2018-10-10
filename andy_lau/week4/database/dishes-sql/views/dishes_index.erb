@@ -1,0 +1,17 @@
+<br>
+<br>
+
+
+<div class="containerGrid">
+
+  <% @result.each do |dish| %>
+  <div>
+    <a href="/dishes/<%= dish.id %>"> <%= dish.name %> </a>
+  </div>
+  <a href="/dishes/<%= dish.id %>">
+  <div class="backgroundImage" style="background-image: url(<%= dish.image_url %>)">
+  </div>
+  </a>
+  <% end %>
+
+</div>

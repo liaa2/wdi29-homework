@@ -1,0 +1,16 @@
+<h2>Edit Sneaker: <%= @sneaker.brand %> <%= @sneaker.silhouette %> <%= @sneaker.colorway %></h2>
+
+<form action="<%= sneaker_path(@sneaker.id) %>" method="post">
+  Brand: <input type="text" name="brand" value="<%= @sneaker.brand %>"><br>
+  Silhouette: <input type="text" name="silhouette" value="<%= @sneaker.silhouette %>"><br>
+  Colorway:<input type="text" name="colorway" value="<%= @sneaker.colorway %>"><br>
+  Description:<input type="text" name="description" value="<%= @sneaker.description %>"><br>
+  Heat Raating:<input type="text" name="heat_rating" value="<%= @sneaker.heat_rating %>"><br>
+  Release Date:<input type="text" name="release_date" value="<%= @sneaker.release_date %>"><br>
+  Image Url:<input type="text" name="image_url" value="<%= @sneaker.image_url %>"><br>
+  <br>
+  <input type="submit" value="Update">
+
+
+
+</form>

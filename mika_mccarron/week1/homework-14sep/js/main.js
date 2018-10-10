@@ -35,25 +35,29 @@ const trainLines = {
   'N':['Times Square', '34th', '28th', '23rd', 'Union Square', '8th'],
   'L':['8th','6th','Union Square','3rd', '1st'],
   '6':['Grand Central', '33rd', '28th','23rd', 'Union Square', 'Astor Place'],
-}
-//console.log(trainLines);
+};
+// console.log(trainLines);
 
-
-
-//From Luke
 const singleLineTrip = function( lineName, startStation, endStation ){
 
 	// this console.log is just for debugging, to help you see what arguments this function is getting
-  console.log('Arguments to this function are:',  lineName, startStation, endStation );
-
+  console.log('Arguments to this function are:',  lineName, startStation, endStation );//???Is this calling the function?
   let tripStations = [];  // create a new empty array and store it in a local variable of the function called tripStations
+
+  let lineStations = trainLines[ lineName ];
+  // console.log(`lineStations is:`, lineStations);
 
   // here's where you work out the stations which will be passed on this trip
   // the first thing you will need to do is retrieve the array which lists the stations for the line the trip is happening on
   // (the name of this line is in the `lineName` argument for this function, which you can use like any normal variable -
   // you will need to use it as a key into your object which stores the 3 lines, to access the array of stations for the requested line
-
   // ..... do something here which loops through the stations in the specified line, from the specified start to end, and adds them to the new array tripStations.....
-
   return tripStations;
-};
+
+}; // end of singleLineTrip()
+
+// debugger;
+
+const results = singleLineTrip('6', '33rd', 'Union Square');
+
+console.log( results );

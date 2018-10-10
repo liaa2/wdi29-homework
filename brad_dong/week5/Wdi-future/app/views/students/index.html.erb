@@ -1,0 +1,9 @@
+<h2>All WDI students</h2>
+
+<ul>
+  <% @students.each do|t| %>
+    <li>
+      <%= link_to t.name, student_path(t.id) %>
+    </li>
+  <% end %>
+</ul>

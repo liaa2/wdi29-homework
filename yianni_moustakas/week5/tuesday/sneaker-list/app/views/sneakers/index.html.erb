@@ -1,0 +1,17 @@
+<h2>Sneakers</h2>
+
+
+<ul>
+  <div class="grid-container">
+  <% @sneakers.each do |sneaker| %>
+  <div class="grid-item">
+    <li>
+      <a href="<%= sneaker_path(sneaker.id) %>">
+        <%= sneaker.brand %> <%= sneaker.silhouette %> <%= sneaker.colorway %>
+      </a> <br>
+      <a href="<%= sneaker_path(sneaker.id) %>"><%= image_tag sneaker.image_url, alt: sneaker.silhouette, class: 'index_sneaker' %></a>
+    </li>
+  </div>
+  <% end %>
+</div>
+</ul>

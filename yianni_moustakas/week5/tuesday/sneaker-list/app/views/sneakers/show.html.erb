@@ -1,0 +1,11 @@
+<h2><%= @sneaker.brand %> <%= @sneaker.silhouette %> <%= @sneaker.colorway %></h2>
+
+<%= link_to "Edit This Shoe", sneaker_edit_path(@sneaker.id) %> | <%= link_to "Scrap This Sneaker", sneaker_destroy_path(@sneaker.id) %>
+<br>
+<% if @sneaker.image_url.present? %>
+<%= image_tag @sneaker.image_url, alt: @sneaker.silhouette, class: 'sneaker' %>
+<% end %>
+<p><strong>Colorway: </strong><%= @sneaker.colorway %></p>
+<p><strong>Description: </strong><%= @sneaker.description %></p>
+<p><strong>Heat Rating: </strong><%= @sneaker.heat_rating %></p>
+<p><strong>Release Date: </strong><%= @sneaker.release_date %></p>

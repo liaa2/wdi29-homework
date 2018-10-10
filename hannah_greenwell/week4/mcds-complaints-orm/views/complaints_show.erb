@@ -1,0 +1,11 @@
+<h2><%= @complaint.title %></h2>
+
+
+<p class="complaint"><%= @complaint.content %></p>
+
+<p class="complainer">Complainer: <a href="/customers/<%= @complaint.customer_id %>"><%= @complaint.customer.name %></p>
+<p class="date">Date: <%= @complaint.date_made %></p>
+
+
+<a class="update" href="/complaints/<%= @complaint.id %>/edit">Edit Complaint</a>
+<a class = "update" href="/complaints/<%= @complaint.id %>/delete">Delete Complaint</a>

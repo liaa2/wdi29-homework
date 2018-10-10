@@ -1,0 +1,20 @@
+<h2><%= @athlete.full_name %></h2>
+
+<img src="<%= @athlete.self_image %>" alt=""> <br>
+
+<p>
+  Age: <%= @athlete.age %>
+</p>
+<p>
+  Club: <%= @athlete.club %>
+</p>
+<img src="<%= @athlete.club_image %>" alt="<%= @athlete.club %>">
+<p>
+  Country: <%= @athlete.country %>
+</p>
+<img src="<%= @athlete.country_image %>" alt="<%= @athlete.country %>"><br>
+<br>
+<br>
+
+<a href="/athletes/<%= @athlete['id'] %>/edit">Edit Athlete</a> <br>
+<a href="/athletes/<%= @athlete.id %>/delete">Delete Athlete</a> <br>

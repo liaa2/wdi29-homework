@@ -1,0 +1,9 @@
+<h2>Guitars</h2>
+
+<ul>
+  <% @guitars.each do |guitar| %>
+    <li>
+      <%= link_to guitar.name, guitar_path(guitar.id) %>
+    </li>
+  <% end %>
+</ul>

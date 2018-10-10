@@ -1,0 +1,14 @@
+<h2>Hello?</h2>
+
+<h3>You: <%= @move %></h3>
+<h3>Computer: <%= @comp %></h3>
+<h3><%= @result %></h3>
+
+<h3>Play Again</h3>
+
+<form action="/games/rockpaperscissors/play">
+  <input type="radio" name="move" value="rock"> ✊
+  <input type="radio" name="move" value="paper"> 🤚
+  <input type="radio" name="move" value="scissors"> ✌️
+  <input type="submit" value="Play Move">
+</form>

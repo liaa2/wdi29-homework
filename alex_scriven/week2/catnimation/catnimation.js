@@ -166,7 +166,7 @@ headStyleTag.innerHTML = ".monkeyImagesToSpin:hover{transition:3s;transform:rota
 document.body.appendChild(headStyleTag);
 
 //UNCOMMENT THIS;
-// let playMusic = document.createElement('audio');
+let playMusic = document.createElement('audio');
 
 //Make a music autoplay thing
 

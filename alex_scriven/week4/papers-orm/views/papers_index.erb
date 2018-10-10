@@ -1,0 +1,10 @@
+<h2> All the Papers!</h2>
+
+<p>All the papers are here:</p>
+
+<ul>
+  <% @papers.each do |paper| %>
+    <li><a href="/papers/<%= paper["id"] %>"><%= paper.title %></a>
+    </li>
+  <% end %>
+</ul>

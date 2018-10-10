@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>World Leaders Database</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <h1>Leaders of the World (and Beyond)!</h1>
+
+    <nav>
+      <a href="<%= leaders_path %>">All World Leaders</a> |
+      <a href="<%= leaders_new_path %>">Add New World Leader</a>
+    </nav>
+
+    <%= yield %>
+
+  </body>
+</html>

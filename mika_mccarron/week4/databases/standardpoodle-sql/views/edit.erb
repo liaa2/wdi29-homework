@@ -1,0 +1,17 @@
+<h2>Edit Poodles: <%= @standardpoodle['name'] %></h2>
+
+
+
+
+<form action="/standardpoodles/<%= @standardpoodle['id'] %>" method="post">
+  Name: <input type="text" name="name" value="<%= @standardpoodle['name'] %>"><br>
+
+  Color: <input type="text" name="color" value="<%= @standardpoodle['color'] %>"><br>
+  Age: <input type="text" name="age" value="<%= @standardpoodle['age'] %>"><br>
+  Temperment: <input type="text" name="temperment" value="<%= @standardpoodle['temperment'] %>"><br>
+  Alive: <input type="text" name="alive" value="<%= @standardpoodle['alive'] %>"><br>
+  Age: <input type="text" name="age" value="<%= @standardpoodle['age'] %>"><br>
+  Image URL: <input type="text" name="image_url" value="<%= @standardpoodle['image_url'] %>"><br>
+  <br>
+  <input type="submit" value="Update Poodle">
+</form>

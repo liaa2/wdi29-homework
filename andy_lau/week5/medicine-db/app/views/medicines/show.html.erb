@@ -1,0 +1,10 @@
+<h2><%= @medicine.name %></h2>
+
+<a href="<%= medicine_edit_path %>">EDIT</a>
+<a href="<%= medicine_destroy_path %>">DESTROY</a>
+
+<p><strong>IUPAC: </strong> <%= @medicine.iupac %></p>
+<p><strong>Molar Mass: </strong> <%= @medicine.molar_mass %> g/mol</p>
+<p><strong>Used for: </strong> <%= @medicine.uses %></p>
+<p><strong>Common brand: </strong>
+  <div><%= image_tag @medicine.image %></div>

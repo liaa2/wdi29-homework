@@ -1,0 +1,14 @@
+<h2>Sports Brands</h2>
+
+<ul>
+  <% @result.each do |brand| %>
+  <li>
+    <a href="/brands/<%= brand.id %>">
+      <%= brand.company_name %>
+    </a>
+  </li>
+  <br>
+  <br>
+  <a href="/brands/<%= brand.id %>"> <img src="<%= brand.logo_url %>" alt="<%= brand.company_name %>"></a>
+  <% end %>
+</ul>

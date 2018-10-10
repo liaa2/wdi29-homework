@@ -1,0 +1,33 @@
+<h2>
+  <%= @band.name %>
+</h2>
+<hr>
+<a href="/bands/<%= @band.id %>/edit">Edit this band</a>  ||
+<a href="/bands/<%= @band.id %>/delete">Delete this band</a>
+
+<hr>
+
+<p>
+    Genre: <%= @band.genre %><br>
+</p>
+
+<p>
+  Number of members: <%= @band.no_of_members %><br>
+</p>
+
+<img src="<%= @band['img_url'] %>" alt="">
+
+
+<h3>Songs by this band</h3>
+<ul>
+  <% @band.songs.each do |song| %>
+    <a href="/songs/<%= song.id%>">
+
+      <li><%= song.name %></li>
+    </a>
+
+  <% end %>
+</ul>
+
+
+<a href="/songs/new">Add a song to this band</a>

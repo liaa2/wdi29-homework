@@ -1,0 +1,26 @@
+<div class="container">
+
+  <div class="grid_item">
+    <img src="<%= @customer.image_url %>" />
+  </div>
+
+  <div class="grid_item">
+    <h2><span class="colour_bg"><%= @customer.name %></span></h2>
+
+    <p>Location: <%= @customer.city %>, <%= @customer.state %></p>
+    <p>Disgruntled Rating: <%= @customer.disgruntled_rating %>/5</p>
+
+    <a class="update" href="/customers/<%= @customer.id %>/edit">Edit <%= @customer.name %></a>
+    <a class="update" href="/customers/<%= @customer.id %>/delete">Delete <%= @customer.name %></a>
+
+    <h2 class="customer_complaint_list"><span class="colour_bg">Complaints</span></h2>
+    <ul>
+      <% @customer.complaints.each do |complaint| %>
+      <li>
+        <a href="/complaints/<%= complaint.id %>"><%= complaint.title %></a>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+
+</div><!-- container -->

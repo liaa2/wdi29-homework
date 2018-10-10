@@ -1,0 +1,16 @@
+<header>
+  <h1 class ="mainTitle title">Edit <%= @food['name'] %></h1>
+</header>
+
+<form action="/food/<%= @food['id'] %>" method="post">
+  Name: <input class="textfield" type="text" name="name" value="<%= @food['name'] %>"><br>
+  Origin: <input class="textfield" type="text" name="country" value="<%= @food['country'] %>"><br>
+  Country Flag: <input class="textfield" type="text" name="country_img" value="<%= @food['country_img'] %>"><br>
+  Main Ingredient: <input class="textfield" type="text" name="main_ingredient" value="<%= @food['main_ingredient'] %>"><br>
+  Description: <input class="textfield" type="text" name="description" value="<%= @food['description'] %>"><br>
+  Score (out of 10): <input class="textfield" type="text" name="score" value="<%= @food['score'] %>"><br>
+  Is it edible?: <input class="textfield" type="text" name="edible" value="<%= @food['edible'] %>"><br>
+  Image URL: <input class="textfield" type="text" name="image_url" value="<%= @food['image_url'] %>"><br>
+  <br>
+  <input type="submit" value="Update food">
+</form>

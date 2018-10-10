@@ -1,0 +1,7 @@
+<h2>You Guessed <%= @guess %> </h2>
+<h2>The answer was </h2>
+
+<div class="secretNumImgDiv">
+  <h3><%= @answer %> </h3>
+  <%= image_tag @result_image, alt: "Result Image", class:"secretNumImg"%>
+</div>

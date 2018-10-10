@@ -1,0 +1,17 @@
+<h2> All the Authors!</h2>
+<div class="mainAuth">
+  <p>All the authors are here:</p>
+  <ul>
+    <% @authors.each do |author| %>
+      <li><a href="/authors/<%= author["id"] %>"><%= author.name %></a>
+        <ul>
+          <li>Age: <%= author.age %></li>
+          <li>Country: <%= author.country %></li>
+          <li>Alive: <%= author.alive %></li>
+        </ul>
+      </li>
+
+    <% end %>
+  </ul>
+
+</div>

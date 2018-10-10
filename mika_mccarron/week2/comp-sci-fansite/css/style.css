@@ -1,0 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  background-color: darkslategray;
+  color: white;
+ font-family: 'Roboto', sans-serif;
+}
+
+div{
+  border: 1px solid red;
+  display: inline-block;
+}
+
+#sidebar{
+  width: 25%;
+  height: 100%;
+}
+
+#main{
+  width: 75%;
+  height: 100%;
+}

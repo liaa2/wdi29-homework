@@ -1,0 +1,23 @@
+
+<h2>The page for <%= @mountain.name %></h2>
+<hr>
+<nav>
+  <%= link_to "Destroy this mountain!", mountain_destroy_path(@mountain) %>
+  <%= link_to "Edit this mountain!", mountain_edit_path(@mountain) %>
+</nav>
+<hr>
+<ul>
+<li>
+  Country: <%= @mountain.country %>
+</li>
+</ul>
+<ul>
+<li>
+  Elevation: <%= @mountain.elevation %>
+</li>
+</ul>
+<ul>
+<li>
+  Pointyness: <%= @mountain.pointyness %>
+</li>
+</ul>

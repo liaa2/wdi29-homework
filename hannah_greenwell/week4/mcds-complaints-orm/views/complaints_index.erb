@@ -1,0 +1,11 @@
+<h2>All Complaints</h2>
+
+<ul>
+  <% @complaints.each do |complaint| %>
+    <li>
+      <a href="/complaints/<%= complaint.id %>">
+        <%= complaint.title %>
+      </a>
+    </li>
+  <% end %>
+</ul>

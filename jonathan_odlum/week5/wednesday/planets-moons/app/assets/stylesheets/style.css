@@ -1,0 +1,21 @@
+body{
+  color: white;
+  background-image: url(https://i.ytimg.com/vi/T40NSkd7Olc/maxresdefault.jpg);
+  background-size: cover;
+}
+
+a{
+  color: rgb(167, 167, 167);
+}
+
+a:visited{
+  color: hotpink;
+}
+
+img{
+  max-width: 300px;
+}
+
+img.moonIcon{
+  max-width: 100px;
+}

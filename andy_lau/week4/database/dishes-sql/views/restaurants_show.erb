@@ -1,0 +1,11 @@
+<div class="inlineBlock">
+  <h2><%= @restaurant.name %></h2>
+  <a href="/restaurants/<%= @restaurant.id %>/edit"><p>Edit</p></a>
+  <a href="/restaurants/<%= @restaurant.id %>/delete"><p>Delete</p></a>
+</div>
+
+<p>Location: <%= @restaurant.location %></p>
+<p>Rating: <%= @restaurant.rating %>/5</p>
+<p>Cost Rating: <%= @restaurant.cost %>/5</p>
+<p>Dish ID: <%= @restaurant.dish_id%></p>
+<p>Signature Dish: <a href="/dishes/<%= @restaurant.dish.id %>"><%= @restaurant.dish.name %></a></p>

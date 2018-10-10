@@ -1,0 +1,1209 @@
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateMountains (20181009052404)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "mountains" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" text, "country" text, "elevation" float, "image" varchar, "pointyness" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181009052404_create_mountains.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181009052404"]]
+  ↳ bin/rails:9
+  [1m[35m (13.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-10-09 05:26:15.878281"], ["updated_at", "2018-10-09 05:26:15.878281"]]
+  ↳ bin/rails:9
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mMountain Load (0.4ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mMountain Create (1.3ms)[0m  [1m[32mINSERT INTO "mountains" ("name", "country", "elevation", "image", "pointyness", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mt Fuji"], ["country", "Japan"], ["elevation", 3776.0], ["image", "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Numazu_and_Mount_Fuji.jpg/320px-Numazu_and_Mount_Fuji.jpg"], ["pointyness", 4], ["created_at", "2018-10-09 05:45:24.238168"], ["updated_at", "2018-10-09 05:45:24.238168"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mMountain Create (0.5ms)[0m  [1m[32mINSERT INTO "mountains" ("name", "country", "elevation", "image", "pointyness", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "K2"], ["country", "Pakistan"], ["elevation", 8611.0], ["image", "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/K2_2006b.jpg/280px-K2_2006b.jpg"], ["pointyness", 7], ["created_at", "2018-10-09 05:45:24.242408"], ["updated_at", "2018-10-09 05:45:24.242408"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mMountain Create (0.6ms)[0m  [1m[32mINSERT INTO "mountains" ("name", "country", "elevation", "image", "pointyness", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "The Matterhorn"], ["country", "Switzerland"], ["elevation", 4478.0], ["image", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Matterhorn_from_Domh%C3%BCtte_-_2.jpg/1200px-Matterhorn_from_Domh%C3%BCtte_-_2.jpg"], ["pointyness", 9], ["created_at", "2018-10-09 05:45:24.246105"], ["updated_at", "2018-10-09 05:45:24.246105"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mMountain Load (0.5ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+Started GET "/mountains" for 127.0.0.1 at 2018-10-09 16:46:35 +1100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/scriven/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/mountains"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/mountains" for 127.0.0.1 at 2018-10-09 17:01:09 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:6
+  Rendered mountains/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 440ms (Views: 431.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-09 17:02:09 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.4ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:6
+  Rendered mountains/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 58ms (Views: 53.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-09 17:02:31 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:6
+  Rendered mountains/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 73ms (Views: 68.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-09 17:03:01 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:6
+  Rendered mountains/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 55ms (Views: 50.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/build-non-gmail-inbox.js.map" for 127.0.0.1 at 2018-10-09 17:03:06 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/build-non-gmail-inbox.js.map"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/mountains" for 127.0.0.1 at 2018-10-09 17:03:23 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.7ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:6
+  Rendered mountains/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 61ms (Views: 55.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/build-non-gmail-inbox.js.map" for 127.0.0.1 at 2018-10-09 17:03:24 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/build-non-gmail-inbox.js.map"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/mountains" for 127.0.0.1 at 2018-10-09 17:03:31 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.6ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:6
+  Rendered mountains/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 66ms (Views: 60.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-09 17:03:52 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:6
+  Rendered mountains/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 50ms (Views: 45.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-09 17:04:01 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:6
+  Rendered mountains/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 53ms (Views: 48.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-09 17:05:34 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.4ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:6
+  Rendered mountains/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 38ms (Views: 34.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-09 17:06:15 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:6
+  Rendered mountains/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 45ms (Views: 40.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-09 17:06:41 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:6
+  Rendered mountains/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 37ms (Views: 33.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-09 17:07:09 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:6
+  Rendered mountains/index.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `image' for nil:NilClass):
+    22:     </li>
+    23:     </ul>
+    24:   </li>
+    25:   <%= image_tag @mountain.image %>
+    26:   <% end %>
+    27: </ul>
+  
+app/views/mountains/index.html.erb:25:in `block in _app_views_mountains_index_html_erb___2477958000294682965_70125019234740'
+app/views/mountains/index.html.erb:6:in `_app_views_mountains_index_html_erb___2477958000294682965_70125019234740'
+Started GET "/mountains" for 127.0.0.1 at 2018-10-09 17:07:16 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:6
+  Rendered mountains/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 37ms (Views: 32.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-09 17:07:58 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:6
+  Rendered mountains/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 54ms (Views: 49.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-09 17:08:34 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:7
+  Rendered mountains/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 63ms (Views: 58.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-09 17:09:05 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:7
+  Rendered mountains/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 34ms (Views: 30.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-10-09 17:11:05 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/scriven/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/scriven/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [7 times] (4.9ms)
+  Rendered /Users/scriven/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/scriven/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 47ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-10-09 17:11:15 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/scriven/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/scriven/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [7 times] (5.3ms)
+  Rendered /Users/scriven/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/scriven/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 56ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-10-09 17:12:46 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/scriven/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/scriven/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [7 times] (2.3ms)
+  Rendered /Users/scriven/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/scriven/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 36ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-09 17:12:48 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:7
+  Rendered mountains/index.html.erb within layouts/application (18.3ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"mountains"}, missing required keys: [:id]):
+    23:     </li>
+    24:     </ul>
+    25:   </li>
+    26:   <a href="<%= mountain_path %>">
+    27:   <%= image_tag mountain.image, class: "mountainImg" %>
+    28:   </a>
+    29:   <% end %>
+  
+app/views/mountains/index.html.erb:26:in `block in _app_views_mountains_index_html_erb___2477958000294682965_70125009345480'
+app/views/mountains/index.html.erb:7:in `_app_views_mountains_index_html_erb___2477958000294682965_70125009345480'
+Started GET "/mountains" for 127.0.0.1 at 2018-10-09 17:13:24 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:7
+  Rendered mountains/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 43ms (Views: 38.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-09 17:13:55 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:7
+  Rendered mountains/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 40ms (Views: 34.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-09 17:16:03 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:7
+  Rendered mountains/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 33ms (Views: 27.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/1" for 127.0.0.1 at 2018-10-09 17:16:05 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:11
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (216.4ms)
+Completed 500 Internal Server Error in 251ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `mountain' for #<#<Class:0x00007f8e808b0ae0>:0x00007f8e7e5485f8>
+Did you mean?  @mountain):
+    2: <h2>The page for <%= @mountain.name %></h2>
+    3: <ul>
+    4: <li>
+    5:   Country: <%= mountain.country %>
+    6: </li>
+    7: </ul>
+    8: <ul>
+  
+app/views/mountains/show.html.erb:5:in `_app_views_mountains_show_html_erb___9825099665114326_70124990779040'
+Started GET "/mountains/1" for 127.0.0.1 at 2018-10-09 17:16:17 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:11
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 53ms (Views: 46.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-10-10 09:42:44 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/scriven/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/scriven/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [12 times] (13.1ms)
+  Rendered /Users/scriven/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Users/scriven/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 41ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains/1" for 127.0.0.1 at 2018-10-10 09:42:47 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMountain Load (0.6ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:29
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (180.2ms)
+Completed 500 Internal Server Error in 218ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `mountain_delete_path' for #<#<Class:0x00007f8e811e6150>:0x00007f8e811dca38>
+Did you mean?  mountain_edit_path
+               mountain_destroy_path):
+    3: <hr>
+    4: <nav>
+    5:   <a href="<%= mountain_edit_path(@mountain) %>/edit">Update this mountain</a> |
+    6:   <a href="<%= mountain_delete_path(@mountain) %>/delete">Delete this mountain</a>
+    7: </nav>
+    8: <hr>
+    9: <ul>
+  
+app/views/mountains/show.html.erb:6:in `_app_views_mountains_show_html_erb___9825099665114326_70125014181160'
+Started GET "/mountains/1" for 127.0.0.1 at 2018-10-10 09:43:37 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:29
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 44ms (Views: 38.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-10 09:43:41 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:7
+  Rendered mountains/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 34ms (Views: 24.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2018-10-10 09:43:45 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"mountains"}, missing required keys: [:id]):
+    1: <h3>Make a new mountain!</h3>
+    2: 
+    3: <form action="<%= mountain_path %>" method="post">
+    4: 
+    5:   Name: <input type="text" name="name">
+    6:   Image URL: <input type="text" name="image">
+  
+app/views/mountains/new.html.erb:3:in `_app_views_mountains_new_html_erb__2619402842394996785_70125027064780'
+Started GET "/mountains/new" for 127.0.0.1 at 2018-10-10 09:44:21 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 32ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/mountains" for 127.0.0.1 at 2018-10-10 09:44:46 +1100
+Processing by MountainsController#create as HTML
+  Parameters: {"name"=>"Test", "image"=>"www.placepuppy.net/250/250", "country"=>"Doggo", "elevation"=>"14", "pointyness"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mountains_controller.rb:10
+  [1m[36mMountain Create (1.6ms)[0m  [1m[32mINSERT INTO "mountains" ("name", "country", "elevation", "image", "pointyness", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Test"], ["country", "Doggo"], ["elevation", 14.0], ["image", "www.placepuppy.net/250/250"], ["pointyness", 1], ["created_at", "2018-10-09 22:44:46.826430"], ["updated_at", "2018-10-09 22:44:46.826430"]]
+  ↳ app/controllers/mountains_controller.rb:10
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mountains_controller.rb:10
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 3.4ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"mountains"}, missing required keys: [:id]):
+  
+app/controllers/mountains_controller.rb:18:in `create'
+Started POST "/mountains" for 127.0.0.1 at 2018-10-10 09:46:46 +1100
+Processing by MountainsController#create as HTML
+  Parameters: {"name"=>"Test", "image"=>"www.placepuppy.net/250/250", "country"=>"Doggo", "elevation"=>"14", "pointyness"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mountains_controller.rb:10
+  [1m[36mMountain Create (0.9ms)[0m  [1m[32mINSERT INTO "mountains" ("name", "country", "elevation", "image", "pointyness", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Test"], ["country", "Doggo"], ["elevation", 14.0], ["image", "www.placepuppy.net/250/250"], ["pointyness", 1], ["created_at", "2018-10-09 22:46:46.546367"], ["updated_at", "2018-10-09 22:46:46.546367"]]
+  ↳ app/controllers/mountains_controller.rb:10
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mountains_controller.rb:10
+Redirected to http://localhost:3000/mountains
+Completed 302 Found in 27ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-10 09:46:46 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:7
+  Rendered mountains/index.html.erb within layouts/application (9.8ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (The asset "www.placepuppy.net/250/250" is not present in the asset pipeline.):
+     9:     Name: <%= mountain.name %>
+    10:   </li>
+    11:   <a href="<%= mountain_path(mountain) %>">
+    12:   <%= image_tag mountain.image, class: "mountainImg" %>
+    13:   </a>
+    14:   <% end %>
+    15: </ul>
+  
+app/views/mountains/index.html.erb:12:in `block in _app_views_mountains_index_html_erb___2477958000294682965_70125018483520'
+app/views/mountains/index.html.erb:7:in `_app_views_mountains_index_html_erb___2477958000294682965_70125018483520'
+Started POST "/mountains" for 127.0.0.1 at 2018-10-10 09:47:26 +1100
+Processing by MountainsController#create as HTML
+  Parameters: {"name"=>"Test", "image"=>"http://www.placepuppy.net/250/250", "country"=>"Doggo", "elevation"=>"14", "pointyness"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mountains_controller.rb:10
+  [1m[36mMountain Create (0.6ms)[0m  [1m[32mINSERT INTO "mountains" ("name", "country", "elevation", "image", "pointyness", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Test"], ["country", "Doggo"], ["elevation", 14.0], ["image", "http://www.placepuppy.net/250/250"], ["pointyness", 1], ["created_at", "2018-10-09 22:47:26.115785"], ["updated_at", "2018-10-09 22:47:26.115785"]]
+  ↳ app/controllers/mountains_controller.rb:10
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mountains_controller.rb:10
+Redirected to http://localhost:3000/mountains
+Completed 302 Found in 11ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-10 09:47:26 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:7
+  Rendered mountains/index.html.erb within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (The asset "www.placepuppy.net/250/250" is not present in the asset pipeline.):
+     9:     Name: <%= mountain.name %>
+    10:   </li>
+    11:   <a href="<%= mountain_path(mountain) %>">
+    12:   <%= image_tag mountain.image, class: "mountainImg" %>
+    13:   </a>
+    14:   <% end %>
+    15: </ul>
+  
+app/views/mountains/index.html.erb:12:in `block in _app_views_mountains_index_html_erb___2477958000294682965_70125016168800'
+app/views/mountains/index.html.erb:7:in `_app_views_mountains_index_html_erb___2477958000294682965_70125016168800'
+Started POST "/mountains" for 127.0.0.1 at 2018-10-10 09:47:54 +1100
+Processing by MountainsController#create as HTML
+  Parameters: {"name"=>"Test", "image"=>"http://www.placepuppy.net/250/250", "country"=>"Doggo", "elevation"=>"14", "pointyness"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mountains_controller.rb:10
+  [1m[36mMountain Create (0.5ms)[0m  [1m[32mINSERT INTO "mountains" ("name", "country", "elevation", "image", "pointyness", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Test"], ["country", "Doggo"], ["elevation", 14.0], ["image", "http://www.placepuppy.net/250/250"], ["pointyness", 1], ["created_at", "2018-10-09 22:47:54.242431"], ["updated_at", "2018-10-09 22:47:54.242431"]]
+  ↳ app/controllers/mountains_controller.rb:10
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mountains_controller.rb:10
+Redirected to http://localhost:3000/mountains
+Completed 302 Found in 10ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-10 09:47:54 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:7
+  Rendered mountains/index.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (The asset "www.placepuppy.net/250/250" is not present in the asset pipeline.):
+     9:     Name: <%= mountain.name %>
+    10:   </li>
+    11:   <a href="<%= mountain_path(mountain) %>">
+    12:   <%= image_tag mountain.image, class: "mountainImg" %>
+    13:   </a>
+    14:   <% end %>
+    15: </ul>
+  
+app/views/mountains/index.html.erb:12:in `block in _app_views_mountains_index_html_erb___2477958000294682965_70124990826800'
+app/views/mountains/index.html.erb:7:in `_app_views_mountains_index_html_erb___2477958000294682965_70124990826800'
+Started POST "/mountains" for 127.0.0.1 at 2018-10-10 09:48:24 +1100
+Processing by MountainsController#create as HTML
+  Parameters: {"name"=>"Test", "image"=>"http://placekitten.com/250/250", "country"=>"Doggo", "elevation"=>"14", "pointyness"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mountains_controller.rb:10
+  [1m[36mMountain Create (0.6ms)[0m  [1m[32mINSERT INTO "mountains" ("name", "country", "elevation", "image", "pointyness", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Test"], ["country", "Doggo"], ["elevation", 14.0], ["image", "http://placekitten.com/250/250"], ["pointyness", 1], ["created_at", "2018-10-09 22:48:24.593530"], ["updated_at", "2018-10-09 22:48:24.593530"]]
+  ↳ app/controllers/mountains_controller.rb:10
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mountains_controller.rb:10
+Redirected to http://localhost:3000/mountains
+Completed 302 Found in 10ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-10 09:48:24 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:7
+  Rendered mountains/index.html.erb within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (The asset "www.placepuppy.net/250/250" is not present in the asset pipeline.):
+     9:     Name: <%= mountain.name %>
+    10:   </li>
+    11:   <a href="<%= mountain_path(mountain) %>">
+    12:   <%= image_tag mountain.image, class: "mountainImg" %>
+    13:   </a>
+    14:   <% end %>
+    15: </ul>
+  
+app/views/mountains/index.html.erb:12:in `block in _app_views_mountains_index_html_erb___2477958000294682965_70125015493340'
+app/views/mountains/index.html.erb:7:in `_app_views_mountains_index_html_erb___2477958000294682965_70125015493340'
+Started GET "/mountains" for 127.0.0.1 at 2018-10-10 09:48:35 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:7
+  Rendered mountains/index.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (The asset "www.placepuppy.net/250/250" is not present in the asset pipeline.):
+     9:     Name: <%= mountain.name %>
+    10:   </li>
+    11:   <a href="<%= mountain_path(mountain) %>">
+    12:   <%= image_tag mountain.image, class: "mountainImg" %>
+    13:   </a>
+    14:   <% end %>
+    15: </ul>
+  
+app/views/mountains/index.html.erb:12:in `block in _app_views_mountains_index_html_erb___2477958000294682965_70125006879920'
+app/views/mountains/index.html.erb:7:in `_app_views_mountains_index_html_erb___2477958000294682965_70125006879920'
+Started GET "/mountains" for 127.0.0.1 at 2018-10-10 09:50:27 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:7
+  Rendered mountains/index.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (The asset "www.placepuppy.net/250/250" is not present in the asset pipeline.):
+    10:   </li>
+    11:     <% if mountain.image.present? %>
+    12:     <a href="<%= mountain_path(mountain) %>">
+    13:     <%= image_tag mountain.image, class: "mountainImg" %>
+    14:     </a>
+    15:     <% end %>
+    16:   <% end %>
+  
+app/views/mountains/index.html.erb:13:in `block in _app_views_mountains_index_html_erb___2477958000294682965_70125009363480'
+app/views/mountains/index.html.erb:7:in `_app_views_mountains_index_html_erb___2477958000294682965_70125009363480'
+  [1m[36mMountain Load (1.0ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMountain Destroy (0.5ms)[0m  [1m[31mDELETE FROM "mountains" WHERE "mountains"."id" = ?[0m  [["id", 8]]
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+Started GET "/mountains" for 127.0.0.1 at 2018-10-10 09:51:48 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:7
+  Rendered mountains/index.html.erb within layouts/application (9.4ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (The asset "www.placepuppy.net/250/250" is not present in the asset pipeline.):
+    10:   </li>
+    11:     <% if mountain.image.present? %>
+    12:     <a href="<%= mountain_path(mountain) %>">
+    13:     <%= image_tag mountain.image, class: "mountainImg" %>
+    14:     </a>
+    15:     <% end %>
+    16:   <% end %>
+  
+app/views/mountains/index.html.erb:13:in `block in _app_views_mountains_index_html_erb___2477958000294682965_70125016305100'
+app/views/mountains/index.html.erb:7:in `_app_views_mountains_index_html_erb___2477958000294682965_70125016305100'
+  [1m[36mMountain Load (0.1ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMountain Destroy (0.3ms)[0m  [1m[31mDELETE FROM "mountains" WHERE "mountains"."id" = ?[0m  [["id", 4]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMountain Destroy (0.4ms)[0m  [1m[31mDELETE FROM "mountains" WHERE "mountains"."id" = ?[0m  [["id", 5]]
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  [1m[36mMountain Load (0.1ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMountain Destroy (0.4ms)[0m  [1m[31mDELETE FROM "mountains" WHERE "mountains"."id" = ?[0m  [["id", 6]]
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/mountains" for 127.0.0.1 at 2018-10-10 09:53:02 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:7
+  Rendered mountains/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 31ms (Views: 26.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/7" for 127.0.0.1 at 2018-10-10 09:53:08 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:29
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 45ms (Views: 38.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/7/edit/edit" for 127.0.0.1 at 2018-10-10 09:53:11 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/mountains/7/edit/edit"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/mountains/7" for 127.0.0.1 at 2018-10-10 09:54:35 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMountain Load (0.1ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:29
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 43ms (Views: 36.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/mountains/7/edit/edit" for 127.0.0.1 at 2018-10-10 10:01:50 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/mountains/7/edit/edit"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/mountains/7" for 127.0.0.1 at 2018-10-10 10:02:00 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:29
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 34ms (Views: 27.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/7" for 127.0.0.1 at 2018-10-10 10:02:34 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:29
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 35ms (Views: 29.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/7" for 127.0.0.1 at 2018-10-10 10:03:29 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:29
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 40ms (Views: 35.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-10 10:03:36 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.4ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:7
+  Rendered mountains/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 39ms (Views: 34.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mountains/1" for 127.0.0.1 at 2018-10-10 10:03:38 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:29
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 31ms (Views: 24.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/1" for 127.0.0.1 at 2018-10-10 10:04:49 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:29
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (147.2ms)
+Completed 500 Internal Server Error in 162ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `planet_destroy_path' for #<#<Class:0x00007f8e81a20460>:0x00007f8e81d1f7b0>):
+    2: <h2>The page for <%= @mountain.name %></h2>
+    3: <hr>
+    4: <nav>
+    5:   <%= link_to "Destroy this mountain!", planet_destroy_path(@planet) %>
+    6:   <%= link_to "Edit this mountain!", planet_edit_path(@planet) %>
+    7: </nav>
+    8: <hr>
+  
+app/views/mountains/show.html.erb:5:in `_app_views_mountains_show_html_erb___9825099665114326_70124992012440'
+Started GET "/mountains/1" for 127.0.0.1 at 2018-10-10 10:05:19 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:29
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 32ms (Views: 26.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/1/edit" for 127.0.0.1 at 2018-10-10 10:05:23 +1100
+Processing by MountainsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:34
+  Rendering mountains/edit.html.erb within layouts/application
+  Rendered mountains/edit.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 36ms (Views: 30.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/mountains/1" for 127.0.0.1 at 2018-10-10 10:05:27 +1100
+Processing by MountainsController#update as HTML
+  Parameters: {"name"=>"Mt Fujii", "image"=>"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Numazu_and_Mount_Fuji.jpg/320px-Numazu_and_Mount_Fuji.jpg", "country"=>"Japan", "elevation"=>"3776.0", "pointyness"=>"4", "id"=>"1"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:39
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mountains_controller.rb:40
+  [1m[36mMountain Update (0.4ms)[0m  [1m[33mUPDATE "mountains" SET "name" = ?, "updated_at" = ? WHERE "mountains"."id" = ?[0m  [["name", "Mt Fujii"], ["updated_at", "2018-10-09 23:05:27.097386"], ["id", 1]]
+  ↳ app/controllers/mountains_controller.rb:40
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mountains_controller.rb:40
+Redirected to http://localhost:3000/mountains/1
+Completed 302 Found in 13ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/mountains/1" for 127.0.0.1 at 2018-10-10 10:05:27 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:29
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 41ms (Views: 34.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/1/edit" for 127.0.0.1 at 2018-10-10 10:05:30 +1100
+Processing by MountainsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:34
+  Rendering mountains/edit.html.erb within layouts/application
+  Rendered mountains/edit.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 37ms (Views: 31.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/mountains/1" for 127.0.0.1 at 2018-10-10 10:05:33 +1100
+Processing by MountainsController#update as HTML
+  Parameters: {"name"=>"Mt Fuji", "image"=>"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Numazu_and_Mount_Fuji.jpg/320px-Numazu_and_Mount_Fuji.jpg", "country"=>"Japan", "elevation"=>"3776.0", "pointyness"=>"4", "id"=>"1"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:39
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mountains_controller.rb:40
+  [1m[36mMountain Update (0.4ms)[0m  [1m[33mUPDATE "mountains" SET "name" = ?, "updated_at" = ? WHERE "mountains"."id" = ?[0m  [["name", "Mt Fuji"], ["updated_at", "2018-10-09 23:05:33.188631"], ["id", 1]]
+  ↳ app/controllers/mountains_controller.rb:40
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mountains_controller.rb:40
+Redirected to http://localhost:3000/mountains/1
+Completed 302 Found in 12ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/mountains/1" for 127.0.0.1 at 2018-10-10 10:05:33 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:29
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 38ms (Views: 31.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2018-10-10 10:05:35 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-10-10 10:05:46 +1100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/scriven/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/scriven/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 17ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-10 10:05:50 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:7
+  Rendered mountains/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 35ms (Views: 30.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-10 10:05:54 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:7
+  Rendered mountains/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 36ms (Views: 30.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2018-10-10 10:05:57 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2018-10-10 10:05:59 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-10-10 10:10:21 +1100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/scriven/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/scriven/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (3.1ms)
+Completed 200 OK in 14ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-10 10:10:23 +1100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/scriven/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/scriven/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.3ms)
+Completed 200 OK in 10ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-10 10:10:25 +1100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/scriven/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/scriven/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.4ms)
+Completed 200 OK in 10ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-10 10:10:28 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.6ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:7
+  Rendered mountains/index.html.erb within layouts/application (35.3ms)
+Completed 200 OK in 91ms (Views: 82.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/mountains/7" for 127.0.0.1 at 2018-10-10 10:10:31 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:29
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 38ms (Views: 31.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/7/edit" for 127.0.0.1 at 2018-10-10 10:10:34 +1100
+Processing by MountainsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMountain Load (0.1ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:34
+  Rendering mountains/edit.html.erb within layouts/application
+  Rendered mountains/edit.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 41ms (Views: 35.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/mountains/7" for 127.0.0.1 at 2018-10-10 10:10:39 +1100
+Processing by MountainsController#update as HTML
+  Parameters: {"name"=>"Dofgggy", "image"=>"http://www.placepuppy.net/250/250", "country"=>"Doggo", "elevation"=>"14.0", "pointyness"=>"1", "id"=>"7"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:39
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mountains_controller.rb:40
+  [1m[36mMountain Update (0.8ms)[0m  [1m[33mUPDATE "mountains" SET "name" = ?, "updated_at" = ? WHERE "mountains"."id" = ?[0m  [["name", "Dofgggy"], ["updated_at", "2018-10-09 23:10:39.017987"], ["id", 7]]
+  ↳ app/controllers/mountains_controller.rb:40
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mountains_controller.rb:40
+Redirected to http://localhost:3000/mountains/7
+Completed 302 Found in 13ms (ActiveRecord: 7.6ms)
+
+
+Started GET "/mountains/7" for 127.0.0.1 at 2018-10-10 10:10:39 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:29
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 47ms (Views: 39.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/7/delete" for 127.0.0.1 at 2018-10-10 10:10:41 +1100
+Processing by MountainsController#destroy as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMountain Load (0.1ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:53
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mountains_controller.rb:54
+  [1m[36mMountain Destroy (0.3ms)[0m  [1m[31mDELETE FROM "mountains" WHERE "mountains"."id" = ?[0m  [["id", 7]]
+  ↳ app/controllers/mountains_controller.rb:54
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mountains_controller.rb:54
+Redirected to http://localhost:3000/mountains
+Completed 302 Found in 10ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-10 10:10:41 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:7
+  Rendered mountains/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 47ms (Views: 39.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2018-10-10 10:10:44 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 40ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/mountains" for 127.0.0.1 at 2018-10-10 10:11:06 +1100
+Processing by MountainsController#create as HTML
+  Parameters: {"name"=>"Doggy", "image"=>"http://www.placepuppy.net/350/350", "country"=>"Dogtown", "elevation"=>"1", "pointyness"=>"2"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mountains_controller.rb:10
+  [1m[36mMountain Create (0.5ms)[0m  [1m[32mINSERT INTO "mountains" ("name", "country", "elevation", "image", "pointyness", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Doggy"], ["country", "Dogtown"], ["elevation", 1.0], ["image", "http://www.placepuppy.net/350/350"], ["pointyness", 2], ["created_at", "2018-10-09 23:11:06.563635"], ["updated_at", "2018-10-09 23:11:06.563635"]]
+  ↳ app/controllers/mountains_controller.rb:10
+  [1m[35m (6.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mountains_controller.rb:10
+Redirected to http://localhost:3000/mountains
+Completed 302 Found in 11ms (ActiveRecord: 7.3ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-10 10:11:06 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:7
+  Rendered mountains/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 37ms (Views: 30.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/9" for 127.0.0.1 at 2018-10-10 10:11:09 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:29
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 34ms (Views: 28.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2018-10-10 10:11:14 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.4ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:7
+  Rendered mountains/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 46ms (Views: 41.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-10-10 10:11:20 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/scriven/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/scriven/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [12 times] (3.9ms)
+  Rendered /Users/scriven/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/scriven/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 30ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+

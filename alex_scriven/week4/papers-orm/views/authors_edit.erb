@@ -1,0 +1,11 @@
+<h2>Edit author: <%= @author["name"] %> </h2>
+
+<form action="/authors/<%= @author['id'] %>" method="post">
+  Name: <input type="text" name="name" value="<%= @author['name'] %>"><br>
+  Age: <input type="text" name="age" value="<%= @author['age'] %>"><br>
+  Country: <input type="text" name="country" value="<%= @author['country'] %>"><br>
+  Profile Picture: <input type="text" name="profile_pic" value="<%= @author['profile_pic'] %>"><br>
+  Alive: <input type="text" name="alive" value="<%= @author['alive'] %>"><br>
+  Website: <input type="text" name="website" value="<%= @author['website'] %>"><br>
+  <input type="submit" value="Update Author">
+</form>

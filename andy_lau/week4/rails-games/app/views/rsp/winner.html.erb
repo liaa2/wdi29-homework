@@ -1,0 +1,12 @@
+<h2>You Played:</h2>
+<img class="imgRsp" src="<%= @image_human %>">
+<h2>Opponent Played:</h2>
+<img class="imgRsp" src="<%= @image_computer %>">
+<br>
+<h2>RESULT:</h2>
+<p class="rspResult"><%= @result %></p>
+
+<br>
+<form action="/rsp">
+  <input type="submit" value="Play Again">
+</form>

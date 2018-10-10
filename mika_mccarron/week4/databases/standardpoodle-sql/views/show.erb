@@ -1,0 +1,15 @@
+
+<h2>
+  <%= @standardpoodle['name'] %>
+
+</h2>
+<a href="/standardpoodles/<%= @standardpoodle['id']%>/edit"> Edit this Standardpoodle</a>
+<a href="/standardpoodles/<%= @standardpoodle['id']%>/delete"> Delete this standardpoodle</a>
+
+<p>Color: <%= @standardpoodle['color'] %></p>
+<p>Age: <%= @standardpoodle['age'] %></p>
+<p>Temperment: <%= @standardpoodle['temperment'] %></p>
+<p>Award: <%= @standardpoodle['award'] %></p>
+<p>Alive: <%= @animal['alive'] %></p>
+
+<img src="<%= @standardpoodle['image_url'] %>" alt="<%= @standardpoodle['description'] %>">

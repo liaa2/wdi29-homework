@@ -1,0 +1,10 @@
+<h2>All Cities</h2>
+
+<ul>
+  <% @result.each do |city| %>
+  <li>
+    <a href="/cities/<%= city.id %>"><%= city.name %></a>
+
+  </li>
+  <% end %>
+</ul>

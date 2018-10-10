@@ -1,0 +1,14 @@
+<h2>The moons as we know them</h2>
+
+<ul>
+  <% @moons.each do |moon| %>
+    <li>
+      <a href="/moons/<%= moon.id %>">
+      <%= moon.name%>
+      </a>
+    </li>
+  <% end %>
+
+</ul>
+<br>
+<a href="/moons/new">NEW MOON!</a>

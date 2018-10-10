@@ -1,0 +1,27 @@
+<%= form_for @moon do |f| %>
+  <fieldset>
+    <%= f.text_field :name %>
+    <%= f.label :name %>
+  </fieldset>
+  <fieldset>
+    <%= f.text_field :period %>
+    <%= f.label :period %>
+  </fieldset>
+  <fieldset>
+    <%= f.text_field :discoverer %>
+    <%= f.label :discoverer %>
+  </fieldset>
+  <fieldset>
+    <%= f.text_field :discovery %>
+    <%= f.label :discovery %>
+  </fieldset>
+  <fieldset>
+    <%= f.text_field :image %>
+    <%= f.label :image, "Image URL"%>
+  </fieldset>
+  <fieldset>
+    <%= f.label :planet_id, 'Moon' %>
+    <%= f.collection_select :planet_id, Planet.all, :id, :name, prompt: 'Please choose the planet' %>
+  </fieldset>
+  <%= f.submit %>
+<% end %>

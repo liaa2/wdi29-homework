@@ -1,0 +1,47 @@
+<form action="/rock_stars" method="post">
+  <fieldset>
+    <legend>Add a new rock star</legend>
+    <div class="form-group">
+      <label for="first_name">First Name:</label>
+      <input id="first_name" name="first_name" type="text" class="form-control" value="" placeholder="E.g. John">
+    </div>
+    <div class="form-group">
+      <label for="last_name">Last Name:</label>
+      <input id="last_name" name="last_name" type="text" class="form-control" value="" placeholder="E.g. Lennon">
+    </div>
+    <div class="form-group">
+      <label for="instruments">Instruments:</label>
+      <input id="instruments" name="instruments" type="text" class="form-control" value="" placeholder="E.g. Vocals, Guitar, Piano">
+    </div>
+    <fieldset class="form-group">
+      <legend>Alive:</legend>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="alive" id="optionsRadios1" value="1" checked>
+          Yes
+        </label>
+      </div>
+      <div class="form-check">
+      <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="alive" id="optionsRadios2" value="0">
+          No
+        </label>
+      </div>
+    </fieldset>
+    <div class="form-group">
+      <label for="image_url">Image URL:</label>
+      <input id="image_url" name="image_url" type="text" class="form-control" value="" placeholder="E.g. http://ultimateclassicrock.com/files/2014/10/Beatles-.jpg?w=980&q=75">
+    </div>
+    <div class="form-group">
+      <label class="band-label">Band:</label>
+      <select id="rock_band_id" name="rock_band_id" class="custom-select band-select">
+        <% @bands.each do |band| %>
+        <option type="select" value="<%= band.id %>"><%= band.name %></option>
+        <% end %>
+      </select>
+      <button formmethod="get" value="Go Elsewhere" formaction="/rock_bands/new" class="btn btn-primary band-button">Add New Band</button>
+    </div>
+    </fieldset>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>

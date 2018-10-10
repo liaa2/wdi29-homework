@@ -1,0 +1,11 @@
+<h2><%= @moon.name %></h2>
+
+<%= image_tag @moon.image, alt: @moon.name %>
+<h4>FACTS</h4>
+
+<p>Orbits <%= link_to @moon.planet.name, planet_path(@moon.planet.id) %> in ~<%= @moon.period %> days.</p>
+<p>Was discovered by <%= @moon.discoverer %> in the year <%= @moon.discovery %></p>
+<nav>
+  <%= link_to 'Edit', edit_moon_path %> ||
+  <%= link_to 'delete', moon_path(@moon.id), method: 'delete' %>
+</nav>

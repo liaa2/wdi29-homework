@@ -1,0 +1,14 @@
+<h2>The 'Show Page' for
+<%= @paper["title"] %>
+</h2>
+<a href="/papers/<%= @paper['id'] %>/edit">Edit This Paper | </a>
+<a href="/papers/<%= @paper['id'] %>/delete">DELETE This Paper </a>
+<ul>
+<li>Paper Title: <%= @paper.title %>
+  <li>Paper Year: <%= @paper.year %></li>
+  <li>Paper Citations: <%= @paper.citations %></li>
+  <li>Paper link: <a href="<%= @paper.web_link %>">here</a> </li>
+</ul>
+
+
+<h3>This Paper's Author is <a href="/authors/<%= @paper.author.id %>"><%= @paper.author.name %></a> </h3>

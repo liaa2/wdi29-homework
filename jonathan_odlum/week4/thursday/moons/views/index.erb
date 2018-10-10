@@ -1,0 +1,11 @@
+<h2>The moons as we know them</h2>
+
+<ul>
+<% @result.each do |moon| %>
+  <li>
+    <a href="/moons/<%= moon['id'] %>">
+    <%= moon['name']%> - <%=  moon['planet']%>
+    </a>
+  </li>
+<% end %>
+</ul>

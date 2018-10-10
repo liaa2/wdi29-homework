@@ -1,0 +1,17 @@
+<h2>Results for "<%= @query %>"</h2>
+
+<div class="grid_container">
+
+  <% @results.each do |movie| %>
+    <div class="grid_item">
+      <a href="/details/<%= movie['id'] %>">
+        <%= movie['title'] %><br />
+
+        <% unless movie['poster_path'].nil? %>
+          <img src="<%= @img_base + movie['poster_path'] %>" />
+        <% end %>
+      </a>
+    </div>
+  <% end %>
+
+</div>

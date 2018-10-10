@@ -14,7 +14,6 @@ const backgroundColour2 = function(){
   }
 }
 
-
 //LEFT HAND SIDE
 
 const $checkingAmountInput = $('#checkingAmount');  //checking input field as number
@@ -38,8 +37,6 @@ const checkMinus = function(){
     backgroundColour1();
   }
 };
-
-
 
 //RIGHT HAND SIDE
 
@@ -65,13 +62,11 @@ const savingsMinus = function(){
   }
 };
 
-
 $(document).ready(function(){
 
   $checkingDeposit.on('click', checkAdd);
   $checkingWithdraw.on('click', checkMinus);
   $savingsDeposit.on('click', savingsAdd);
   $savingsWithdraw.on('click', savingsMinus);
-
 
 });   //end of document ready function

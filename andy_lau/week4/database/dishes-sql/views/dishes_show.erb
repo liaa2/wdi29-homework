@@ -1,0 +1,24 @@
+<div class="inlineBlock">
+<h2><%= @dish.name %></h2>
+<a href="/dishes/<%= @dish.id %>/edit"><h5>Edit</h5></a>
+<a href="/dishes/<%= @dish.id %>/delete"><h5>Delete</h5></a>
+</div>
+
+
+<p>Origin: <%= @dish.origin %> <img id="flag" src="<%= @dish.flag_url %>"> </p>
+<p>Main Ingredients: <%= @dish.ingredient %></p>
+<p>Description: <%= @dish.description %></p>
+<p>Rating: <%= @dish.rating %>/5</p>
+
+
+<h3> Signature dish of:</h3>
+<ul>
+  <% @dish.restaurants.each do |restaurant| %>
+    <li><a href="/restaurants/<%= restaurant.id %>">
+      <%= restaurant.name %>
+    </li></a>
+  <% end  %>
+</ul>
+<!-- <div class="vignette"> -->
+  <div class="dishImg" style="background-image: url(<%= @dish.image_url %>)"> </div>
+<!-- </div> -->

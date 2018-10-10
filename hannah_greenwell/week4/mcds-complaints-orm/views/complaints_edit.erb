@@ -1,0 +1,33 @@
+<h2> Edit Complaint: <%= @complaint.title %></h2>
+
+<form action="/complaints/<%= @complaint.id %>" method="post">
+  <div class="form_item">
+    <label>Customer:</label>
+    <select name="customer_id">
+      <% @customers.each do |customer| %>
+        <% if customer.id == @complaint.customer_id %>
+          <option value="<%= customer.id %>" selected><%= customer.name %></option>
+        <% else %>
+          <option value="<%= customer.id %>"><%= customer.name %></option>
+        <% end %>
+      <% end %>
+    </select>
+  </div>
+
+  <div class="form_item">
+    <label>Date:</label>
+    <input type="text" name="date_made" value="<%= @complaint.date_made %>" />
+  </div>
+
+  <div class="form_item">
+    <label>Title:</label>
+    <input type="text" name="title" value="<%= @complaint.title %>" />
+  </div>
+
+  <div class="form_item">
+    <label>Complaint:</label>
+    <textarea name="content"><%= @complaint.content %></textarea>
+  </div>
+
+  <input type="submit" value="Update Complaint" />
+</form>

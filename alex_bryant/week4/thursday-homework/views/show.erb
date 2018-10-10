@@ -1,0 +1,19 @@
+<% active = "Still active"
+   if @band['still_active'] == 0
+     active = "Inactive"
+   end
+  %>
+  <div class="bs-component">
+    <div class="jumbotron">
+      <div>
+      <h1 class="display-3"><%= @band['name'] %></h1>
+      <a href="/rock_bands/<%= @band['id'] %>/edit" role="button" type="button" class="btn btn-secondary custom-btn">Update</a>
+      <a href="/rock_bands/<%= @band['id'] %>/delete" role="button" type="button" class="btn btn-danger">Delete</a></div>
+      <img src="<%= @band['image_url'] %>" alt="<%= @band['name'] %>">
+      <p class="lead"><%= @band['genre'] %> | <%= active %> </p>
+      <p class="lead">Notable songs: <%= @band['notable_songs'] %> </p>
+      <p class="lead">Website: <a href="<%= @band['website_url']%>"><%= @band['website_url']%></a></p>
+      <hr class="my-4">
+      <p><%= @band['description']%></p>
+    </div>
+  </div>

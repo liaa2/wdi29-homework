@@ -1,0 +1,19 @@
+body {
+  font-family: Helvetica;
+  background-color: rgba(24, 151, 242, 0.62);
+  color: rgb(51, 121, 87);
+  text-align: center;
+}
+a {
+  color: rgb(51, 121, 87);
+}
+img {
+  max-width: 200px;
+  min-width: 200px;
+  max-height: 100px;
+  min-height: 100px;
+}
+
+ul {
+  list-style-type: none;
+}

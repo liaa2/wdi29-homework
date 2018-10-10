@@ -1,0 +1,3761 @@
+Started GET "/" for 127.0.0.1 at 2018-10-08 17:51:09 +1100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/alexbryant/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/alexbryant/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (3.7ms)
+Completed 200 OK in 42ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 17:51:14 +1100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/alexbryant/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/alexbryant/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (3.6ms)
+Completed 200 OK in 16ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2018-10-08 17:51:19 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-10-08 17:51:23 +1100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/alexbryant/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/alexbryant/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 14ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-08 17:52:23 +1100
+  
+ActionController::RoutingError (uninitialized constant GamesController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/games" for 127.0.0.1 at 2018-10-08 17:53:25 +1100
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for GamesController):
+  
+actionpack (5.2.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/games" for 127.0.0.1 at 2018-10-08 17:53:39 +1100
+Processing by GamesController#index as HTML
+Completed 406 Not Acceptable in 118ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (GamesController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.1) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/games" for 127.0.0.1 at 2018-10-08 17:54:31 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb
+  Rendered games/index.html.erb (0.4ms)
+Completed 200 OK in 14ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-08 17:54:34 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb
+  Rendered games/index.html.erb (0.3ms)
+Completed 200 OK in 14ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 17:55:18 +1100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/alexbryant/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/alexbryant/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (3.1ms)
+Completed 200 OK in 13ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-08 17:55:23 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb
+  Rendered games/index.html.erb (0.7ms)
+Completed 200 OK in 16ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-08 17:55:52 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb
+  Rendered games/index.html.erb (0.3ms)
+Completed 200 OK in 13ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-08 17:55:54 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb
+  Rendered games/index.html.erb (0.2ms)
+Completed 200 OK in 11ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-08 17:55:55 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb
+  Rendered games/index.html.erb (0.3ms)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-08 17:55:55 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb
+  Rendered games/index.html.erb (0.3ms)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-08 17:57:46 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb
+  Rendered games/index.html.erb (0.4ms)
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-08 17:57:46 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb
+  Rendered games/index.html.erb (0.2ms)
+Completed 200 OK in 11ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-08 17:57:47 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb
+  Rendered games/index.html.erb (0.3ms)
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-08 17:57:47 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb
+  Rendered games/index.html.erb (0.3ms)
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-08 17:57:47 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb
+  Rendered games/index.html.erb (0.2ms)
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-08 17:58:08 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb
+  Rendered games/index.html.erb (0.3ms)
+Completed 200 OK in 12ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-08 17:58:09 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb
+  Rendered games/index.html.erb (0.3ms)
+Completed 200 OK in 12ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-08 17:58:31 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb
+  Rendered games/index.html.erb (0.5ms)
+Completed 200 OK in 14ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 17:58:36 +1100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/alexbryant/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/alexbryant/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 13ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 17:59:37 +1100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/alexbryant/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/alexbryant/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (3.5ms)
+Completed 200 OK in 17ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-08 17:59:45 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb
+  Rendered games/index.html.erb (0.4ms)
+Completed 200 OK in 15ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-08 17:59:47 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb
+  Rendered games/index.html.erb (0.4ms)
+Completed 200 OK in 12ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-08 17:59:48 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb
+  Rendered games/index.html.erb (0.4ms)
+Completed 200 OK in 12ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-08 17:59:49 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb
+  Rendered games/index.html.erb (0.3ms)
+Completed 200 OK in 13ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 18:01:08 +1100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/alexbryant/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/alexbryant/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 10ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-08 18:01:14 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb
+  Rendered games/index.html.erb (0.4ms)
+Completed 200 OK in 14ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-08 18:01:23 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb
+  Rendered games/index.html.erb (0.3ms)
+Completed 200 OK in 17ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-08 18:03:08 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 277ms (Views: 273.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-08 19:25:22 +1100
+  
+SyntaxError (/Users/alexbryant/wdi/homework/alex_bryant/week5/monday-homework/games/config/routes.rb:4: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+  root :to "games#index"
+           ^
+/Users/alexbryant/wdi/homework/alex_bryant/week5/monday-homework/games/config/routes.rb:8: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+config/routes.rb:4: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:8: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/games" for 127.0.0.1 at 2018-10-08 19:27:53 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 112ms (Views: 108.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:27:57 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 40ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:28:00 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 34ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:30:00 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 592ms (Views: 576.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:31:13 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 49ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:31:53 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 35ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:32:53 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 72ms (Views: 67.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:33:54 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:34:15 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:35:15 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 74ms (Views: 70.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:35:17 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:35:25 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 71ms (Views: 67.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:35:27 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:35:48 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 68ms (Views: 63.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:35:49 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:36:02 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 25ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:38:05 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 27ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:38:44 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:39:30 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 60ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:41:19 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:43:38 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 63ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:49:02 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 53ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:51:03 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 101ms (Views: 98.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:51:19 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 113ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:51:31 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 80ms (Views: 76.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:51:37 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 79ms (Views: 75.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:51:39 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:51:47 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 48ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:52:49 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 58ms (Views: 52.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:53:31 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 63ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:53:41 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 61ms (Views: 57.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 19:56:10 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 86ms (Views: 82.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 20:04:16 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 840ms (Views: 816.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 20:06:46 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 69ms (Views: 63.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 20:06:48 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 77ms (Views: 71.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 20:10:23 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 63ms (Views: 58.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 20:10:25 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 54ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Games" for 127.0.0.1 at 2018-10-08 20:10:29 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/Games"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/Games" for 127.0.0.1 at 2018-10-08 20:10:47 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/Games"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-10-08 20:10:51 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 32ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 20:10:53 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 20:10:54 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 43ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 20:10:55 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 46ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 20:10:57 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 56ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 20:14:54 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 64ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 20:15:31 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 30ms (Views: 25.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 20:16:45 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 60ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 20:18:31 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 50ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 20:18:51 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 38ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 20:18:52 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 44ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 20:19:11 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 51ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 20:19:12 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 20:19:29 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 60ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 20:19:35 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 39ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 20:19:49 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 99ms (Views: 95.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 20:19:58 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 64ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 20:24:22 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 20:24:57 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 43ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 20:26:07 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 28ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 20:26:25 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 30ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 20:29:38 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 28ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 20:29:54 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 20:30:12 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 33ms (Views: 28.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 20:30:21 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 31ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 20:30:37 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 20:31:26 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 72ms (Views: 69.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 20:31:49 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 69ms (Views: 64.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 20:31:54 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 31ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 20:31:55 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 40ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball/answer?question=" for 127.0.0.1 at 2018-10-08 21:28:37 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/eightball/answer"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 21:29:24 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 138ms (Views: 133.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 21:30:57 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 70ms (Views: 65.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 21:32:01 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 146ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 21:32:20 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 63ms (Views: 59.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 21:32:29 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 21:32:54 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 44ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 21:32:56 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 47ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 21:34:02 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball/answer?question=Blag" for 127.0.0.1 at 2018-10-08 21:34:07 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/eightball/answer"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/eightball/answer?question=Blag" for 127.0.0.1 at 2018-10-08 21:34:40 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/eightball/answer"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/eightball/answer?question=Blag" for 127.0.0.1 at 2018-10-08 21:34:44 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/eightball/answer"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 21:34:48 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 21:34:49 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball/result?question=hadjk" for 127.0.0.1 at 2018-10-08 21:34:53 +1100
+Processing by EightballController#answer as HTML
+  Parameters: {"question"=>"hadjk"}
+  Rendering eightball/answer.html.erb within layouts/application
+  Rendered eightball/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 29ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 21:37:35 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 39ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball/result?question=Blag" for 127.0.0.1 at 2018-10-08 21:39:54 +1100
+Processing by EightballController#answer as HTML
+  Parameters: {"question"=>"Blag"}
+  Rendering eightball/answer.html.erb within layouts/application
+  Rendered eightball/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 39ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 21:39:59 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 38ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball/result?question=Am+I+worthy" for 127.0.0.1 at 2018-10-08 21:40:47 +1100
+Processing by EightballController#answer as HTML
+  Parameters: {"question"=>"Am I worthy"}
+  Rendering eightball/answer.html.erb within layouts/application
+  Rendered eightball/answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 21:40:59 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 51ms (Views: 47.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball/result?question=Am+I+worthy" for 127.0.0.1 at 2018-10-08 21:41:10 +1100
+Processing by EightballController#answer as HTML
+  Parameters: {"question"=>"Am I worthy"}
+  Rendering eightball/answer.html.erb within layouts/application
+  Rendered eightball/answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball/result?question=Am+I+worthy" for 127.0.0.1 at 2018-10-08 21:42:03 +1100
+Processing by EightballController#answer as HTML
+  Parameters: {"question"=>"Am I worthy"}
+  Rendering eightball/answer.html.erb within layouts/application
+  Rendered eightball/answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 32ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball/result?question=Am+I+worthy" for 127.0.0.1 at 2018-10-08 21:43:04 +1100
+Processing by EightballController#answer as HTML
+  Parameters: {"question"=>"Am I worthy"}
+  Rendering eightball/answer.html.erb within layouts/application
+  Rendered eightball/answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 81ms (Views: 75.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball/result?question=Am+I+worthy" for 127.0.0.1 at 2018-10-08 21:43:17 +1100
+Processing by EightballController#answer as HTML
+  Parameters: {"question"=>"Am I worthy"}
+  Rendering eightball/answer.html.erb within layouts/application
+  Rendered eightball/answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 39ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 21:43:20 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball/result?question=Am+I+worthy" for 127.0.0.1 at 2018-10-08 21:43:23 +1100
+Processing by EightballController#answer as HTML
+  Parameters: {"question"=>"Am I worthy"}
+  Rendering eightball/answer.html.erb within layouts/application
+  Rendered eightball/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 28ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 21:43:30 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 41ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 21:44:01 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball/result?question=Am+I+worthy" for 127.0.0.1 at 2018-10-08 21:44:04 +1100
+Processing by EightballController#answer as HTML
+  Parameters: {"question"=>"Am I worthy"}
+  Rendering eightball/answer.html.erb within layouts/application
+  Rendered eightball/answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball/result?question=Am+I+worthy" for 127.0.0.1 at 2018-10-08 21:44:13 +1100
+Processing by EightballController#answer as HTML
+  Parameters: {"question"=>"Am I worthy"}
+  Rendering eightball/answer.html.erb within layouts/application
+  Rendered eightball/answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 62ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 21:44:15 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 40ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball/result?question=Am+I+worthy" for 127.0.0.1 at 2018-10-08 21:44:18 +1100
+Processing by EightballController#answer as HTML
+  Parameters: {"question"=>"Am I worthy"}
+  Rendering eightball/answer.html.erb within layouts/application
+  Rendered eightball/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 30ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 21:44:23 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball/result?question=Blag" for 127.0.0.1 at 2018-10-08 21:44:26 +1100
+Processing by EightballController#answer as HTML
+  Parameters: {"question"=>"Blag"}
+  Rendering eightball/answer.html.erb within layouts/application
+  Rendered eightball/answer.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 28ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 21:44:30 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball/result?question=hadjk" for 127.0.0.1 at 2018-10-08 21:44:33 +1100
+Processing by EightballController#answer as HTML
+  Parameters: {"question"=>"hadjk"}
+  Rendering eightball/answer.html.erb within layouts/application
+  Rendered eightball/answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 21:49:32 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 36ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 21:49:33 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 21:49:34 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 38ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 21:49:36 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 40ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 21:49:44 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 42ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball/result?question=Am+I+worthy" for 127.0.0.1 at 2018-10-08 21:49:53 +1100
+Processing by EightballController#answer as HTML
+  Parameters: {"question"=>"Am I worthy"}
+  Rendering eightball/answer.html.erb within layouts/application
+  Rendered eightball/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 28ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 21:51:40 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/secret_number"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 21:51:57 +1100
+  
+ActionController::RoutingError (uninitialized constant SecretController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 21:52:35 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 31ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 21:58:02 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 57ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:00:26 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 52ms (Views: 48.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:00:28 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:01:00 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 46ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 22:01:04 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 29ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:01:05 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 45ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:01:31 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:02:20 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 22:02:57 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 62ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 22:02:57 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 41ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball/result?question=Am+I+worthy" for 127.0.0.1 at 2018-10-08 22:03:04 +1100
+Processing by EightballController#answer as HTML
+  Parameters: {"question"=>"Am I worthy"}
+  Rendering eightball/answer.html.erb within layouts/application
+  Rendered eightball/answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:03:09 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 33ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:04:45 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 80ms (Views: 74.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:05:56 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 51ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:06:50 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 58ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:07:46 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 48ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:07:58 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 62ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:08:40 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 46ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:08:56 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 55ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:09:27 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 58ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:10:11 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 55ms (Views: 52.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:15:20 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 103ms (Views: 97.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:19:36 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 63ms (Views: 58.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:19:58 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 68ms (Views: 64.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:20:45 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 61ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:21:03 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 73ms (Views: 66.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:21:36 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 80ms (Views: 75.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:22:19 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 64ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:22:47 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 65ms (Views: 61.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:23:01 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 88ms (Views: 85.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:23:12 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 57ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/$%7Bnum%7D?paramOne=1&paramX=abc" for 127.0.0.1 at 2018-10-08 22:23:14 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"paramOne"=>"1", "paramX"=>"abc", "guess"=>"${num}"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 85ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/$%7Bnum%7D?paramOne=1&paramX=abc" for 127.0.0.1 at 2018-10-08 22:23:15 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"paramOne"=>"1", "paramX"=>"abc", "guess"=>"${num}"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 78ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:24:02 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 62ms (Views: 59.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/$%7Bnum%7D?paramOne=1&paramX=abc" for 127.0.0.1 at 2018-10-08 22:24:04 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"paramOne"=>"1", "paramX"=>"abc", "guess"=>"${num}"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 79ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/$%7Bnum%7D?paramOne=1&paramX=abc" for 127.0.0.1 at 2018-10-08 22:24:05 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"paramOne"=>"1", "paramX"=>"abc", "guess"=>"${num}"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 78ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:24:36 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 57ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?paramOne=1&paramX=abc" for 127.0.0.1 at 2018-10-08 22:24:37 +1100
+Processing by GamesController#index as */*
+  Parameters: {"paramOne"=>"1", "paramX"=>"abc"}
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 96ms (Views: 53.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?paramOne=1&paramX=abc" for 127.0.0.1 at 2018-10-08 22:24:39 +1100
+Processing by GamesController#index as */*
+  Parameters: {"paramOne"=>"1", "paramX"=>"abc"}
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 80ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:26:22 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 54ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 22:26:23 +1100
+Processing by GamesController#index as */*
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 77ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:30:21 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 78ms (Views: 73.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?_=1538998221744" for 127.0.0.1 at 2018-10-08 22:30:23 +1100
+Processing by GamesController#index as JS
+  Parameters: {"_"=>"1538998221744"}
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 94ms (Views: 53.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:31:04 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 67ms (Views: 62.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/8?_=1538998264660" for 127.0.0.1 at 2018-10-08 22:31:05 +1100
+Processing by SecretController#answer as JS
+  Parameters: {"_"=>"1538998264660", "guess"=>"8"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 81ms (Views: 47.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:35:37 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 74ms (Views: 68.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/1?{%22answer%22:%20${num}}" for 127.0.0.1 at 2018-10-08 22:35:38 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"{\"answer\": ${num}}"=>nil, "guess"=>"1"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 77ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/1?{%22answer%22:%20${num}}" for 127.0.0.1 at 2018-10-08 22:35:51 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"{\"answer\": ${num}}"=>nil, "guess"=>"1"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 79ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:36:32 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 74ms (Views: 70.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/1?{%22answer%22:%20${num}}" for 127.0.0.1 at 2018-10-08 22:36:34 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"{\"answer\": ${num}}"=>nil, "guess"=>"1"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 78ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/6?{%22answer%22:%20${num}}" for 127.0.0.1 at 2018-10-08 22:36:35 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"{\"answer\": ${num}}"=>nil, "guess"=>"6"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 78ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/7?{%22answer%22:%20${num}}" for 127.0.0.1 at 2018-10-08 22:36:35 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"{\"answer\": ${num}}"=>nil, "guess"=>"7"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 79ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:36:49 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 71ms (Views: 67.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:37:00 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 60ms (Views: 54.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/$%7Bnum%7D?{%22answer%22:%20${num}}" for 127.0.0.1 at 2018-10-08 22:37:02 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"{\"answer\": ${num}}"=>nil, "guess"=>"${num}"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 79ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/$%7Bnum%7D?{%22answer%22:%20${num}}" for 127.0.0.1 at 2018-10-08 22:37:03 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"{\"answer\": ${num}}"=>nil, "guess"=>"${num}"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 83ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:37:44 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 31ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/$%7Bnum%7D?{%22answer%22:%20${num}}" for 127.0.0.1 at 2018-10-08 22:37:45 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"{\"answer\": ${num}}"=>nil, "guess"=>"${num}"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/$%7Bnum%7D?{%22answer%22:%20${num}}" for 127.0.0.1 at 2018-10-08 22:37:46 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"{\"answer\": ${num}}"=>nil, "guess"=>"${num}"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/$%7Bnum%7D?{%22answer%22:%20${num}}" for 127.0.0.1 at 2018-10-08 22:37:46 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"{\"answer\": ${num}}"=>nil, "guess"=>"${num}"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/$%7Bnum%7D?{%22answer%22:%20${num}}" for 127.0.0.1 at 2018-10-08 22:37:46 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"{\"answer\": ${num}}"=>nil, "guess"=>"${num}"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:37:56 +1100
+Processing by SecretController#guess as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:37:59 +1100
+Processing by SecretController#guess as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:38:47 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 33ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/$%7Bnum%7D?{%22answer%22:%20${num}}" for 127.0.0.1 at 2018-10-08 22:38:49 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"{\"answer\": ${num}}"=>nil, "guess"=>"${num}"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 77ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/$%7Bnum%7D?{%22answer%22:%20${num}}" for 127.0.0.1 at 2018-10-08 22:38:50 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"{\"answer\": ${num}}"=>nil, "guess"=>"${num}"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 77ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/$%7Bnum%7D?{%22answer%22:%20${num}}" for 127.0.0.1 at 2018-10-08 22:38:50 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"{\"answer\": ${num}}"=>nil, "guess"=>"${num}"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 78ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/$%7Bnum%7D?{%22answer%22:%20${num}}" for 127.0.0.1 at 2018-10-08 22:38:51 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"{\"answer\": ${num}}"=>nil, "guess"=>"${num}"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 84ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:52:09 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 39ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 22:59:06 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 49ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/$%7Bnum%7D?{%22answer%22:%20${num}}" for 127.0.0.1 at 2018-10-08 22:59:08 +1100
+Processing by SecretController#answer as */*
+Started GET "/secret_number/:guess" for 127.0.0.1 at 2018-10-08 22:59:08 +1100
+  Parameters: {"{\"answer\": ${num}}"=>nil, "guess"=>"${num}"}
+Processing by SecretController#answer as HTML
+  Parameters: {"guess"=>":guess"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.9ms)
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 75ms (Views: 72.3ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 157ms (Views: 115.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:02:02 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 39ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:02:24 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 35ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/$%7Bnum%7D?{%22answer%22:%20${num}}" for 127.0.0.1 at 2018-10-08 23:02:26 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"{\"answer\": ${num}}"=>nil, "guess"=>"${num}"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 79ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:04:21 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 31ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/$%7Bnum%7D?{%22answer%22:%20${num}}" for 127.0.0.1 at 2018-10-08 23:04:23 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"{\"answer\": ${num}}"=>nil, "guess"=>"${num}"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 76ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/$%7Bnum%7D?{%22answer%22:%20${num}}" for 127.0.0.1 at 2018-10-08 23:04:24 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"{\"answer\": ${num}}"=>nil, "guess"=>"${num}"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 79ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/$%7Bnum%7D?{%22answer%22:%20${num}}" for 127.0.0.1 at 2018-10-08 23:04:24 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"{\"answer\": ${num}}"=>nil, "guess"=>"${num}"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 77ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/$%7Bnum%7D?{%22answer%22:%20${num}}" for 127.0.0.1 at 2018-10-08 23:04:24 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"{\"answer\": ${num}}"=>nil, "guess"=>"${num}"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 78ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/$%7Bnum%7D?{%22answer%22:%20${num}}" for 127.0.0.1 at 2018-10-08 23:04:25 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"{\"answer\": ${num}}"=>nil, "guess"=>"${num}"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 80ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/$%7Bnum%7D?{%22answer%22:%20${num}}" for 127.0.0.1 at 2018-10-08 23:04:25 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"{\"answer\": ${num}}"=>nil, "guess"=>"${num}"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 78ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:04:57 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/$%7Bnum%7D?{%22answer%22:%20${num}}" for 127.0.0.1 at 2018-10-08 23:04:59 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"{\"answer\": ${num}}"=>nil, "guess"=>"${num}"}
+Started GET "/secret_number/:guess" for 127.0.0.1 at 2018-10-08 23:04:59 +1100
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.2ms)
+Processing by SecretController#answer as HTML
+  Parameters: {"guess"=>":guess"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 116ms (Views: 77.7ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 49ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:07:17 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 36ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/$%7Bnum%7D?{%22answer%22:%20${num}}" for 127.0.0.1 at 2018-10-08 23:07:19 +1100
+Processing by SecretController#answer as */*
+  Parameters: {"{\"answer\": ${num}}"=>nil, "guess"=>"${num}"}
+Started GET "/secret_number/submit?1=" for 127.0.0.1 at 2018-10-08 23:07:19 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"1"=>"", "guess"=>"submit"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.4ms)
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 104ms (Views: 66.2ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 46ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/submit?1=" for 127.0.0.1 at 2018-10-08 23:14:56 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"1"=>"", "guess"=>"submit"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:14:59 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:19:42 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 47ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:21:11 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 85ms (Views: 80.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/submit" for 127.0.0.1 at 2018-10-08 23:21:14 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"guess"=>"submit"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/submit" for 127.0.0.1 at 2018-10-08 23:22:19 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"guess"=>"submit"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 64ms (Views: 60.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:22:23 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 46ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/submit?7=" for 127.0.0.1 at 2018-10-08 23:22:25 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"7"=>"", "guess"=>"submit"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/submit?7=" for 127.0.0.1 at 2018-10-08 23:23:18 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"7"=>"", "guess"=>"submit"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:23:24 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 41ms (Views: 37.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/submit?number=4" for 127.0.0.1 at 2018-10-08 23:23:26 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"number"=>"4", "guess"=>"submit"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 25ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/submit?number=4" for 127.0.0.1 at 2018-10-08 23:23:59 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"number"=>"4", "guess"=>"submit"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 41ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:24:01 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 35ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/answer?number=4" for 127.0.0.1 at 2018-10-08 23:24:03 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"number"=>"4", "guess"=>"answer"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 27ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/answer?number=4" for 127.0.0.1 at 2018-10-08 23:26:48 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"number"=>"4", "guess"=>"answer"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 35ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/answer?number=4" for 127.0.0.1 at 2018-10-08 23:26:51 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"number"=>"4", "guess"=>"answer"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 39ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/answer?number=4" for 127.0.0.1 at 2018-10-08 23:26:53 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"number"=>"4", "guess"=>"answer"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 46ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/answer?number=4" for 127.0.0.1 at 2018-10-08 23:26:54 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"number"=>"4", "guess"=>"answer"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 36ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/answer?number=4" for 127.0.0.1 at 2018-10-08 23:26:55 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"number"=>"4", "guess"=>"answer"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:27:00 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 43ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:27:50 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 40ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:29:09 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/answer?number=1" for 127.0.0.1 at 2018-10-08 23:29:12 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"number"=>"1", "guess"=>"answer"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 30ms (Views: 25.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:29:18 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 45ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:29:23 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/answer?number=3" for 127.0.0.1 at 2018-10-08 23:29:24 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"number"=>"3", "guess"=>"answer"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 32ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:29:27 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 45ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:30:54 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 37ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:30:58 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 33ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/answer?number=9" for 127.0.0.1 at 2018-10-08 23:31:06 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"number"=>"9", "guess"=>"answer"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/answer?number=9" for 127.0.0.1 at 2018-10-08 23:32:56 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"number"=>"9", "guess"=>"answer"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 67ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 23:32:58 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 41ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball/result?question=Am+I+worthy" for 127.0.0.1 at 2018-10-08 23:33:01 +1100
+Processing by EightballController#answer as HTML
+  Parameters: {"question"=>"Am I worthy"}
+  Rendering eightball/answer.html.erb within layouts/application
+  Rendered eightball/answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-08 23:33:05 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:33:08 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 59ms (Views: 53.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:34:12 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 63ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/answer?number=8" for 127.0.0.1 at 2018-10-08 23:34:14 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"number"=>"8", "guess"=>"answer"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 23:34:17 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 45ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball/result?question=Am+I+worthy" for 127.0.0.1 at 2018-10-08 23:34:20 +1100
+Processing by EightballController#answer as HTML
+  Parameters: {"question"=>"Am I worthy"}
+  Rendering eightball/answer.html.erb within layouts/application
+  Rendered eightball/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 42ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:34:23 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 48ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:34:48 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 49ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 23:34:51 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 40ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-08 23:35:27 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 36ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball/result?question=Am+I+worthy" for 127.0.0.1 at 2018-10-08 23:35:31 +1100
+Processing by EightballController#answer as HTML
+  Parameters: {"question"=>"Am I worthy"}
+  Rendering eightball/answer.html.erb within layouts/application
+  Rendered eightball/answer.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 33ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:35:36 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 47ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:35:46 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 33ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/answer?number=4" for 127.0.0.1 at 2018-10-08 23:35:48 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"number"=>"4", "guess"=>"answer"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/answer?number=4" for 127.0.0.1 at 2018-10-08 23:36:03 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"number"=>"4", "guess"=>"answer"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 31ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/answer?number=4" for 127.0.0.1 at 2018-10-08 23:36:07 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"number"=>"4", "guess"=>"answer"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 32ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/answer?number=4" for 127.0.0.1 at 2018-10-08 23:36:09 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"number"=>"4", "guess"=>"answer"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 27ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/answer?number=4" for 127.0.0.1 at 2018-10-08 23:36:10 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"number"=>"4", "guess"=>"answer"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/answer?number=4" for 127.0.0.1 at 2018-10-08 23:36:12 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"number"=>"4", "guess"=>"answer"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:36:13 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 42ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:36:16 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/answer?number=6" for 127.0.0.1 at 2018-10-08 23:36:18 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"number"=>"6", "guess"=>"answer"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 25ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:36:24 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:43:10 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 43ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:43:13 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 44ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-08 23:47:46 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 90ms (Views: 85.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-08 23:47:48 +1100
+Processing by RpsController#game as HTML
+Completed 406 Not Acceptable in 169ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (RpsController#game is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.1) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/rps" for 127.0.0.1 at 2018-10-08 23:48:28 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 30ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-08 23:52:08 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 80ms (Views: 75.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-08 23:52:46 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-08 23:54:48 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-08 23:56:38 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 117ms (Views: 113.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-08 23:56:44 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 39ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-08 23:57:22 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 29ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-08 23:58:22 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?customRadio=on" for 127.0.0.1 at 2018-10-08 23:58:24 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"customRadio"=>"on", "throw"=>"result"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 31ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?customRadio=on" for 127.0.0.1 at 2018-10-08 23:58:53 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"customRadio"=>"on", "throw"=>"result"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 28ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-08 23:58:55 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 44ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?rock=on" for 127.0.0.1 at 2018-10-08 23:58:58 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"rock"=>"on", "throw"=>"result"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?rock=on" for 127.0.0.1 at 2018-10-08 23:59:59 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"rock"=>"on", "throw"=>"result"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:00:00 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 43ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?choice=R" for 127.0.0.1 at 2018-10-09 00:00:02 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"choice"=>"R", "throw"=>"result"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 31ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:00:07 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 37ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-09 00:00:10 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-09 00:00:11 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-09 00:00:12 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 43ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:00:13 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?choice=S" for 127.0.0.1 at 2018-10-09 00:00:19 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"choice"=>"S", "throw"=>"result"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 26ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?choice=S" for 127.0.0.1 at 2018-10-09 00:03:18 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"choice"=>"S", "throw"=>"result"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?choice=S" for 127.0.0.1 at 2018-10-09 00:05:18 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"choice"=>"S", "throw"=>"result"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 40ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/result.png"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/rps/result?choice=S" for 127.0.0.1 at 2018-10-09 00:06:08 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"choice"=>"S", "throw"=>"result"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 40ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/result.png"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/rps/result?choice=S" for 127.0.0.1 at 2018-10-09 00:06:11 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"choice"=>"S", "throw"=>"result"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/result.png"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:06:21 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 96ms (Views: 91.9ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/result.png"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/rps/result?throw=paper" for 127.0.0.1 at 2018-10-09 00:06:23 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"result"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 31ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/result.png"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:07:37 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 40ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=paper" for 127.0.0.1 at 2018-10-09 00:07:39 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"result"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 33ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/result.png"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:09:01 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 49ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/result.png"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/rps/result?throw=scissors" for 127.0.0.1 at 2018-10-09 00:09:05 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"result"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/result.png"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:09:25 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/result.png"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/rps/result?throw=scissors" for 127.0.0.1 at 2018-10-09 00:09:27 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"result"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/result.png"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/rps/result?throw=scissors" for 127.0.0.1 at 2018-10-09 00:10:37 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"scissors"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 41ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:10:42 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=scissors" for 127.0.0.1 at 2018-10-09 00:10:45 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"scissors"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:10:47 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 42ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=paper" for 127.0.0.1 at 2018-10-09 00:10:49 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"paper"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:10:51 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 38ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=rock" for 127.0.0.1 at 2018-10-09 00:10:53 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"rock"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 28ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:10:54 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 40ms (Views: 37.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=scissors" for 127.0.0.1 at 2018-10-09 00:10:56 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"scissors"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 31ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=scissors" for 127.0.0.1 at 2018-10-09 00:15:30 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"scissors"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 42ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:15:33 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 51ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=paper" for 127.0.0.1 at 2018-10-09 00:15:34 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"paper"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:15:36 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 43ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=paper" for 127.0.0.1 at 2018-10-09 00:15:38 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"paper"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 32ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:15:40 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 40ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=scissors" for 127.0.0.1 at 2018-10-09 00:15:42 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"scissors"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 28ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-09 00:16:06 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 36ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-09 00:16:07 +1100
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:16:09 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=rock" for 127.0.0.1 at 2018-10-09 00:16:11 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"rock"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 30ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:16:14 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 40ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=paper" for 127.0.0.1 at 2018-10-09 00:16:16 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"paper"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 30ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:16:17 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 80ms (Views: 75.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=scissors" for 127.0.0.1 at 2018-10-09 00:16:19 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"scissors"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:16:20 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 37ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=scissors" for 127.0.0.1 at 2018-10-09 00:16:22 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"scissors"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:16:24 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 40ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=scissors" for 127.0.0.1 at 2018-10-09 00:16:25 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"scissors"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:16:26 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 39ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=scissors" for 127.0.0.1 at 2018-10-09 00:16:28 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"scissors"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 28ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:17:02 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 39ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=rock" for 127.0.0.1 at 2018-10-09 00:17:04 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"rock"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:17:06 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 40ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=paper" for 127.0.0.1 at 2018-10-09 00:17:07 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"paper"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 28ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=paper" for 127.0.0.1 at 2018-10-09 00:17:43 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"paper"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 43ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:17:45 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 48ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=paper" for 127.0.0.1 at 2018-10-09 00:17:47 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"paper"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 30ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:17:48 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 43ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=scissors" for 127.0.0.1 at 2018-10-09 00:17:50 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"scissors"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:17:52 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 52ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=scissors" for 127.0.0.1 at 2018-10-09 00:17:53 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"scissors"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 32ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:17:54 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 47ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=paper" for 127.0.0.1 at 2018-10-09 00:17:56 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"paper"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:17:57 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 47ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=rock" for 127.0.0.1 at 2018-10-09 00:17:59 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"rock"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 33ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=rock" for 127.0.0.1 at 2018-10-09 00:19:12 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"rock"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 33ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:19:13 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 46ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=paper" for 127.0.0.1 at 2018-10-09 00:19:15 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"paper"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:19:17 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 36ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=scissors" for 127.0.0.1 at 2018-10-09 00:19:18 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"scissors"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:19:20 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 48ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=rock" for 127.0.0.1 at 2018-10-09 00:19:22 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"rock"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:19:23 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 39ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=rock" for 127.0.0.1 at 2018-10-09 00:19:24 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"rock"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 28ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:19:26 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 45ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=rock" for 127.0.0.1 at 2018-10-09 00:19:27 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"rock"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:19:29 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 43ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=rock" for 127.0.0.1 at 2018-10-09 00:19:30 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"rock"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:19:39 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 40ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=paper" for 127.0.0.1 at 2018-10-09 00:19:41 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"paper"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball" for 127.0.0.1 at 2018-10-09 00:19:54 +1100
+Processing by EightballController#game as HTML
+  Rendering eightball/game.html.erb within layouts/application
+  Rendered eightball/game.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 40ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eightball/result?question=Am+I+worthy" for 127.0.0.1 at 2018-10-09 00:19:57 +1100
+Processing by EightballController#answer as HTML
+  Parameters: {"question"=>"Am I worthy"}
+  Rendering eightball/answer.html.erb within layouts/application
+  Rendered eightball/answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-09 00:19:58 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-09 00:20:05 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 31ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/answer?number=5" for 127.0.0.1 at 2018-10-09 00:20:07 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"number"=>"5", "guess"=>"answer"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-09 00:20:09 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 43ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-09 00:20:13 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 36ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number/answer?number=9" for 127.0.0.1 at 2018-10-09 00:20:14 +1100
+Processing by SecretController#answer as HTML
+  Parameters: {"number"=>"9", "guess"=>"answer"}
+  Rendering secret/answer.html.erb within layouts/application
+  Rendered secret/answer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/secret_number" for 127.0.0.1 at 2018-10-09 00:20:23 +1100
+Processing by SecretController#guess as HTML
+  Rendering secret/guess.html.erb within layouts/application
+  Rendered secret/guess.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 37ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps" for 127.0.0.1 at 2018-10-09 00:20:27 +1100
+Processing by RpsController#game as HTML
+  Rendering rps/game.html.erb within layouts/application
+  Rendered rps/game.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 38ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rps/result?throw=rock" for 127.0.0.1 at 2018-10-09 00:20:29 +1100
+Processing by RpsController#result as HTML
+  Parameters: {"throw"=>"rock"}
+  Rendering rps/result.html.erb within layouts/application
+  Rendered rps/result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 32ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+

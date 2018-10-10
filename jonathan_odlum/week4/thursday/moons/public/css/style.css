@@ -1,0 +1,16 @@
+body{
+  color: white;
+  background-color: black;
+}
+
+img{
+  max-width: 200px;
+}
+
+a{
+  color: grey;
+}
+
+a:visited{
+  color: hotpink;
+}

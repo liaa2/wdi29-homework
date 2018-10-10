@@ -1,0 +1,16 @@
+<h2>Edit Brand: <%= @brand['company_name'] %></h2>
+
+<form action="/brands/<%= @brand['id'] %>" method="post">
+
+  Company Name: <input type="text" name="company_name" value="<%= @brand['company_name'] %>"><br>
+  Founded (year): <input type="text" name="founded" value="<%= @brand['founded'] %>"><br>
+  Headquarters (city): <input type="text" name="hq" value="<%= @brand['hq'] %>"><br>
+  CEO (name): <input type="text" name="ceo" value="<%= @brand['ceo'] %>"><br>
+  Revenue: <input type="text" name="revenue" value="<%= @brand['revenue'] %>"><br>
+  Stock Price: <input type="text" name="stock_price" value="<%= @brand['stock_price'] %>"><br>
+  Website URL: <input type="text" name="website" value="<%= @brand['website'] %>"><br>
+  Logo Image URL: <input type="text" name="logo_url" value="<%= @brand['logo_url'] %>"><br>
+  <br>
+  <input type="submit" value="Update Brand">
+
+</form>

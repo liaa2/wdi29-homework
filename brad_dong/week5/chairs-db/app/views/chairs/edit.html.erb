@@ -1,0 +1,12 @@
+<h2>Edit: <%= @chair.name %></h2>
+<form action="<%= chair_path(@chair.id) %>" method="post">
+
+Name: <input type="text" name="name" value="<%= @chair.name %>"><br><br>
+Image: <input type="text" name="image" value="<%= @chair.image %>"><br><br>
+Legs: <input type="text" name="legs" value="<%= @chair.legs %>"><br><br>
+Material: <input type="text" name="material" value="<%= @chair.material %>"><br><br>
+Recliner: <input type="text" name="recliner" value="<%= @chair.recliner %>">
+
+<input type="submit" value="Edit">
+
+</form>

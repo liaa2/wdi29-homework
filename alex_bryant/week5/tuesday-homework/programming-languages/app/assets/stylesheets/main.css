@@ -1,0 +1,27 @@
+.spaced {
+  margin: 20px;
+}
+
+#smaller-table {
+  width: 20%;
+  float: left;
+  margin-right: 50px;
+}
+
+.update-button {
+  float: left;
+  margin-right: 10px;
+}
+
+.margin-right {
+  margin-right: 10px;
+}
+
+.program-text {
+  font-family: monospace;
+  font-size: 18px;
+}
+
+.side-by-side {
+  layout: inline-block;
+}

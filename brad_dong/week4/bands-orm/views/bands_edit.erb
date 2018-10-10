@@ -1,0 +1,18 @@
+<!-- create prefilled form -->
+
+<!-- <h2>Edit band: <%= @band['name'] %></h2> -->
+<h2>Edit band: <%= @band.name %></h2>
+
+<!-- <form action="/bands/<%= @band['id'] %>" method="post"> -->
+<form action="/bands/<%= @band.id %>" method="post">
+  Name: <input type="text" name="name" value="<%= @band.name %>"><br>
+
+  Number of members: <input type="text" name="no_of_members" value = "<%= @band.no_of_members %>"><br>
+
+  Genre: <input type="text" name="genre" value ="<%= @band.genre %>"><br>
+
+  Image URL: <input type="text" name="img_url" value="<%=  @band.img_url %>"><br>
+
+
+  <input type="submit" name="" value="Edit this band">
+</form>

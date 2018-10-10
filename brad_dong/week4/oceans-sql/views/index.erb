@@ -1,0 +1,17 @@
+<h2>List of oceans</h2>
+
+
+<ul>
+  <% @results.each do |sea|  %>
+  <li>
+
+    <a href="/index/<%= sea['id'] %>">
+    <%= sea['name'] %>
+    </a>
+
+  </li>
+  <% end  %>
+</ul>
+
+
+<a href="/oceans/new">Add new Ocean</a>

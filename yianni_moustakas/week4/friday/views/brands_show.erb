@@ -1,0 +1,28 @@
+<h2><%= @brand.company_name %></h2>
+
+<a href="/brands/<%= @brand['id'] %>/edit">Edit This Brand</a><br>
+<a href="/brands/<%= @brand['id'] %>/delete">Delete This Brand</a>
+
+<p>
+  Company Name: <%= @brand.company_name %>
+</p>
+<p>
+  Website: <%= @brand.website %>
+</p>
+<p>
+  Founded: <%= @brand.founded %>
+</p>
+<p>
+  Headquarters: <%= @brand.hq %>
+</p>
+<p>
+  CEO: <%= @brand.ceo %>
+</p>
+<p>
+  Revenue: <%= @brand.revenue.to_f %>
+</p>
+<p>
+  Stock Price: <%= @brand.stock_price %>
+</p>
+
+<img src="<%= @brand.logo_url %>" alt="<%= @brand.company_name  %>">

@@ -1,0 +1,13 @@
+
+<h2>Results for "<%= @query %>":</h2>
+
+<ul>
+<% @results.each do |movie| %>
+  <li>
+    <%= movie['title'] %><br>
+    <% unless movie['poster_path'].nil? %>
+    <a id="<%= movie['id'] %>" href="/details/<%= movie['id'] %>"><img src="<%= @img_base + movie['poster_path'] %>" /></a>
+    <% end %>
+  </li>
+<% end %>
+</ul>

@@ -1,0 +1,2 @@
+class WorldLeader < ApplicationRecord
+end

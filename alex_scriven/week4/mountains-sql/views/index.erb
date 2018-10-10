@@ -1,0 +1,15 @@
+<h1>Here are all our mountains</h1>
+<h3>Click an image to find out more</h3>
+<hr>
+<hr>
+
+<% @allmountains.each do |mountain| %>
+<div class="mountainImageDiv">
+  <a href="/mountains/<%= mountain['id'] %>">
+<img src="<%= mountain['image'] %>" alt="<%= mountain['name'] %>" class="mountainImage">
+  </a>
+<div class="mountainName">
+  <h3><%= mountain['name'] %></h3>
+</div>
+</div>
+<% end  %>

@@ -1,0 +1,11 @@
+<h2>All Disgruntled Customers</h2>
+
+<ul>
+  <% @customers.each do |customer| %>
+  <li>
+    <a href="/customers/<%= customer.id %>">
+      <%= customer.name %> from <%= customer.city %>, <%= customer.state %>
+    </a>
+  </li>
+  <% end %>
+</ul>
