@@ -1,0 +1,27 @@
+<div>
+<h2><%= @party.name %></h2>
+
+<div>
+  <%= link_to 'Edit This Party', edit_party_path(@party) %>
+  |
+  <%= link_to 'Delete This Party', party_path(@party), method: 'delete' %>
+</div>
+<br>
+
+<strong>Founded:</strong> <%= @party.founded %><br>
+<strong>Abbreviation:</strong> <%= @party.abbr %><br>
+<strong>Leader:</strong> <%= @party.leader %><br>
+<strong>Position:</strong> <%= @party.position %><br>
+<strong>Ideology:</strong> <%= @party.ideology %><br>
+<div>
+
+  <h4>Members of Parliament:</h4>
+  <ul>
+  <% @party.members.each do |member| %>
+    <li>
+      <%= link_to member.name, member_path(member.id) %>, <%= member.seat %>
+    </li>
+  <% end %>
+  </ul>
+<%= image_tag @party.image, alt: @party.name, class: 'partyPortait' %>
+</div>

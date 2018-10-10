@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ABC Co - IT Helpdesk</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <h1>Welcome - ABC IT Helpdesk</h1>
+    <h1>----------------------------------------</h1>
+    <nav>
+     <a href="/technicians/new">Add New Technician</a> |
+     <a href="/technicians">List Technician</a> |
+     <a href="/issues/new">Add Issue</a> |
+     <a href="/issues">List Issue</a>
+
+    </nav>
+    <hr>
+      <%= yield %>
+    <hr>
+
+  </body>
+  <footer>
+    &copy;ABC Co  2018
+  </footer>
+</html>

@@ -1,0 +1,16 @@
+<h2>Edit Issue <%= @issue.summary %> </h2>
+
+
+<form action="/issues/<%= @issue.id %>" method="post">
+  Summary: <input type="text" name="summary" value="<%= @issue.summary %>"><br>
+  Description: <input type="text" name="description" value="<%= @issue.description %>"><br>
+  Caller Name: <input type="text" name="cust_name" value="<%= @issue.cust_name %>"><br>
+  Business Unit: <input type="text" name="business_unit" value="<%= @issue.business_unit %>"><br>
+  Priority: <input type="text" name="priority" value="<%= @issue.priority %>"><br>
+  Category: <input type="text" name="category" value="<%= @issue.category %>"><br>
+  Resolved: <input type="text" name="resolved" value="<%= @issue.resolved %>"><br>
+  Resolution: <input type="text" name="resolution" value="<%= @issue.resolution %>"><br>
+  Technician Assigned: <input type="text" name="technician_id" value="<%= @issue.technician_id %>"><br>
+  <br>
+  <input type="submit" value="Update Issue">
+</form>

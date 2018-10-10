@@ -1,0 +1,13 @@
+<h2>Campsites Listing</h2>
+
+
+<ul>
+<% @campsites.each do |campsite| %>
+  <li>
+    <!-- use the 'path helper' to generate the correct url for the show page for campsites, passing in the ID of the campite we want to show -->
+    <a href="<%= campsite_path(campsite.id) %>">
+      <%= campsite.name %>
+    </a>
+  </li>
+<% end %>
+</ul>
