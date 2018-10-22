@@ -1,0 +1,6 @@
+.oneMovie{
+  visibility : hidden;
+  max-width: 60vw;
+  max-height: 40vh;
+  z-index: 4;
+}
