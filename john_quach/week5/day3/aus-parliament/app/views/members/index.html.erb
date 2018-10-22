@@ -1,0 +1,9 @@
+<h2>Members Index</h2>
+
+<ul>
+<% @members.each do |member| %>
+  <li>
+    <%= link_to member.name, member_path(member.id) %>, <%= member.seat %>
+  </li>
+<% end %>
+</ul>

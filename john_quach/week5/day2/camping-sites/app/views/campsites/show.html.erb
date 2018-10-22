@@ -1,0 +1,13 @@
+<h2> <%= @campsite.name %> </h2>
+
+
+
+<%= link_to 'Edit this Campsite', campsite_edit_path(@campsite.id) %>
+|
+<%= link_to 'Delete this Campsite', campsite_destroy_path(@campsite.id), class: 'destroy', id: 'delete_link' %>
+
+<p><strong>Name:</strong> <%= @campsite.name %> </p>
+<p><strong>Location:</strong> <%= @campsite.location %> </p>
+<p><strong>Campsite Type:</strong> <%= @campsite.campsite_type %> </p>
+<p><strong>Maximum People:</strong> <%= @campsite.max_people %> </p>
+<p><strong>Per Night: </strong> <%= number_to_currency(@campsite.per_night) %></p>

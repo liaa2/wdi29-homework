@@ -1,0 +1,14 @@
+<h2><em><%= @member.name %></em>, <%= @member.title %></h2>
+<strong><%= link_to @member.party.name, party_path(@member.party.id) %></strong>
+
+
+<p>Seat: <%= @member.seat %></p>
+<p>About: <%= @member.about %></p>
+
+<%= image_tag @member.image, alt: @member.name, class: 'memberImage' %>
+
+<br>
+
+<%= link_to 'Edit This Member', edit_member_path(@member) %>
+|
+<%= link_to 'Delete This Member', member_path(@member), method: 'delete' %>

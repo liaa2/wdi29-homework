@@ -1,0 +1,25 @@
+<h2>
+  <%= @technicians['name']     %>
+
+</h2>
+
+
+<a href="/technicians/<%= @technicians['id'] %>/edit">Edit This Technician</a> |
+<a href="/technicians/<%= @technicians['id'] %>/delete">Delete This Technician</a>
+<div class="">
+  <img src="<%= @technicians['image_url'] %>" alt="<%= @technicians['name'] %>">
+</div>
+
+<p>Department: <%= @technicians.department %></p>
+<p>Location: <%= @technicians.location %></p>
+<p>Country: <%= @technicians.country %></p>
+<p>Certification: <%= @technicians.certification %></p>
+<p>Level: <%= @technicians.level %></p>
+<p>On-Call: <%= @technicians.on_call == true ? 'Yes' : 'No'%></p>
+<hr>
+<h3>Open Isssues Log:</h3>
+<ul>
+  <% @technicians.issues.each do |issue| %>
+     <li> <a href="/issues/<%= issue.technician_id %>"><%= issue.summary %></a></li>
+  <% end %>
+</ul>

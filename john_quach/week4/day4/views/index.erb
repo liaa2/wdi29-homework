@@ -1,0 +1,13 @@
+<h1>Campsites</h1>
+
+<ul>
+  <% @result.each do |campsite| %>
+    <li>
+      <a href="/campsites/<%= campsite['id'] %>"><%= campsite['name'] %> <%= campsite['location'] %></a>
+      (
+        <%= campsite['type'] %>,
+        <%= "$" %><%= campsite['entry_fee'] %> <%="a night."%>
+      )
+    </li>
+  <% end %>
+</ul>
