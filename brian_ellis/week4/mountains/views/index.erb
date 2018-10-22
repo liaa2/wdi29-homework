@@ -1,0 +1,18 @@
+<h2>All Mountains</h2>
+
+(list goes here)
+
+<ul>
+#may need = removed
+<% @result.each do | mountain | %>
+<li>
+  <a href="/mountains/<%= mountain['id'] %>">
+<%= mountain['mountain_name'] %>
+  </a>
+(
+<%= mountain['mountain_continent']%>
+<%= mountain['environment']%>
+)
+</li>
+  <% end %>
+</ul>

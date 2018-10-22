@@ -29,7 +29,7 @@ In Roman numerals 1990 is MCMXC:
 2000=MM
 8=VIII
 ____
-See also: http://www.novaroma.org/via_romana/numbers.html
+See http://www.romannumerals.co.uk/roman-numerals/numerals-chart.html for the table of Roman Numbers you will need to check for.
 
 
 Do this in Ruby.

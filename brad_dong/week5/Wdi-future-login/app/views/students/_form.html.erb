@@ -1,0 +1,27 @@
+<%= form_for @student do |f| %>
+
+  <fieldset>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :location %>
+    <%= f.text_field :location %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :hobbies %>
+    <%= f.text_field :hobbies %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :image %>
+    <%= f.text_field :image %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :future_id, 'Class' %>
+    <%= f.collection_select :future_id, Future.all, :id, :name, prompt: 'Please choose an class' %>
+  </fieldset>
+  <%= f.submit %>
+
+
+<% end %>

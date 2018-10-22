@@ -26,7 +26,7 @@ class Atbash
     # @word.each_char do |letter|
       # index = @alphabet.index(c)
     # end
-    
+
     @word.each_char do |letter|
 
       #find where each letter appears in the normal alphabet
@@ -48,63 +48,3 @@ word = gets.chomp
 
 cipher = Atbash.new(word)
 puts cipher.encode
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# class Atbash
-#   # @@alphabet = ("a".."z").to_a
-#   # @@reverse = @@alphabet.reverse
-#
-#   def initialize(input)
-#     @word = input.downcase
-#     @alphabet = ("a".."z").to_a
-#     @reverse = @alphabet.reverse
-#   end
-#
-#
-#   def encode(string)
-#     message = ""
-#
-#     # @word.split("").each do |letter|
-#     # @word.chars.each do |letter|
-#     string.each_char do |letter|
-#       index = @alphabet.index(letter)
-#       # puts index
-#       cipher_character = @reverse[index]
-#       # p cipher_character
-#       # message += cipher_character
-#       message << cipher_character
-#     end #@word.each
-#     message
-#   end
-# end
-#
-#
-# puts "What's your secret word?"
-# word = gets.chomp
-#
-# cipher = Atbash.new(word)
-# puts cipher.encode "test"
-# puts cipher.encode "gvhg"
-
-# cipher = Atbash.new
-# puts cipher.encode "test"
-# puts cipher.encode "gvhg"

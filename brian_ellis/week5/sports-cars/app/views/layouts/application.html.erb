@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SuperCars</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
+  </head>
+
+  <body>
+<h1> Super Cars </h1>
+<nav>
+  <%= link_to 'Super Cars Index', cars_path %>
+  <%= link_to 'Create Super Cars', cars_new_path %>
+  </nav>
+<hr>
+    <%= yield %>
+  </body>
+</html>

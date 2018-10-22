@@ -1,0 +1,24 @@
+<h2>Future class: <%= @future.name %></h2>
+
+<nav>
+  <%= link_to 'Edit this class', edit_future_path(@future.id) %>||
+  <%= link_to 'Delete this class', future_path(@future.id), method: 'delete'%>
+
+</nav>
+
+<p>
+  Year: <%= @future.year %><br>
+  Location: <%= @future.location %><br>
+  <hr>
+  Students:
+  <ul>
+
+      <% @future.students.each do|student| %>
+        <li><%= link_to student.name, student_path(student.id)  %></li>
+      <% end %>
+
+
+  </ul>
+  <%= image_tag @future.image, alt:@future.name , :class=>"image"%>
+
+</p>

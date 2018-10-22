@@ -1,3 +1,5 @@
 <h2><%= @book.title %></h2>
-Author: <%= @book.author %>
-<img src=alt="Smiley face" height="42" width="42">
+
+Author: <%= link_to @book.author.name, author_path(@book.author.id)  %>
+<br>
+<img src="<%= @book.image %>" alt="<%= @book.title %>">

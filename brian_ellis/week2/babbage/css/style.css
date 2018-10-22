@@ -1,0 +1,200 @@
+
+html {
+    background: url(/Users/brianellis/wdi/homework/brian_ellis/week2/babbage/images/cogs.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* margin:0;
+    padding:0; */
+  }
+
+  body {
+    margin:0;
+    padding:0;
+    /* background-image: url(/Users/brianellis/wdi/homework/brian_ellis/week2/babbage/images/train.jpg) */
+
+      /* background-color: #cccccc; */
+  }
+
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+
+}
+
+#container {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  /* background-color: lightblue; */
+  /* background-image: url("images/train.jpg"); */
+  overflow: auto; /* overflow hidden */
+}
+
+/* #background {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  z-index: -1;
+} */
+
+#but_holder {
+  margin: 0 auto;
+  width: 60%;
+  height: 25px;
+  background-color: rgb(251, 196, 0);
+  padding-top: 30px;
+  padding-bottom: 70px;
+  opacity: 0.9;
+}
+
+.but_1 {
+  width:  27.5%;
+  height: 50px;
+  background-color: rgb(251, 196, 0);
+  display: inline-block;
+  margin: 0px;
+  padding: 5px 0px 15px 5%;
+  opacity: 0.8;
+}
+
+
+.but_2 {
+  width:  27.5%;
+  height: 50px;
+  background-color: rgb(251, 196, 0);
+  display: inline-block;
+  margin: 0px;
+  padding: 5px 0px 15px 5%;
+  opacity: 0.8;
+}
+
+
+.but_3 {
+  width:  27.5%;
+  height: 50px;
+  background-color: rgb(251, 196, 0);
+  display: inline-block;
+  margin: 0px;
+  padding: 5px 0px 15px 5%;
+  opacity: 0.8;
+}
+
+#col_holder{
+  margin: 0 auto;
+  width: 60%;
+  height: auto;
+  background-color: rgb(251, 196, 0);
+  padding-top: 0px;
+  padding-bottom: 30px;
+    opacity: 0.8;
+          overflow: auto;
+}
+
+.col_1 {
+  width: 23%;
+  height: auto;
+  background-color: rgb(252, 229, 148);
+  display: inline-block;
+  margin: -1px;
+  padding: 5%;
+  overflow: auto;
+    opacity: 0.8;
+}
+
+#babbage {
+  width: 100%;
+  height: auto;
+
+}
+
+.col_2 {
+  width: 23%;
+  height: auto;
+  background-color: rgb(252, 229, 148);
+  display: inline-block;
+  margin: -1px;
+  padding: 5%;
+  position: relative;
+  overflow: auto;
+    opacity: 0.8;
+}
+#difference {
+  width: 100%;
+  height: auto;
+}
+
+.col_3 {
+  width: 23%;
+  height: auto;
+  background-color: rgb(252, 229, 148);
+  display: inline-block;
+  margin: -1px;
+  padding: 5%;
+  position: relative;
+  overflow: auto;
+    opacity: 0.8;
+}
+
+.col2plus3Trivia {
+  width: 57%;
+  height: auto;
+  background-color: rgb(252, 229, 148);
+  display: inline-block;
+  margin: -1px;
+  padding: 5%;
+  position: relative;
+  overflow: auto;
+    opacity: 0.8;
+      overflow: auto;
+}
+
+.col1plus2Hometown {
+  width: 57%;
+  height: auto;
+  background-color: rgb(252, 229, 148);
+  display: inline-block;
+  margin: -1px;
+  padding: 5%;
+  position: relative;
+  overflow: auto;
+    opacity: 0.8;
+      overflow: auto;
+}
+
+
+
+
+
+#analytical {
+  width: 100%;
+  height: auto;
+}
+/* font-family: 'Fredericka the Great', cursive; */
+/* font-family: 'Oswald', sans-serif; */
+
+# analytical_text{
+  opacity: 1
+}
+
+#bodyCopy {
+  font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+  font-family: 'Fredericka the Great', cursive;
+  /* font-family: 'Oswald', sans-serif; */
+  color: rgb(136, 5, 5);
+}
+
+h2 {
+  font-family: 'Fredericka the Great', cursive;
+  color: rgb(9, 79, 0);
+  /* font-family: 'Oswald', sans-serif; */
+}

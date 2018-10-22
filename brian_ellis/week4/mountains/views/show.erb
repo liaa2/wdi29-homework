@@ -1,0 +1,8 @@
+<h2><%= @mountain['mountain_name'] %>
+
+  <a href="/mountains/<%= @mountain['id'] %> /edit"> edit this Mountain</a>
+  <a href="/mountains/<%= @mountain['id'] %> /delete"> delete this Mountain</a>
+
+  <%= @result.to_s %>
+  <p>Mountain Name: <%= @mountain['mountain_name'] %></p>
+<img src="<%= @mountain['image_url']%>"

@@ -1,0 +1,3005 @@
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (13.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateFutures (20181010093148)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20181010093148_create_futures.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "futures" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" text, "year" integer, "location" text, "image" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181010093148_create_futures.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181010093148"]]
+  ↳ bin/rails:9
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-10-10 09:38:23.555913"], ["updated_at", "2018-10-10 09:38:23.555913"]]
+  ↳ bin/rails:9
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mFuture Create (0.5ms)[0m  [1m[32mINSERT INTO "futures" ("name", "year", "location", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "WDI Serial Killers"], ["year", 2018], ["location", "Super-duper MAX"], ["image", "https://cdn.europosters.eu/image/750/stickers/skull-crossbones-i7800.jpg"], ["created_at", "2018-10-10 09:39:17.995158"], ["updated_at", "2018-10-10 09:39:17.995158"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mFuture Create (0.4ms)[0m  [1m[32mINSERT INTO "futures" ("name", "year", "location", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "WDI Underwater"], ["year", 2060], ["location", "Atlantis"], ["image", "https://i.ytimg.com/vi/YXPLOlUMtPQ/maxresdefault.jpg"], ["created_at", "2018-10-10 09:39:17.999247"], ["updated_at", "2018-10-10 09:39:17.999247"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mFuture Create (0.6ms)[0m  [1m[32mINSERT INTO "futures" ("name", "year", "location", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "WDI Dwarves"], ["year", 1970], ["location", "Far Far Away"], ["image", "https://filmschoolrejects.com/wp-content/uploads/2017/07/sevendwarvesthanksgiving1.jpg"], ["created_at", "2018-10-10 09:39:18.004759"], ["updated_at", "2018-10-10 09:39:18.004759"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mFuture Load (0.6ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 20:51:41 +1100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daniththai/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  
+LoadError (Unable to autoload constant FuturesController, expected /Users/daniththai/wdi/homework/brad_dong/week5/Wdi-future/app/controllers/futures_controller.rb to define it):
+  
+activesupport (5.2.1) lib/active_support/dependencies.rb:507:in `load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:16:in `allow_bootsnap_retry'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:57:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/dependencies.rb:193:in `const_missing'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.1) lib/active_support/dependencies.rb:578:in `get'
+activesupport (5.2.1) lib/active_support/dependencies.rb:609:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.1) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.1) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 20:52:34 +1100
+  
+LoadError (Unable to autoload constant FuturesController, expected /Users/daniththai/wdi/homework/brad_dong/week5/Wdi-future/app/controllers/futures_controller.rb to define it):
+  
+activesupport (5.2.1) lib/active_support/dependencies.rb:507:in `load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:16:in `allow_bootsnap_retry'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:57:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/dependencies.rb:193:in `const_missing'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.1) lib/active_support/dependencies.rb:578:in `get'
+activesupport (5.2.1) lib/active_support/dependencies.rb:609:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.1) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.1) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 20:56:49 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  Rendered futures/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/daniththai/wdi/homework/brad_dong/week5/Wdi-future/app/views/futures/index.html.erb:4: syntax error, unexpected keyword_class, expecting '|'
+...reeze;   @futures.each do|class| 
+...                          ^~~~~
+/Users/daniththai/wdi/homework/brad_dong/week5/Wdi-future/app/views/futures/index.html.erb:6: syntax error, unexpected '.'
+...;@output_buffer.append=( class.name );@output_buffer.safe_ap...
+...                              ^
+/Users/daniththai/wdi/homework/brad_dong/week5/Wdi-future/app/views/futures/index.html.erb:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/futures/index.html.erb:4: syntax error, unexpected keyword_class, expecting '|'
+app/views/futures/index.html.erb:6: syntax error, unexpected '.'
+app/views/futures/index.html.erb:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 20:57:15 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 481ms (Views: 473.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-10-10 20:58:18 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/daniththai/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/daniththai/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [13 times] (8.7ms)
+  Rendered /Users/daniththai/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (67.9ms)
+  Rendered /Users/daniththai/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (91.5ms)
+Completed 200 OK in 132ms (Views: 120.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 20:58:57 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 47ms (Views: 40.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/futures/1" for 127.0.0.1 at 2018-10-10 21:01:57 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:18
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 87ms (Views: 63.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/futures/1" for 127.0.0.1 at 2018-10-10 21:02:26 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:18
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 57ms (Views: 49.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/futures/1" for 127.0.0.1 at 2018-10-10 21:04:10 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFuture Load (0.4ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:18
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (/Users/daniththai/wdi/homework/brad_dong/week5/Wdi-future/app/views/futures/show.html.erb:7: syntax error, unexpected '='
+...image, alt:@future.name, class="futureClass" );@output_buffe...
+...                              ^):
+  
+app/views/futures/show.html.erb:7: syntax error, unexpected '='
+Started GET "/futures/1" for 127.0.0.1 at 2018-10-10 21:04:44 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFuture Load (0.5ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:18
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.5ms)
+
+
+  
+SyntaxError (/Users/daniththai/wdi/homework/brad_dong/week5/Wdi-future/app/views/futures/show.html.erb:7: syntax error, unexpected '='
+...image, alt:@future.name, class="image" );@output_buffer.safe...
+...                              ^):
+  
+app/views/futures/show.html.erb:7: syntax error, unexpected '='
+Started GET "/futures/1" for 127.0.0.1 at 2018-10-10 21:05:15 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:18
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 83ms (Views: 77.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures/2" for 127.0.0.1 at 2018-10-10 21:05:20 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:18
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 38ms (Views: 29.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/futures/3" for 127.0.0.1 at 2018-10-10 21:05:30 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:18
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 54ms (Views: 45.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures/new" for 127.0.0.1 at 2018-10-10 21:10:36 +1100
+Processing by FuturesController#new as HTML
+Completed 500 Internal Server Error in 256ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `future' for #<FuturesController:0x00007fa793c18f30>
+Did you mean?  future_url):
+  
+app/controllers/futures_controller.rb:5:in `new'
+Started GET "/futures/new" for 127.0.0.1 at 2018-10-10 21:10:51 +1100
+Processing by FuturesController#new as HTML
+  Rendering futures/new.html.erb within layouts/application
+  Rendered futures/_form.html.erb (63.0ms)
+  Rendered futures/new.html.erb within layouts/application (69.9ms)
+Completed 200 OK in 174ms (Views: 148.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/futures/new" for 127.0.0.1 at 2018-10-10 21:11:40 +1100
+Processing by FuturesController#new as HTML
+  Rendering futures/new.html.erb within layouts/application
+  Rendered futures/_form.html.erb (4.6ms)
+  Rendered futures/new.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 56ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/futures" for 127.0.0.1 at 2018-10-10 21:14:49 +1100
+  
+SyntaxError (/Users/daniththai/wdi/homework/brad_dong/week5/Wdi-future/app/controllers/futures_controller.rb:41: syntax error, unexpected keyword_end, expecting ')'
+  end
+  ^~~):
+  
+app/controllers/futures_controller.rb:41: syntax error, unexpected keyword_end, expecting ')'
+Started POST "/futures" for 127.0.0.1 at 2018-10-10 21:15:55 +1100
+Processing by FuturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lKE8eDGLQiyIfSky0SnpcPe8XE4Hb+ipUaLrgXyEB5OqEypEiu/fEaIcG5qoevbxSKU+g2J2OGPuR0Q+M62GYA==", "future"=>{"name"=>"Hello Kitty", "year"=>"2017", "location"=>"Japan", "image"=>"http://fillmurray.com/300/300"}, "commit"=>"Create Future"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/futures_controller.rb:9
+  [1m[36mFuture Create (0.5ms)[0m  [1m[32mINSERT INTO "futures" ("name", "year", "location", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Hello Kitty"], ["year", 2017], ["location", "Japan"], ["image", "http://fillmurray.com/300/300"], ["created_at", "2018-10-10 10:15:55.452311"], ["updated_at", "2018-10-10 10:15:55.452311"]]
+  ↳ app/controllers/futures_controller.rb:9
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/futures_controller.rb:9
+Redirected to http://localhost:3000/futures
+Completed 302 Found in 25ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 21:15:55 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.4ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 80ms (Views: 71.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/futures/4" for 127.0.0.1 at 2018-10-10 21:15:57 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFuture Load (0.4ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 45ms (Views: 38.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/futures/4/edit" for 127.0.0.1 at 2018-10-10 21:17:48 +1100
+Processing by FuturesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:24
+Completed 500 Internal Server Error in 290ms (ActiveRecord: 1.3ms)
+
+
+  
+NameError (undefined local variable or method `work_params' for #<FuturesController:0x00007fa7984d9030>):
+  
+app/controllers/futures_controller.rb:25:in `edit'
+Started GET "/futures/4/edit" for 127.0.0.1 at 2018-10-10 21:18:01 +1100
+Processing by FuturesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:24
+Completed 400 Bad Request in 20ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: future):
+  
+app/controllers/futures_controller.rb:42:in `future_params'
+app/controllers/futures_controller.rb:25:in `edit'
+Started GET "/futures/4/edit" for 127.0.0.1 at 2018-10-10 21:18:55 +1100
+Processing by FuturesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFuture Load (0.4ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:24
+Completed 406 Not Acceptable in 307ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionController::UnknownFormat (FuturesController#edit is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.1) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/futures/4/edit" for 127.0.0.1 at 2018-10-10 21:19:55 +1100
+Processing by FuturesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:24
+  Rendering futures/edit.html.erb within layouts/application
+  Rendered futures/_form.html.erb (5.3ms)
+  Rendered futures/edit.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 58ms (Views: 53.0ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/futures/4" for 127.0.0.1 at 2018-10-10 21:20:04 +1100
+Processing by FuturesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hksfkKf59ht9wIP/57mo3LRDSFRD0YxLNX4WbUiFY664+QmsHJ1rJlehsVee6rddC1oqmSbIXIGKm7nSB6ziXQ==", "future"=>{"name"=>"Hello Kitty !!!", "year"=>"2017", "location"=>"Japan", "image"=>"http://fillmurray.com/300/300"}, "commit"=>"Update Future", "id"=>"4"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/futures_controller.rb:29
+  [1m[36mFuture Update (1.6ms)[0m  [1m[33mUPDATE "futures" SET "name" = ?, "updated_at" = ? WHERE "futures"."id" = ?[0m  [["name", "Hello Kitty !!!"], ["updated_at", "2018-10-10 10:20:04.065889"], ["id", 4]]
+  ↳ app/controllers/futures_controller.rb:29
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/futures_controller.rb:29
+Redirected to http://localhost:3000/futures/4
+Completed 302 Found in 21ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/futures/4" for 127.0.0.1 at 2018-10-10 21:20:04 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 99ms (Views: 58.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures/4" for 127.0.0.1 at 2018-10-10 21:21:01 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 74ms (Views: 47.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/futures/4/destroy" for 127.0.0.1 at 2018-10-10 21:21:09 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/futures/4/destroy"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/futures/4/destroy" for 127.0.0.1 at 2018-10-10 21:24:33 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/futures/4/destroy"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/futures/4/delete" for 127.0.0.1 at 2018-10-10 21:24:46 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/futures/4/delete"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/futures/4/destroy" for 127.0.0.1 at 2018-10-10 21:26:27 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/futures/4/destroy"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/futures/4" for 127.0.0.1 at 2018-10-10 21:26:41 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFuture Load (0.1ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 61ms (Views: 41.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/futures/4/edit" for 127.0.0.1 at 2018-10-10 21:26:45 +1100
+Processing by FuturesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:24
+  Rendering futures/edit.html.erb within layouts/application
+  Rendered futures/_form.html.erb (6.9ms)
+  Rendered futures/edit.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 55ms (Views: 47.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/futures/4/destroy" for 127.0.0.1 at 2018-10-10 21:27:03 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/futures/4/destroy"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/futures/4/destroy" for 127.0.0.1 at 2018-10-10 21:28:14 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/futures/4/destroy"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 21:32:36 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 85ms (Views: 77.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 21:32:38 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 39ms (Views: 33.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures/new" for 127.0.0.1 at 2018-10-10 21:32:39 +1100
+Processing by FuturesController#new as HTML
+  Rendering futures/new.html.erb within layouts/application
+  Rendered futures/_form.html.erb (4.3ms)
+  Rendered futures/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 50ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 21:32:40 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 36ms (Views: 30.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures/new" for 127.0.0.1 at 2018-10-10 21:32:42 +1100
+Processing by FuturesController#new as HTML
+  Rendering futures/new.html.erb within layouts/application
+  Rendered futures/_form.html.erb (3.4ms)
+  Rendered futures/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 34ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 21:32:43 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 35ms (Views: 29.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures/4" for 127.0.0.1 at 2018-10-10 21:35:34 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/daniththai/wdi/homework/brad_dong/week5/Wdi-future/app/views/futures/show.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+...'Delete this class' future_path(@future.id));@output_buffer....
+...                    ^~~~~~~~~~~):
+  
+app/views/futures/show.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/futures/4" for 127.0.0.1 at 2018-10-10 21:35:45 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 59ms (Views: 51.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures/4/edit" for 127.0.0.1 at 2018-10-10 21:35:47 +1100
+Processing by FuturesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFuture Load (0.4ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:24
+  Rendering futures/edit.html.erb within layouts/application
+  Rendered futures/_form.html.erb (4.3ms)
+  Rendered futures/edit.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 39ms (Views: 34.5ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/futures/4" for 127.0.0.1 at 2018-10-10 21:35:53 +1100
+Processing by FuturesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nF+FJEMZ+UyHq9L96fMXqXKzPY4Ly/KJ1djbsIYNIiSi7ZMY+H1kca3K4FWQoAgozapfQ27SIkNqPXQPySSj1w==", "future"=>{"name"=>"Hello Kitty !!!", "year"=>"2017", "location"=>"Japan", "image"=>"http://fillmurray.com/300/300"}, "commit"=>"Update Future", "id"=>"4"}
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:28
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/futures_controller.rb:29
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/futures_controller.rb:29
+Redirected to http://localhost:3000/futures/4
+Completed 302 Found in 7ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/futures/4" for 127.0.0.1 at 2018-10-10 21:35:53 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 45ms (Views: 40.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures/4" for 127.0.0.1 at 2018-10-10 21:35:54 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFuture Load (0.5ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 32ms (Views: 26.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/futures/4" for 127.0.0.1 at 2018-10-10 21:35:56 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 35ms (Views: 28.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures/4/edit" for 127.0.0.1 at 2018-10-10 21:37:39 +1100
+Processing by FuturesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:24
+  Rendering futures/edit.html.erb within layouts/application
+  Rendered futures/_form.html.erb (3.4ms)
+  Rendered futures/edit.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 53ms (Views: 49.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/futures/4" for 127.0.0.1 at 2018-10-10 21:37:40 +1100
+Processing by FuturesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"raAFwwM+lby64PDQeIW+q/eo2da7I5kRhWHi6BLWMS2TEhP/uFoIgZCBwngB1qEqSLG7G946Sds6hE1XXf+w3g==", "future"=>{"name"=>"Hello Kitty !!!", "year"=>"2017", "location"=>"Japan", "image"=>"http://fillmurray.com/300/300"}, "commit"=>"Update Future", "id"=>"4"}
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/futures_controller.rb:29
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/futures_controller.rb:29
+Redirected to http://localhost:3000/futures/4
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/futures/4" for 127.0.0.1 at 2018-10-10 21:37:40 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFuture Load (0.1ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 35ms (Views: 27.8ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/futures/4" for 127.0.0.1 at 2018-10-10 21:37:42 +1100
+Processing by FuturesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"f9xlJfrb0CZgBIcLeEfjMNcrmXDbRnkjUHduW2Lkz2dBbnMZQb9NG0pltaMBFPyxaDL7vb5fqenvksHkLc1OlA==", "id"=>"4"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:35
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/futures_controller.rb:37
+  [1m[36mFuture Destroy (0.6ms)[0m  [1m[31mDELETE FROM "futures" WHERE "futures"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/futures_controller.rb:37
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/futures_controller.rb:37
+Redirected to http://localhost:3000/futures
+Completed 302 Found in 9ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 21:37:42 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.4ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 68ms (Views: 61.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/futures/2" for 127.0.0.1 at 2018-10-10 21:37:47 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 45ms (Views: 38.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures/3" for 127.0.0.1 at 2018-10-10 21:37:57 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 48ms (Views: 41.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 21:38:03 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 46ms (Views: 41.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures/1" for 127.0.0.1 at 2018-10-10 21:38:06 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 33ms (Views: 27.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/futures/1" for 127.0.0.1 at 2018-10-10 21:45:36 +1100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daniththai/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 301ms (Views: 272.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/futures/1" for 127.0.0.1 at 2018-10-10 21:46:40 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (236.0ms)
+Completed 500 Internal Server Error in 250ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `image' for #<#<Class:0x00007ff6db971bc8>:0x00007ff6d82e9808>
+Did you mean?  image_url):
+    10:   Year: <%= @future.year %><br>
+    11:   Location: <%= @future.location %><br>
+    12: 
+    13:   <%= image_tag @future.image, alt:@future.name , class: image%>
+    14: 
+    15: </p>
+  
+app/views/futures/show.html.erb:13:in `_app_views_futures_show_html_erb___3063245278795815291_70349082810200'
+Started GET "/futures/1" for 127.0.0.1 at 2018-10-10 21:47:04 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/Users/daniththai/wdi/homework/brad_dong/week5/Wdi-future/app/views/futures/show.html.erb:13: syntax error, unexpected '='
+...mage, alt:@future.name , class="image");@output_buffer.safe_...
+...                              ^):
+  
+app/views/futures/show.html.erb:13: syntax error, unexpected '='
+Started GET "/futures/1" for 127.0.0.1 at 2018-10-10 21:48:03 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 38ms (Views: 34.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures/1" for 127.0.0.1 at 2018-10-10 21:49:10 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 48ms (Views: 43.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 21:49:18 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.5ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 53ms (Views: 46.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/futures/2" for 127.0.0.1 at 2018-10-10 21:49:19 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFuture Load (0.1ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 34ms (Views: 30.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 21:49:24 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 47ms (Views: 41.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures/3" for 127.0.0.1 at 2018-10-10 21:49:25 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 31ms (Views: 25.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures/3" for 127.0.0.1 at 2018-10-10 21:49:45 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 73ms (Views: 64.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/futures/3" for 127.0.0.1 at 2018-10-10 21:50:06 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 72ms (Views: 65.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 21:50:09 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 39ms (Views: 33.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures/2" for 127.0.0.1 at 2018-10-10 21:50:10 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 35ms (Views: 27.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 21:50:12 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 41ms (Views: 36.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures/1" for 127.0.0.1 at 2018-10-10 21:50:13 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 34ms (Views: 28.5ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateStudents (20181010105604)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20181010105604_create_students.rb:3
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "students" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" text, "location" text, "hobbies" text, "image" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181010105604_create_students.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181010105604"]]
+  ↳ bin/rails:9
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mFuture Destroy (0.5ms)[0m  [1m[31mDELETE FROM "futures" WHERE "futures"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:8
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mFuture Destroy (0.5ms)[0m  [1m[31mDELETE FROM "futures" WHERE "futures"."id" = ?[0m  [["id", 2]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mFuture Destroy (0.5ms)[0m  [1m[31mDELETE FROM "futures" WHERE "futures"."id" = ?[0m  [["id", 3]]
+  ↳ db/seeds.rb:8
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mFuture Create (0.6ms)[0m  [1m[32mINSERT INTO "futures" ("name", "year", "location", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "WDI Serial Killers"], ["year", 2018], ["location", "Super-duper MAX"], ["image", "https://cdn.europosters.eu/image/750/stickers/skull-crossbones-i7800.jpg"], ["created_at", "2018-10-10 11:18:45.727537"], ["updated_at", "2018-10-10 11:18:45.727537"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mFuture Create (0.9ms)[0m  [1m[32mINSERT INTO "futures" ("name", "year", "location", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "WDI Underwater"], ["year", 2060], ["location", "Atlantis"], ["image", "https://i.ytimg.com/vi/YXPLOlUMtPQ/maxresdefault.jpg"], ["created_at", "2018-10-10 11:18:45.734921"], ["updated_at", "2018-10-10 11:18:45.734921"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mFuture Create (0.5ms)[0m  [1m[32mINSERT INTO "futures" ("name", "year", "location", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "WDI Dwarves"], ["year", 1970], ["location", "Far Far Away"], ["image", "https://filmschoolrejects.com/wp-content/uploads/2017/07/sevendwarvesthanksgiving1.jpg"], ["created_at", "2018-10-10 11:18:45.742333"], ["updated_at", "2018-10-10 11:18:45.742333"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddFutureIdToStudents (20181010112358)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "students" ADD "future_id" integer[0m
+  ↳ db/migrate/20181010112358_add_future_id_to_students.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181010112358"]]
+  ↳ bin/rails:9
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mFuture Load (1.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mFuture Destroy (0.5ms)[0m  [1m[31mDELETE FROM "futures" WHERE "futures"."id" = ?[0m  [["id", 5]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mFuture Destroy (0.4ms)[0m  [1m[31mDELETE FROM "futures" WHERE "futures"."id" = ?[0m  [["id", 6]]
+  ↳ db/seeds.rb:8
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mFuture Destroy (0.7ms)[0m  [1m[31mDELETE FROM "futures" WHERE "futures"."id" = ?[0m  [["id", 7]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mFuture Create (1.6ms)[0m  [1m[32mINSERT INTO "futures" ("name", "year", "location", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "WDI Serial Killers"], ["year", 2018], ["location", "Super-duper MAX"], ["image", "https://cdn.europosters.eu/image/750/stickers/skull-crossbones-i7800.jpg"], ["created_at", "2018-10-10 11:24:22.437336"], ["updated_at", "2018-10-10 11:24:22.437336"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mFuture Create (0.6ms)[0m  [1m[32mINSERT INTO "futures" ("name", "year", "location", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "WDI Underwater"], ["year", 2060], ["location", "Atlantis"], ["image", "https://i.ytimg.com/vi/YXPLOlUMtPQ/maxresdefault.jpg"], ["created_at", "2018-10-10 11:24:22.443684"], ["updated_at", "2018-10-10 11:24:22.443684"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mFuture Create (0.6ms)[0m  [1m[32mINSERT INTO "futures" ("name", "year", "location", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "WDI Dwarves"], ["year", 1970], ["location", "Far Far Away"], ["image", "https://filmschoolrejects.com/wp-content/uploads/2017/07/sevendwarvesthanksgiving1.jpg"], ["created_at", "2018-10-10 11:24:22.449108"], ["updated_at", "2018-10-10 11:24:22.449108"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "location", "hobbies", "image", "created_at", "updated_at", "future_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jeffrey Dahmer"], ["location", "USA"], ["hobbies", "Dining with friends"], ["image", "https://static1.squarespace.com/static/553a8ddae4b0bd1c1a10972e/t/5a66876d9140b71728f634cd/1516668784982/dahmer.jpg"], ["created_at", "2018-10-10 11:24:22.497741"], ["updated_at", "2018-10-10 11:24:22.497741"], ["future_id", 8]]
+  ↳ db/seeds.rb:18
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[36mStudent Create (0.6ms)[0m  [1m[32mINSERT INTO "students" ("name", "location", "hobbies", "image", "created_at", "updated_at", "future_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Linna Liu"], ["location", "Behind you"], ["hobbies", "Stalking her next victim, updating the gitbook"], ["image", "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX8107180.jpg"], ["created_at", "2018-10-10 11:24:22.504316"], ["updated_at", "2018-10-10 11:24:22.504316"], ["future_id", 8]]
+  ↳ db/seeds.rb:20
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "location", "hobbies", "image", "created_at", "updated_at", "future_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Aquaman"], ["location", "Under da sea"], ["hobbies", "Swimming around, dodging fishing nets"], ["image", "http://2.bp.blogspot.com/--lIiLIJQWu0/Tn_5ti-xHcI/AAAAAAAAANw/suevM6WxjXw/s640/aquaman.jpg"], ["created_at", "2018-10-10 11:24:22.510712"], ["updated_at", "2018-10-10 11:24:22.510712"], ["future_id", 9]]
+  ↳ db/seeds.rb:22
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mFuture Load (8.5ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "location", "hobbies", "image", "created_at", "updated_at", "future_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Spongebib Squorepants"], ["location", "Sweatshop"], ["hobbies", "Avoiding copyright"], ["image", "https://thoughtcatalog.files.wordpress.com/2013/08/spongerob-cubejeans.jpg?w=584"], ["created_at", "2018-10-10 11:24:22.525080"], ["updated_at", "2018-10-10 11:24:22.525080"], ["future_id", 9]]
+  ↳ db/seeds.rb:24
+  [1m[35m (27.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "location", "hobbies", "image", "created_at", "updated_at", "future_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Surly"], ["location", "Duff Gardens"], ["hobbies", "Abusing kids"], ["image", "https://vignette.wikia.nocookie.net/simpsons/images/4/42/Surly_Duff.png/revision/latest?cb=20130601152108"], ["created_at", "2018-10-10 11:24:22.556307"], ["updated_at", "2018-10-10 11:24:22.556307"], ["future_id", 10]]
+  ↳ db/seeds.rb:26
+  [1m[35m (74.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:26
+Started GET "/students" for 127.0.0.1 at 2018-10-10 22:32:18 +1100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daniththai/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by StudentsController#index as HTML
+Completed 406 Not Acceptable in 276ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (StudentsController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.1) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/ftures" for 127.0.0.1 at 2018-10-10 22:34:58 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/ftures"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 22:35:04 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (241.4ms)
+Completed 500 Internal Server Error in 274ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `future' for #<#<Class:0x00007fc9ce11ce58>:0x00007fc9ce1168c8>
+Did you mean?  @futures):
+    4:   <% @futures.each do|t| %>
+    5:     <li>
+    6:       <%= t.name %>
+    7:       <%= link_to future.name, future_path(t.id) %>
+    8:     </li>
+    9:   <% end %>
+   10: </ul>
+  
+app/views/futures/index.html.erb:7:in `block in _app_views_futures_index_html_erb___3562962019280038401_70252361216060'
+app/views/futures/index.html.erb:4:in `_app_views_futures_index_html_erb___3562962019280038401_70252361216060'
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-10-10 22:35:37 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/daniththai/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/daniththai/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [21 times] (7.4ms)
+  Rendered /Users/daniththai/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/daniththai/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 54ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 22:35:39 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (308.5ms)
+Completed 500 Internal Server Error in 323ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `future' for #<#<Class:0x00007fc9ce11ce58>:0x00007fc9ce1375a0>
+Did you mean?  @futures):
+    4:   <% @futures.each do|t| %>
+    5:     <li>
+    6:       <%= t.name %>
+    7:       <%= link_to future.name, futures_path %>
+    8:     </li>
+    9:   <% end %>
+   10: </ul>
+  
+app/views/futures/index.html.erb:7:in `block in _app_views_futures_index_html_erb___3562962019280038401_70252361278200'
+app/views/futures/index.html.erb:4:in `_app_views_futures_index_html_erb___3562962019280038401_70252361278200'
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 22:36:17 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.4ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 285ms (Views: 279.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2018-10-10 22:37:19 +1100
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:4
+  Rendered students/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 72ms (Views: 66.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2018-10-10 22:40:02 +1100
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:4
+  Rendered students/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 113ms (Views: 106.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2018-10-10 22:40:06 +1100
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:4
+  Rendered students/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 46ms (Views: 39.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2018-10-10 22:41:19 +1100
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:4
+  Rendered students/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 45ms (Views: 40.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students/2" for 127.0.0.1 at 2018-10-10 22:41:24 +1100
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:19
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (145.1ms)
+Completed 500 Internal Server Error in 184ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `student' for #<#<Class:0x00007fc9cd4d30c0>:0x00007fc9ce509de0>
+Did you mean?  student_url):
+    2: 
+    3: <nav>
+    4:   <%= link_to 'Edit this student', edit_student_path(@student.id) %>||
+    5:   <%= link_to 'Delete this student', student(@student.id), method: 'delete'%>
+    6: 
+    7: </nav>
+    8: 
+  
+app/views/students/show.html.erb:5:in `_app_views_students_show_html_erb___4236700096562506345_70252363277700'
+Started GET "/students/2" for 127.0.0.1 at 2018-10-10 22:42:35 +1100
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:19
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 39ms (Views: 33.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students/2/edit" for 127.0.0.1 at 2018-10-10 22:48:29 +1100
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:24
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mFuture Load (0.4ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/students/_form.html.erb:22
+  Rendered students/_form.html.erb (56.3ms)
+  Rendered students/edit.html.erb within layouts/application (59.7ms)
+Completed 200 OK in 118ms (Views: 109.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/students/2/edit" for 127.0.0.1 at 2018-10-10 22:48:43 +1100
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:24
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mFuture Load (0.5ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/students/_form.html.erb:22
+  Rendered students/_form.html.erb (8.5ms)
+  Rendered students/edit.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 69ms (Views: 60.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/students/2/edit" for 127.0.0.1 at 2018-10-10 22:49:20 +1100
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:24
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/students/_form.html.erb:22
+  Rendered students/_form.html.erb (4.3ms)
+  Rendered students/edit.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 55ms (Views: 47.5ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/students/2" for 127.0.0.1 at 2018-10-10 22:49:35 +1100
+Processing by StudentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7tAVbbDvGjzGAtOxl1BvjdB3iaSe9y+tpju0iRpR/5bQYgNRC4uHAexj4RnuA3AMb27rafvu/2cZ3hs2VXh+ZQ==", "student"=>{"name"=>"Linna Liu1", "location"=>"Behind you", "hobbies"=>"Stalking her next victim, updating the gitbook", "image"=>"https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX8107180.jpg", "future_id"=>"8"}, "commit"=>"Update Student", "id"=>"2"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:28
+Completed 500 Internal Server Error in 172ms (ActiveRecord: 0.2ms)
+
+
+  
+NameError (undefined local variable or method `student_params' for #<StudentsController:0x00007fc9d1811e18>
+Did you mean?  student_path):
+  
+app/controllers/students_controller.rb:29:in `update'
+Started PATCH "/students/2" for 127.0.0.1 at 2018-10-10 22:50:49 +1100
+Processing by StudentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7tAVbbDvGjzGAtOxl1BvjdB3iaSe9y+tpju0iRpR/5bQYgNRC4uHAexj4RnuA3AMb27rafvu/2cZ3hs2VXh+ZQ==", "student"=>{"name"=>"Linna Liu1", "location"=>"Behind you", "hobbies"=>"Stalking her next victim, updating the gitbook", "image"=>"https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX8107180.jpg", "future_id"=>"8"}, "commit"=>"Update Student", "id"=>"2"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:29
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:29
+  [1m[36mStudent Update (0.6ms)[0m  [1m[33mUPDATE "students" SET "name" = ?, "updated_at" = ? WHERE "students"."id" = ?[0m  [["name", "Linna Liu1"], ["updated_at", "2018-10-10 11:50:49.540412"], ["id", 2]]
+  ↳ app/controllers/students_controller.rb:29
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:29
+Redirected to http://localhost:3000/students/2
+Completed 302 Found in 60ms (ActiveRecord: 9.1ms)
+
+
+Started GET "/students/2" for 127.0.0.1 at 2018-10-10 22:50:49 +1100
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:19
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 98ms (Views: 92.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students/2/edit" for 127.0.0.1 at 2018-10-10 22:50:52 +1100
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:24
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/students/_form.html.erb:22
+  Rendered students/_form.html.erb (8.5ms)
+  Rendered students/edit.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 57ms (Views: 50.0ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/students/2" for 127.0.0.1 at 2018-10-10 22:50:57 +1100
+Processing by StudentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VQLKMykoNPWL98+CAryg0QeKs2n79C+bIwHYHoBpL5lrsNwPkkypyKGW/Sp7779QuJPRpJ7t/1Gc5Hehz0Cuag==", "student"=>{"name"=>"Linna Liu", "location"=>"Behind you", "hobbies"=>"Stalking her next victim, updating the gitbook", "image"=>"https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX8107180.jpg", "future_id"=>"8"}, "commit"=>"Update Student", "id"=>"2"}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:28
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:29
+  [1m[36mFuture Load (0.6ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:29
+  [1m[36mStudent Update (0.5ms)[0m  [1m[33mUPDATE "students" SET "name" = ?, "updated_at" = ? WHERE "students"."id" = ?[0m  [["name", "Linna Liu"], ["updated_at", "2018-10-10 11:50:57.725096"], ["id", 2]]
+  ↳ app/controllers/students_controller.rb:29
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:29
+Redirected to http://localhost:3000/students/2
+Completed 302 Found in 14ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/students/2" for 127.0.0.1 at 2018-10-10 22:50:57 +1100
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:19
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 61ms (Views: 52.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 22:51:21 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 45ms (Views: 40.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 22:51:23 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 53ms (Views: 46.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 22:51:26 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 62ms (Views: 56.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 22:52:19 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 55ms (Views: 50.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/futures/8" for 127.0.0.1 at 2018-10-10 22:52:22 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  Rendered futures/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 44ms (Views: 35.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/futures/8" for 127.0.0.1 at 2018-10-10 22:59:09 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."future_id" = ?[0m  [["future_id", 8]]
+  ↳ app/views/futures/show.html.erb:15
+  Rendered futures/show.html.erb within layouts/application (449.3ms)
+Completed 500 Internal Server Error in 463ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `student' for #<#<Class:0x00007fc9d18ece00>:0x00007fc9d132ee28>
+Did you mean?  student_url):
+    13:   <ul>
+    14:     <li>
+    15:       <% @future.students.each do|x| %>
+    16:         <%= link_to x.name, student_path(student.id)  %>
+    17:       <% end %>
+    18: 
+    19:     </li>
+  
+app/views/futures/show.html.erb:16:in `block in _app_views_futures_show_html_erb___4137413649262623963_70252387466340'
+app/views/futures/show.html.erb:15:in `_app_views_futures_show_html_erb___4137413649262623963_70252387466340'
+Started GET "/futures/8" for 127.0.0.1 at 2018-10-10 22:59:39 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."future_id" = ?[0m  [["future_id", 8]]
+  ↳ app/views/futures/show.html.erb:15
+  Rendered futures/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 51ms (Views: 43.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/futures/8" for 127.0.0.1 at 2018-10-10 23:00:14 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."future_id" = ?[0m  [["future_id", 8]]
+  ↳ app/views/futures/show.html.erb:15
+  Rendered futures/show.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 52ms (Views: 44.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/futures/8" for 127.0.0.1 at 2018-10-10 23:00:35 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."future_id" = ?[0m  [["future_id", 8]]
+  ↳ app/views/futures/show.html.erb:16
+  Rendered futures/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 53ms (Views: 47.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 23:00:51 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 50ms (Views: 43.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures/10" for 127.0.0.1 at 2018-10-10 23:00:53 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."future_id" = ?[0m  [["future_id", 10]]
+  ↳ app/views/futures/show.html.erb:16
+  Rendered futures/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 40ms (Views: 32.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/students/5" for 127.0.0.1 at 2018-10-10 23:00:56 +1100
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:19
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 36ms (Views: 28.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 23:01:08 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.4ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 64ms (Views: 58.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/futures/8" for 127.0.0.1 at 2018-10-10 23:01:10 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mFuture Load (0.4ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."future_id" = ?[0m  [["future_id", 8]]
+  ↳ app/views/futures/show.html.erb:16
+  Rendered futures/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 40ms (Views: 32.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/students/2" for 127.0.0.1 at 2018-10-10 23:01:13 +1100
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:19
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 39ms (Views: 30.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures/new" for 127.0.0.1 at 2018-10-10 23:01:27 +1100
+Processing by FuturesController#new as HTML
+  Rendering futures/new.html.erb within layouts/application
+  Rendered futures/_form.html.erb (10.1ms)
+  Rendered futures/new.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 60ms (Views: 53.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/futures" for 127.0.0.1 at 2018-10-10 23:01:39 +1100
+Processing by FuturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4lduADsa/A985LSWSj8+GWNkbWFaRLd/XRxehZrueQ/c5Xg8gH5hMlaFhj4zbCGY3H0PrD9dZ7Xi+fE61cf4/A==", "future"=>{"name"=>"Hello Kitty", "year"=>"2017", "location"=>"Japan", "image"=>"http://fillmurray.com/300/300"}, "commit"=>"Create Future"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/futures_controller.rb:9
+  [1m[36mFuture Create (1.3ms)[0m  [1m[32mINSERT INTO "futures" ("name", "year", "location", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Hello Kitty"], ["year", 2017], ["location", "Japan"], ["image", "http://fillmurray.com/300/300"], ["created_at", "2018-10-10 12:01:39.758268"], ["updated_at", "2018-10-10 12:01:39.758268"]]
+  ↳ app/controllers/futures_controller.rb:9
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/futures_controller.rb:9
+Redirected to http://localhost:3000/futures
+Completed 302 Found in 12ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 23:01:39 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 52ms (Views: 47.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures/11" for 127.0.0.1 at 2018-10-10 23:01:41 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."future_id" = ?[0m  [["future_id", 11]]
+  ↳ app/views/futures/show.html.erb:16
+  Rendered futures/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 35ms (Views: 29.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 23:01:53 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 47ms (Views: 41.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 23:03:49 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 47ms (Views: 42.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures/8" for 127.0.0.1 at 2018-10-10 23:03:52 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."future_id" = ?[0m  [["future_id", 8]]
+  ↳ app/views/futures/show.html.erb:16
+  Rendered futures/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 34ms (Views: 27.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2018-10-10 23:03:56 +1100
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:4
+  Rendered students/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 41ms (Views: 33.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2018-10-10 23:03:59 +1100
+Processing by StudentsController#new as HTML
+  Rendering students/new.html.erb within layouts/application
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/students/_form.html.erb:22
+  Rendered students/_form.html.erb (5.2ms)
+  Rendered students/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 47ms (Views: 41.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2018-10-10 23:04:43 +1100
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"48c28C/YOku9sMn2dkWFK55GfRY5FHbE/neKwJnuTKPddSDMlLyndpfR+14PFpqqIV8f21wNpg5BkiV/1sfNUA==", "student"=>{"name"=>"Kitty", "location"=>"Australia", "hobbies"=>"Being cute", "image"=>"https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Hello_kitty_character_portrait.png/200px-Hello_kitty_character_portrait.png", "future_id"=>"11"}, "commit"=>"Create Student"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:9
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:9
+  [1m[36mStudent Create (0.8ms)[0m  [1m[32mINSERT INTO "students" ("name", "location", "hobbies", "image", "created_at", "updated_at", "future_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Kitty"], ["location", "Australia"], ["hobbies", "Being cute"], ["image", "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Hello_kitty_character_portrait.png/200px-Hello_kitty_character_portrait.png"], ["created_at", "2018-10-10 12:04:43.643800"], ["updated_at", "2018-10-10 12:04:43.643800"], ["future_id", 11]]
+  ↳ app/controllers/students_controller.rb:9
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:9
+Redirected to http://localhost:3000/students
+Completed 302 Found in 15ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2018-10-10 23:04:43 +1100
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:4
+  Rendered students/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 58ms (Views: 52.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students/6" for 127.0.0.1 at 2018-10-10 23:04:45 +1100
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:19
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 37ms (Views: 30.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/students/6" for 127.0.0.1 at 2018-10-10 23:05:41 +1100
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:19
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 116ms (Views: 109.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students/6" for 127.0.0.1 at 2018-10-10 23:05:58 +1100
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:19
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 83ms (Views: 74.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 23:06:07 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.4ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 61ms (Views: 54.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/futures/11" for 127.0.0.1 at 2018-10-10 23:06:16 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."future_id" = ?[0m  [["future_id", 11]]
+  ↳ app/views/futures/show.html.erb:16
+  Rendered futures/show.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 64ms (Views: 54.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/futures/11/edit" for 127.0.0.1 at 2018-10-10 23:06:23 +1100
+Processing by FuturesController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:24
+  Rendering futures/edit.html.erb within layouts/application
+  Rendered futures/_form.html.erb (9.1ms)
+  Rendered futures/edit.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 65ms (Views: 54.8ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/futures/11" for 127.0.0.1 at 2018-10-10 23:06:29 +1100
+Processing by FuturesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2i/2jmKThWlNVv3E8YxiVwcJQ8NPr57Y10ZqIRl+zyLkneCy2fcYVGc3z2yI333WuBAhDiq2ThJoo8WeVldO0Q==", "future"=>{"name"=>"Hello Kitty Immersive", "year"=>"2017", "location"=>"Japan", "image"=>"http://fillmurray.com/300/300"}, "commit"=>"Update Future", "id"=>"11"}
+  [1m[36mFuture Load (0.5ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:28
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/futures_controller.rb:29
+  [1m[36mFuture Update (0.7ms)[0m  [1m[33mUPDATE "futures" SET "name" = ?, "updated_at" = ? WHERE "futures"."id" = ?[0m  [["name", "Hello Kitty Immersive"], ["updated_at", "2018-10-10 12:06:29.441338"], ["id", 11]]
+  ↳ app/controllers/futures_controller.rb:29
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/futures_controller.rb:29
+Redirected to http://localhost:3000/futures/11
+Completed 302 Found in 20ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/futures/11" for 127.0.0.1 at 2018-10-10 23:06:29 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mFuture Load (0.8ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."future_id" = ?[0m  [["future_id", 11]]
+  ↳ app/views/futures/show.html.erb:16
+  Rendered futures/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 130ms (Views: 116.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/futures/11/edit" for 127.0.0.1 at 2018-10-10 23:06:52 +1100
+Processing by FuturesController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:24
+  Rendering futures/edit.html.erb within layouts/application
+  Rendered futures/_form.html.erb (4.3ms)
+  Rendered futures/edit.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 62ms (Views: 54.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/futures/11" for 127.0.0.1 at 2018-10-10 23:07:59 +1100
+Processing by FuturesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7vyejOHJX7Z3vClOcxta71H1sSC6LIDP77VT0dzWpdfQToiwWq3Ci13dG+YKSEVu7uzT7d81UAVQUPxuk/8kJA==", "future"=>{"name"=>"Hello Kitty Immersive", "year"=>"2017", "location"=>"Japan", "image"=>"https://c1.staticflickr.com/5/4002/4481787462_0e307a7191_b.jpg"}, "commit"=>"Update Future", "id"=>"11"}
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/futures_controller.rb:29
+  [1m[36mFuture Update (0.6ms)[0m  [1m[33mUPDATE "futures" SET "image" = ?, "updated_at" = ? WHERE "futures"."id" = ?[0m  [["image", "https://c1.staticflickr.com/5/4002/4481787462_0e307a7191_b.jpg"], ["updated_at", "2018-10-10 12:07:59.650191"], ["id", 11]]
+  ↳ app/controllers/futures_controller.rb:29
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/futures_controller.rb:29
+Redirected to http://localhost:3000/futures/11
+Completed 302 Found in 9ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/futures/11" for 127.0.0.1 at 2018-10-10 23:07:59 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."future_id" = ?[0m  [["future_id", 11]]
+  ↳ app/views/futures/show.html.erb:16
+  Rendered futures/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 52ms (Views: 45.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/futures/11" for 127.0.0.1 at 2018-10-10 23:08:25 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."future_id" = ?[0m  [["future_id", 11]]
+  ↳ app/views/futures/show.html.erb:16
+  Rendered futures/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 75ms (Views: 68.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/futures/11" for 127.0.0.1 at 2018-10-10 23:09:57 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."future_id" = ?[0m  [["future_id", 11]]
+  ↳ app/views/futures/show.html.erb:16
+  Rendered futures/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 72ms (Views: 65.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/futures/11" for 127.0.0.1 at 2018-10-10 23:10:13 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."future_id" = ?[0m  [["future_id", 11]]
+  ↳ app/views/futures/show.html.erb:16
+  Rendered futures/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 80ms (Views: 73.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/futures/11" for 127.0.0.1 at 2018-10-10 23:11:14 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."future_id" = ?[0m  [["future_id", 11]]
+  ↳ app/views/futures/show.html.erb:16
+  Rendered futures/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 94ms (Views: 88.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/futures/11" for 127.0.0.1 at 2018-10-10 23:11:47 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."future_id" = ?[0m  [["future_id", 11]]
+  ↳ app/views/futures/show.html.erb:16
+  Rendered futures/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 68ms (Views: 62.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/futures/11" for 127.0.0.1 at 2018-10-10 23:11:57 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mFuture Load (0.7ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."future_id" = ?[0m  [["future_id", 11]]
+  ↳ app/views/futures/show.html.erb:16
+  Rendered futures/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 74ms (Views: 64.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/futures/11" for 127.0.0.1 at 2018-10-10 23:12:15 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."future_id" = ?[0m  [["future_id", 11]]
+  ↳ app/views/futures/show.html.erb:16
+  Rendered futures/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 72ms (Views: 65.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/futures/11" for 127.0.0.1 at 2018-10-10 23:12:52 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."future_id" = ?[0m  [["future_id", 11]]
+  ↳ app/views/futures/show.html.erb:16
+  Rendered futures/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 79ms (Views: 72.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 23:12:56 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 45ms (Views: 38.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 23:13:30 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 81ms (Views: 75.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures/8" for 127.0.0.1 at 2018-10-10 23:13:35 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."future_id" = ?[0m  [["future_id", 8]]
+  ↳ app/views/futures/show.html.erb:16
+  Rendered futures/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 43ms (Views: 35.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/futures/8" for 127.0.0.1 at 2018-10-10 23:14:26 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."future_id" = ?[0m  [["future_id", 8]]
+  ↳ app/views/futures/show.html.erb:16
+  Rendered futures/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 67ms (Views: 60.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-10 23:14:59 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.5ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 62ms (Views: 52.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/futures/8" for 127.0.0.1 at 2018-10-10 23:15:07 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."future_id" = ?[0m  [["future_id", 8]]
+  ↳ app/views/futures/show.html.erb:16
+  Rendered futures/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 53ms (Views: 47.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2018-10-10 23:15:11 +1100
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:19
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 42ms (Views: 34.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students/2" for 127.0.0.1 at 2018-10-10 23:15:19 +1100
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:19
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 51ms (Views: 42.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students/2" for 127.0.0.1 at 2018-10-10 23:15:33 +1100
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:19
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 48ms (Views: 40.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/students/2/edit" for 127.0.0.1 at 2018-10-10 23:15:35 +1100
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:24
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/students/_form.html.erb:22
+  Rendered students/_form.html.erb (6.3ms)
+  Rendered students/edit.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 43ms (Views: 36.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students/2/edit" for 127.0.0.1 at 2018-10-11 08:58:53 +1100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daniththai/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (1.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:24
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mFuture Load (1.4ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/students/_form.html.erb:22
+  Rendered students/_form.html.erb (47.3ms)
+  Rendered students/edit.html.erb within layouts/application (53.5ms)
+Completed 200 OK in 390ms (Views: 350.2ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-11 08:59:02 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 39ms (Views: 35.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-11 08:59:38 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 30ms (Views: 25.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures/new" for 127.0.0.1 at 2018-10-11 08:59:40 +1100
+Processing by FuturesController#new as HTML
+  Rendering futures/new.html.erb within layouts/application
+  Rendered futures/_form.html.erb (4.0ms)
+  Rendered futures/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 33ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2018-10-11 08:59:44 +1100
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:4
+  Rendered students/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 32ms (Views: 24.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/futures/8" for 127.0.0.1 at 2018-10-11 09:07:22 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mFuture Load (0.7ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."future_id" = ?[0m  [["future_id", 8]]
+  ↳ app/views/futures/show.html.erb:16
+  Rendered futures/show.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 82ms (Views: 73.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/students/2" for 127.0.0.1 at 2018-10-11 09:07:24 +1100
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:19
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 37ms (Views: 31.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students/2/edit" for 127.0.0.1 at 2018-10-11 09:07:28 +1100
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:24
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/students/_form.html.erb:22
+  Rendered students/_form.html.erb (4.0ms)
+  Rendered students/edit.html.erb within layouts/application (36.5ms)
+Completed 200 OK in 88ms (Views: 69.7ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/students/2" for 127.0.0.1 at 2018-10-11 09:07:33 +1100
+Processing by StudentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3CJMhRVGgNgo5sDbNqa2QTKBcNXY8qzZl94Rr8KmCp7ikFq5riId5QKH8nNP9anAjZgSGL3rfBMoO74QjY+LbQ==", "student"=>{"name"=>"Linna Liu", "location"=>"Sheehind you", "hobbies"=>"Stalking her next victim, updating the gitbook", "image"=>"https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX8107180.jpg", "future_id"=>"8"}, "commit"=>"Update Student", "id"=>"2"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:29
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:29
+  [1m[36mStudent Update (2.4ms)[0m  [1m[33mUPDATE "students" SET "location" = ?, "updated_at" = ? WHERE "students"."id" = ?[0m  [["location", "Sheehind you"], ["updated_at", "2018-10-10 22:07:33.178109"], ["id", 2]]
+  ↳ app/controllers/students_controller.rb:29
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:29
+Redirected to http://localhost:3000/students/2
+Completed 302 Found in 20ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/students/2" for 127.0.0.1 at 2018-10-11 09:07:33 +1100
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:19
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 34ms (Views: 27.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/students/2/edit" for 127.0.0.1 at 2018-10-11 09:07:37 +1100
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:24
+  Rendering students/edit.html.erb within layouts/application
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/students/_form.html.erb:22
+  Rendered students/_form.html.erb (6.2ms)
+  Rendered students/edit.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 66ms (Views: 57.8ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/students/2" for 127.0.0.1 at 2018-10-11 09:07:49 +1100
+Processing by StudentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V+nLrWSgKV/SuDkayabkdXmiKqaADBZbSjcBbGn1Eq1pW92R38S0YvjZC7Kw9fv0xrtIa+UVxpH10q7TJtyTXg==", "student"=>{"name"=>"Linna Liu", "location"=>"She's right behind you", "hobbies"=>"Stalking her next victim, updating the gitbook", "image"=>"https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX8107180.jpg", "future_id"=>"8"}, "commit"=>"Update Student", "id"=>"2"}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:29
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:29
+  [1m[36mStudent Update (0.9ms)[0m  [1m[33mUPDATE "students" SET "location" = ?, "updated_at" = ? WHERE "students"."id" = ?[0m  [["location", "She's right behind you"], ["updated_at", "2018-10-10 22:07:49.640221"], ["id", 2]]
+  ↳ app/controllers/students_controller.rb:29
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:29
+Redirected to http://localhost:3000/students/2
+Completed 302 Found in 15ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/students/2" for 127.0.0.1 at 2018-10-11 09:07:49 +1100
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:19
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 57ms (Views: 49.9ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20181011093553)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20181011093553_create_users.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" text, "email" text, "password" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181011093553_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181011093553"]]
+  ↳ bin/rails:9
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mFuture Load (1.1ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mFuture Destroy (1.7ms)[0m  [1m[31mDELETE FROM "futures" WHERE "futures"."id" = ?[0m  [["id", 8]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mFuture Destroy (0.3ms)[0m  [1m[31mDELETE FROM "futures" WHERE "futures"."id" = ?[0m  [["id", 9]]
+  ↳ db/seeds.rb:8
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mFuture Destroy (0.6ms)[0m  [1m[31mDELETE FROM "futures" WHERE "futures"."id" = ?[0m  [["id", 10]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mFuture Destroy (0.5ms)[0m  [1m[31mDELETE FROM "futures" WHERE "futures"."id" = ?[0m  [["id", 11]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mFuture Create (2.1ms)[0m  [1m[32mINSERT INTO "futures" ("name", "year", "location", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "WDI Serial Killers"], ["year", 2018], ["location", "Super-duper MAX"], ["image", "https://cdn.europosters.eu/image/750/stickers/skull-crossbones-i7800.jpg"], ["created_at", "2018-10-11 09:39:03.498138"], ["updated_at", "2018-10-11 09:39:03.498138"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mFuture Create (0.6ms)[0m  [1m[32mINSERT INTO "futures" ("name", "year", "location", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "WDI Underwater"], ["year", 2060], ["location", "Atlantis"], ["image", "https://i.ytimg.com/vi/YXPLOlUMtPQ/maxresdefault.jpg"], ["created_at", "2018-10-11 09:39:03.508256"], ["updated_at", "2018-10-11 09:39:03.508256"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mFuture Create (0.6ms)[0m  [1m[32mINSERT INTO "futures" ("name", "year", "location", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "WDI Dwarves"], ["year", 1970], ["location", "Far Far Away"], ["image", "https://filmschoolrejects.com/wp-content/uploads/2017/07/sevendwarvesthanksgiving1.jpg"], ["created_at", "2018-10-11 09:39:03.514921"], ["updated_at", "2018-10-11 09:39:03.514921"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Destroy (5.5ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:16
+  [1m[35m (10.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Destroy (2.0ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 2]]
+  ↳ db/seeds.rb:16
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Destroy (0.5ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 3]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Destroy (0.5ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 4]]
+  ↳ db/seeds.rb:16
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Destroy (1.1ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 5]]
+  ↳ db/seeds.rb:16
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Destroy (1.3ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 6]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mStudent Create (2.0ms)[0m  [1m[32mINSERT INTO "students" ("name", "location", "hobbies", "image", "created_at", "updated_at", "future_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jeffrey Dahmer"], ["location", "USA"], ["hobbies", "Dining with friends"], ["image", "https://static1.squarespace.com/static/553a8ddae4b0bd1c1a10972e/t/5a66876d9140b71728f634cd/1516668784982/dahmer.jpg"], ["created_at", "2018-10-11 09:39:03.749241"], ["updated_at", "2018-10-11 09:39:03.749241"], ["future_id", 12]]
+  ↳ db/seeds.rb:18
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("name", "location", "hobbies", "image", "created_at", "updated_at", "future_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Linna Liu"], ["location", "Behind you"], ["hobbies", "Stalking her next victim, updating the gitbook"], ["image", "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX8107180.jpg"], ["created_at", "2018-10-11 09:39:03.761209"], ["updated_at", "2018-10-11 09:39:03.761209"], ["future_id", 12]]
+  ↳ db/seeds.rb:20
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "location", "hobbies", "image", "created_at", "updated_at", "future_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Aquaman"], ["location", "Under da sea"], ["hobbies", "Swimming around, dodging fishing nets"], ["image", "http://2.bp.blogspot.com/--lIiLIJQWu0/Tn_5ti-xHcI/AAAAAAAAANw/suevM6WxjXw/s640/aquaman.jpg"], ["created_at", "2018-10-11 09:39:03.770806"], ["updated_at", "2018-10-11 09:39:03.770806"], ["future_id", 13]]
+  ↳ db/seeds.rb:22
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "location", "hobbies", "image", "created_at", "updated_at", "future_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Spongebib Squorepants"], ["location", "Sweatshop"], ["hobbies", "Avoiding copyright"], ["image", "https://thoughtcatalog.files.wordpress.com/2013/08/spongerob-cubejeans.jpg?w=584"], ["created_at", "2018-10-11 09:39:03.778156"], ["updated_at", "2018-10-11 09:39:03.778156"], ["future_id", 13]]
+  ↳ db/seeds.rb:24
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mStudent Create (0.6ms)[0m  [1m[32mINSERT INTO "students" ("name", "location", "hobbies", "image", "created_at", "updated_at", "future_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Surly"], ["location", "Duff Gardens"], ["hobbies", "Abusing kids"], ["image", "https://vignette.wikia.nocookie.net/simpsons/images/4/42/Surly_Duff.png/revision/latest?cb=20130601152108"], ["created_at", "2018-10-11 09:39:03.786573"], ["updated_at", "2018-10-11 09:39:03.786573"], ["future_id", 14]]
+  ↳ db/seeds.rb:26
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Brad"], ["email", "brad@brad"], ["password", "chicken"], ["created_at", "2018-10-11 09:39:03.806889"], ["updated_at", "2018-10-11 09:39:03.806889"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Joe"], ["email", "joe@joe"], ["password", "chicken"], ["created_at", "2018-10-11 09:39:03.817351"], ["updated_at", "2018-10-11 09:39:03.817351"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:33
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Jane"], ["email", "jane@jane"], ["password", "chicken"], ["created_at", "2018-10-11 09:39:03.830042"], ["updated_at", "2018-10-11 09:39:03.830042"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20181011093553)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (3.2ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20181011093553"]]
+  ↳ bin/rails:9
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20181011094416)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20181011094416_create_users.rb:3
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" text, "email" text, "password_digest" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181011094416_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181011094416"]]
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mFuture Load (1.1ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mFuture Destroy (0.6ms)[0m  [1m[31mDELETE FROM "futures" WHERE "futures"."id" = ?[0m  [["id", 12]]
+  ↳ db/seeds.rb:8
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mFuture Destroy (0.4ms)[0m  [1m[31mDELETE FROM "futures" WHERE "futures"."id" = ?[0m  [["id", 13]]
+  ↳ db/seeds.rb:8
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mFuture Destroy (0.5ms)[0m  [1m[31mDELETE FROM "futures" WHERE "futures"."id" = ?[0m  [["id", 14]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mFuture Create (1.6ms)[0m  [1m[32mINSERT INTO "futures" ("name", "year", "location", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "WDI Serial Killers"], ["year", 2018], ["location", "Super-duper MAX"], ["image", "https://cdn.europosters.eu/image/750/stickers/skull-crossbones-i7800.jpg"], ["created_at", "2018-10-11 09:44:44.011763"], ["updated_at", "2018-10-11 09:44:44.011763"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mFuture Create (0.9ms)[0m  [1m[32mINSERT INTO "futures" ("name", "year", "location", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "WDI Underwater"], ["year", 2060], ["location", "Atlantis"], ["image", "https://i.ytimg.com/vi/YXPLOlUMtPQ/maxresdefault.jpg"], ["created_at", "2018-10-11 09:44:44.019346"], ["updated_at", "2018-10-11 09:44:44.019346"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mFuture Create (0.8ms)[0m  [1m[32mINSERT INTO "futures" ("name", "year", "location", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "WDI Dwarves"], ["year", 1970], ["location", "Far Far Away"], ["image", "https://filmschoolrejects.com/wp-content/uploads/2017/07/sevendwarvesthanksgiving1.jpg"], ["created_at", "2018-10-11 09:44:44.107911"], ["updated_at", "2018-10-11 09:44:44.107911"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Destroy (0.5ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 7]]
+  ↳ db/seeds.rb:16
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Destroy (0.5ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 8]]
+  ↳ db/seeds.rb:16
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Destroy (3.2ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 9]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Destroy (0.6ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 10]]
+  ↳ db/seeds.rb:16
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mStudent Destroy (0.8ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 11]]
+  ↳ db/seeds.rb:16
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "location", "hobbies", "image", "created_at", "updated_at", "future_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jeffrey Dahmer"], ["location", "USA"], ["hobbies", "Dining with friends"], ["image", "https://static1.squarespace.com/static/553a8ddae4b0bd1c1a10972e/t/5a66876d9140b71728f634cd/1516668784982/dahmer.jpg"], ["created_at", "2018-10-11 09:44:44.238290"], ["updated_at", "2018-10-11 09:44:44.238290"], ["future_id", 15]]
+  ↳ db/seeds.rb:18
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "location", "hobbies", "image", "created_at", "updated_at", "future_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Linna Liu"], ["location", "Behind you"], ["hobbies", "Stalking her next victim, updating the gitbook"], ["image", "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX8107180.jpg"], ["created_at", "2018-10-11 09:44:44.246928"], ["updated_at", "2018-10-11 09:44:44.246928"], ["future_id", 15]]
+  ↳ db/seeds.rb:20
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mStudent Create (0.6ms)[0m  [1m[32mINSERT INTO "students" ("name", "location", "hobbies", "image", "created_at", "updated_at", "future_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Aquaman"], ["location", "Under da sea"], ["hobbies", "Swimming around, dodging fishing nets"], ["image", "http://2.bp.blogspot.com/--lIiLIJQWu0/Tn_5ti-xHcI/AAAAAAAAANw/suevM6WxjXw/s640/aquaman.jpg"], ["created_at", "2018-10-11 09:44:44.258089"], ["updated_at", "2018-10-11 09:44:44.258089"], ["future_id", 16]]
+  ↳ db/seeds.rb:22
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mStudent Create (1.0ms)[0m  [1m[32mINSERT INTO "students" ("name", "location", "hobbies", "image", "created_at", "updated_at", "future_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Spongebib Squorepants"], ["location", "Sweatshop"], ["hobbies", "Avoiding copyright"], ["image", "https://thoughtcatalog.files.wordpress.com/2013/08/spongerob-cubejeans.jpg?w=584"], ["created_at", "2018-10-11 09:44:44.264198"], ["updated_at", "2018-10-11 09:44:44.264198"], ["future_id", 16]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "location", "hobbies", "image", "created_at", "updated_at", "future_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Surly"], ["location", "Duff Gardens"], ["hobbies", "Abusing kids"], ["image", "https://vignette.wikia.nocookie.net/simpsons/images/4/42/Surly_Duff.png/revision/latest?cb=20130601152108"], ["created_at", "2018-10-11 09:44:44.274066"], ["updated_at", "2018-10-11 09:44:44.274066"], ["future_id", 17]]
+  ↳ db/seeds.rb:26
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:29
+Started GET "/futures" for 127.0.0.1 at 2018-10-11 21:13:29 +1100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daniththai/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (1.4ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (18.8ms)
+Completed 500 Internal Server Error in 1610ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_user_path' for #<#<Class:0x00007fc081919da0>:0x00007fc08010ec88>
+Did you mean?  new_future_path):
+    19: 
+    20:       <% else %>
+    21:         <%= link_to 'Login', login_path %>
+    22:         <%= link_to 'Sign up', new_user_path %>
+    23: 
+    24:       <% end %>
+    25: 
+  
+app/views/layouts/application.html.erb:22:in `_app_views_layouts_application_html_erb__1432381293599640823_70232413042560'
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-10-11 21:13:53 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/daniththai/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/daniththai/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [24 times] (7.8ms)
+  Rendered /Users/daniththai/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.6ms)
+  Rendered /Users/daniththai/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (33.1ms)
+Completed 200 OK in 75ms (Views: 58.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-11 21:16:41 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (7.0ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (9.9ms)
+Completed 500 Internal Server Error in 873ms (ActiveRecord: 7.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_user_path' for #<#<Class:0x00007fc081919da0>:0x00007fc081d34070>
+Did you mean?  new_future_path):
+    19: 
+    20:       <% else %>
+    21:         <%= link_to 'Login', login_path %>
+    22:         <!-- <%= link_to 'Sign up', new_user_path %> -->
+    23: 
+    24:       <% end %>
+    25: 
+  
+app/views/layouts/application.html.erb:22:in `_app_views_layouts_application_html_erb__1432381293599640823_70232394186520'
+Started GET "/futures" for 127.0.0.1 at 2018-10-11 21:16:53 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 78ms (Views: 68.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-11 21:16:58 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 59ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-11 21:17:04 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 74ms (Views: 62.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-11 21:19:40 +1100
+Processing by FuturesController#index as HTML
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (1.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 83ms (Views: 66.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-11 21:20:23 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 62ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-11 21:20:25 +1100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 76ms (Views: 57.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-11 21:20:27 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 48ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-10-11 21:20:52 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LUcfncNxOVIWfQ8XLh3G33wzSaHuoOcXDXWuR23dW94T9QmheBWkbzwcPb9XTtlewyorbIu5N92ykAH4IvTaLQ==", "email"=>"brad@brad", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "brad@brad"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:7
+Redirected to http://localhost:3000/login
+Completed 302 Found in 9ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-11 21:20:52 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 57ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-11 21:20:57 +1100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 67ms (Views: 56.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-10-11 21:21:28 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zOnfmpl+4GtM4sXr3x16wW1QjweUbEWFUOUVPH34Bq3yW8mmIhp9VmaD90OmTmVA0kntyvF1lU/vALqDMtGHXg==", "user"=>{"name"=>"brad", "email"=>"brad@brad", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:7
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "brad@brad"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "brad"], ["email", "brad@brad"], ["password_digest", "$2a$10$ujFhYuJjip951joctxsb2evT4/NmCyu5s9QU4gszHDCl6h4PV1L/y"], ["created_at", "2018-10-11 10:21:28.500045"], ["updated_at", "2018-10-11 10:21:28.500045"]]
+  ↳ app/controllers/users_controller.rb:7
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:7
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 86ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-10-11 21:21:28 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 65ms (Views: 55.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2018-10-11 21:52:36 +1100
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (1.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:4
+  Rendered students/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 86ms (Views: 66.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-11 21:52:40 +1100
+Processing by FuturesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (1.9ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 55ms (Views: 40.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/futures/15" for 127.0.0.1 at 2018-10-11 21:52:42 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mFuture Load (0.3ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."future_id" = ?[0m  [["future_id", 15]]
+  ↳ app/views/futures/show.html.erb:16
+  Rendered futures/show.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 86ms (Views: 73.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/students/13" for 127.0.0.1 at 2018-10-11 21:52:48 +1100
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:19
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 78ms (Views: 62.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/futures" for 127.0.0.1 at 2018-10-11 21:53:04 +1100
+Processing by FuturesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendering futures/index.html.erb within layouts/application
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT "futures".* FROM "futures"[0m
+  ↳ app/views/futures/index.html.erb:4
+  Rendered futures/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 66ms (Views: 54.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/futures/16" for 127.0.0.1 at 2018-10-11 21:53:06 +1100
+Processing by FuturesController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mFuture Load (0.2ms)[0m  [1m[34mSELECT  "futures".* FROM "futures" WHERE "futures"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/futures_controller.rb:19
+  Rendering futures/show.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."future_id" = ?[0m  [["future_id", 16]]
+  ↳ app/views/futures/show.html.erb:16
+  Rendered futures/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 56ms (Views: 44.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/students/15" for 127.0.0.1 at 2018-10-11 21:53:11 +1100
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:19
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 53ms (Views: 40.2ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/login" for 127.0.0.1 at 2018-10-11 21:53:23 +1100
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OixjH0oXYlMfIOM78AXlFWxyPvhLwlobM3jrpytqydAEnnUj8XP/bjVB0ZOJVvqU02tcNS7bitGMnUQYZENIIw=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+Redirected to http://localhost:3000/login
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-11 21:53:23 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 57ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+
+
