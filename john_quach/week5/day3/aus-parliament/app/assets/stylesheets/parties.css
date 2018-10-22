@@ -1,0 +1,25 @@
+body {
+  font-family: Helvetica, sans-serif;
+  /* background-color: rgb(83, 81, 87); */
+  background-color: #38424E;
+  color: white;
+  text-align: center;
+}
+
+a {
+  color: rgb(251, 242, 195);
+}
+
+img.partyPortait {
+  max-height: 50vh;
+  margin-top: 30px;
+}
+
+div {
+
+  text-align: center;
+}
+
+ul {
+ list-style-type: none;
+ }

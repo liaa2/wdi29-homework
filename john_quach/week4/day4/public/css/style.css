@@ -1,0 +1,33 @@
+body {
+  /* background-color: rgb(31, 86, 15,0.5); */
+  /* background-image: url("https://www.w3schools.com/w3images/fjords.jpg");
+  background-size: cover; */
+  background-image: url("http://www.p-wec.org/sites/default/files/styles/galleryformatter_slide/public/camping-eksklusif-02.jpg?itok=zZAYmLvJ");
+  background-size: cover;
+  color: red;
+  
+}
+
+img {
+  max-width: 400px;
+
+}
+/* body
+{background: url('www.unsplash.com/photos/pSaEMIiUO84');
+} */
+
+a:link {
+color: white;
+}
+a:visited {
+color: white;
+}
+a:hover {
+color: white;
+}
+
+h1 {
+
+color: blue;
+text-align: center;
+}

@@ -1,0 +1,15 @@
+<h2>Edit Technician: <%= @technicians['name'] %> <%= @technicians['location'] %></h2>
+
+
+<form action="/technicians/<%= @technicians['id'] %>" method="post">
+  Name: <input type="text" name="name" value="<%= @technicians['name'] %>"><br>
+  Department: <input type="text" name="department" value="<%= @technicians['department'] %>"><br>
+  Location: <input type="text" name="location" value="<%= @technicians['location'] %>"><br>
+  Country: <input type="text" name="country" value="<%= @technicians['country'] %>"><br>
+  Certification: <input type="text" name="certification" value="<%= @technicians['certification'] %>"><br>
+  Level: <input type="text" name="level" value="<%= @technicians['level'] %>"><br>
+  On-Call: <input type="text" name="on_call" value="<%= @technicians['on_call'] %>"><br>
+  Image URL: <input type="text" name="image_url" value="<%= @technicians['image_url'] %>"><br>
+  <br>
+  <input type="submit" value="Update Technician">
+</form>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NSW Campsites</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <h1>NSW Camping Sites</h1>
+    <nav>
+       <%= link_to 'Campsite Index', campsites_path %>
+       |
+       <%= link_to 'Create Campsite', campsites_new_path %>
+    </nav>
+    <hr/>
+    <%= yield %>
+  </body>
+</html>
