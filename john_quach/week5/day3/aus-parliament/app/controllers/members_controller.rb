@@ -7,7 +7,7 @@ class MembersController < ApplicationController
 
     def create
       Member.create member_params  # pass in the strong version of the form params
-      redirect_to( members_path )  # redirect to the index "/works"
+      redirect_to( members_path )  # redirect to the index "/members_path"
     end
 
     # READ
@@ -16,7 +16,7 @@ class MembersController < ApplicationController
     end
 
     def show
-      @member = Member.find params[:id]  # ID is in params because of the route "/works/:id"
+      @member = Member.find params[:id]  # ID is in params because of the route "/memebrs/:id"
     end
 
     # UPDATE
@@ -39,6 +39,7 @@ class MembersController < ApplicationController
 
     private
 
+    #Security for the the CREATE and UPDATE
     def member_params
       params.require(:member).permit(:name, :about, :title, :seat, :image, :party_id)
     end

@@ -3435,3 +3435,321 @@ Processing by PartiesController#show as HTML
 Completed 200 OK in 30ms (Views: 25.1ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/members/new" for 127.0.0.1 at 2018-10-11 10:02:30 +1100
+Processing by MembersController#new as HTML
+  Rendering members/new.html.erb within layouts/application
+  [1m[36mParty Load (0.2ms)[0m  [1m[34mSELECT "parties".* FROM "parties"[0m
+  ↳ app/views/members/_form.html.erb:24
+  Rendered members/_form.html.erb (11.5ms)
+  Rendered members/new.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 42ms (Views: 31.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/parties" for 127.0.0.1 at 2018-10-11 10:02:34 +1100
+Processing by PartiesController#index as HTML
+  Rendering parties/index.html.erb within layouts/application
+  [1m[36mParty Load (0.2ms)[0m  [1m[34mSELECT "parties".* FROM "parties"[0m
+  ↳ app/views/parties/index.html.erb:5
+  Rendered parties/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 21ms (Views: 17.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/parties/13" for 127.0.0.1 at 2018-10-11 10:25:43 +1100
+Processing by PartiesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mParty Load (0.2ms)[0m  [1m[34mSELECT  "parties".* FROM "parties" WHERE "parties"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/parties_controller.rb:20
+  Rendering parties/show.html.erb within layouts/application
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."party_id" = ?[0m  [["party_id", 13]]
+  ↳ app/views/parties/show.html.erb:20
+  Rendered parties/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 26ms (Views: 22.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/members/9" for 127.0.0.1 at 2018-10-11 10:25:55 +1100
+Processing by MembersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/members_controller.rb:19
+  Rendering members/show.html.erb within layouts/application
+  [1m[36mParty Load (0.1ms)[0m  [1m[34mSELECT  "parties".* FROM "parties" WHERE "parties"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/members/show.html.erb:2
+  Rendered members/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 21ms (Views: 16.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/members/10" for 127.0.0.1 at 2018-10-11 10:26:02 +1100
+Processing by MembersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/members_controller.rb:19
+  Rendering members/show.html.erb within layouts/application
+  [1m[36mParty Load (0.1ms)[0m  [1m[34mSELECT  "parties".* FROM "parties" WHERE "parties"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/members/show.html.erb:2
+  Rendered members/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 21ms (Views: 17.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/members/12" for 127.0.0.1 at 2018-10-11 10:26:13 +1100
+Processing by MembersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/members_controller.rb:19
+  Rendering members/show.html.erb within layouts/application
+  [1m[36mParty Load (0.1ms)[0m  [1m[34mSELECT  "parties".* FROM "parties" WHERE "parties"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/members/show.html.erb:2
+  Rendered members/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 20ms (Views: 17.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/parties" for 127.0.0.1 at 2018-10-11 10:26:21 +1100
+Processing by PartiesController#index as HTML
+  Rendering parties/index.html.erb within layouts/application
+  [1m[36mParty Load (0.2ms)[0m  [1m[34mSELECT "parties".* FROM "parties"[0m
+  ↳ app/views/parties/index.html.erb:5
+  Rendered parties/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 21ms (Views: 17.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/members" for 127.0.0.1 at 2018-10-11 10:26:33 +1100
+Processing by MembersController#index as HTML
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:4
+  Rendered members/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 20ms (Views: 16.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/parties" for 127.0.0.1 at 2018-10-11 10:26:38 +1100
+Processing by PartiesController#index as HTML
+  Rendering parties/index.html.erb within layouts/application
+  [1m[36mParty Load (0.2ms)[0m  [1m[34mSELECT "parties".* FROM "parties"[0m
+  ↳ app/views/parties/index.html.erb:5
+  Rendered parties/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 21ms (Views: 17.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/parties/16" for 127.0.0.1 at 2018-10-11 10:26:43 +1100
+Processing by PartiesController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mParty Load (0.2ms)[0m  [1m[34mSELECT  "parties".* FROM "parties" WHERE "parties"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/parties_controller.rb:20
+  Rendering parties/show.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."party_id" = ?[0m  [["party_id", 16]]
+  ↳ app/views/parties/show.html.erb:20
+  Rendered parties/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 21ms (Views: 16.8ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mParty Load (0.1ms)[0m  [1m[34mSELECT "parties".* FROM "parties"[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mParty Destroy (0.3ms)[0m  [1m[31mDELETE FROM "parties" WHERE "parties"."id" = ?[0m  [["id", 13]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mParty Destroy (0.2ms)[0m  [1m[31mDELETE FROM "parties" WHERE "parties"."id" = ?[0m  [["id", 14]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mParty Destroy (0.2ms)[0m  [1m[31mDELETE FROM "parties" WHERE "parties"."id" = ?[0m  [["id", 15]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mParty Destroy (0.2ms)[0m  [1m[31mDELETE FROM "parties" WHERE "parties"."id" = ?[0m  [["id", 16]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mParty Destroy (0.2ms)[0m  [1m[31mDELETE FROM "parties" WHERE "parties"."id" = ?[0m  [["id", 17]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mParty Create (0.3ms)[0m  [1m[32mINSERT INTO "parties" ("name", "founded", "abbr", "leader", "position", "ideology", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Liberal Party"], ["founded", "1944-10-16"], ["abbr", "LP"], ["leader", "Scott Morrision"], ["position", "Centre Right"], ["ideology", "Economic liberalism,Liberal conservatism"], ["created_at", "2018-10-10 23:30:33.797037"], ["updated_at", "2018-10-10 23:30:33.797037"], ["image", "https://cdn.liberal.org.au/headers/LPABanner.png"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mParty Create (0.3ms)[0m  [1m[32mINSERT INTO "parties" ("name", "founded", "abbr", "leader", "position", "ideology", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Australian Labor Party"], ["founded", "1901-05-08"], ["abbr", "ALP"], ["leader", "Bill Shorten"], ["position", "Centre Left"], ["ideology", "Social democracy"], ["created_at", "2018-10-10 23:30:33.799386"], ["updated_at", "2018-10-10 23:30:33.799386"], ["image", "http://www.fridaymash.com/wp-content/uploads/1970/01/ALP-coverage-on-FridayMash.jpg"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mParty Create (0.2ms)[0m  [1m[32mINSERT INTO "parties" ("name", "founded", "abbr", "leader", "position", "ideology", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "National Party Australia"], ["founded", "1920-01-20"], ["abbr", "National"], ["leader", "Michael McCormack"], ["position", "Centre Right"], ["ideology", "Conservatism,Agrarianism"], ["created_at", "2018-10-10 23:30:33.802039"], ["updated_at", "2018-10-10 23:30:33.802039"], ["image", "https://upload.wikimedia.org/wikipedia/commons/a/ab/The_National_Party_of_Australia_Logo.png"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mParty Load (0.1ms)[0m  [1m[34mSELECT "parties".* FROM "parties"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "parties"."name" FROM "parties"[0m
+  ↳ db/seeds.rb:17
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mMember Destroy (0.3ms)[0m  [1m[31mDELETE FROM "members" WHERE "members"."id" = ?[0m  [["id", 9]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mMember Destroy (0.2ms)[0m  [1m[31mDELETE FROM "members" WHERE "members"."id" = ?[0m  [["id", 10]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mMember Destroy (0.3ms)[0m  [1m[31mDELETE FROM "members" WHERE "members"."id" = ?[0m  [["id", 11]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mMember Destroy (0.3ms)[0m  [1m[31mDELETE FROM "members" WHERE "members"."id" = ?[0m  [["id", 12]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("name", "about", "title", "seat", "image", "created_at", "updated_at", "party_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Scott Morrison"], ["about", "Scott Morrison was sworn in as Prime Minister of Australia on 24 August 2018 after being elected leader of the Liberal Party. He was first elected as the Federal Member for Cook in 2007."], ["title", "Prime Minister"], ["seat", "Cook"], ["image", "https://www.betootaadvocate.com/wp-content/uploads/2018/08/sco-mo-1.png"], ["created_at", "2018-10-10 23:30:33.825137"], ["updated_at", "2018-10-10 23:30:33.825137"], ["party_id", 18]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mMember Create (0.6ms)[0m  [1m[32mINSERT INTO "members" ("name", "about", "title", "seat", "image", "created_at", "updated_at", "party_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Josh Frydenberg "], ["about", "Josh Frydenberg was sworn in as Treasurer on 24 August 2018. He has previously served as the Minister for the Environment and Energy, and Assistant Treasurer"], ["title", "Treasurer"], ["seat", "Kooyong"], ["image", "https://1v1d1e1lmiki1lgcvx32p49h8fe-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/josh-frydenberg-960x540.jpg"], ["created_at", "2018-10-10 23:30:33.828355"], ["updated_at", "2018-10-10 23:30:33.828355"], ["party_id", 18]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[36mMember Create (0.3ms)[0m  [1m[32mINSERT INTO "members" ("name", "about", "title", "seat", "image", "created_at", "updated_at", "party_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Michael McCormack"], ["about", "Michael McCormack is the Deputy Prime Minister, Leader of The Nationals and Nationals Federal Member for Riverina."], ["title", "Deputy Prime Minister"], ["seat", "Riverina"], ["image", "https://www.betootaadvocate.com/wp-content/uploads/2018/08/sco-mo-1.png"], ["created_at", "2018-10-10 23:30:33.832236"], ["updated_at", "2018-10-10 23:30:33.832236"], ["party_id", 18]]
+  ↳ db/seeds.rb:25
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mParty Load (0.1ms)[0m  [1m[34mSELECT "parties".* FROM "parties"[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mParty Destroy (0.3ms)[0m  [1m[31mDELETE FROM "parties" WHERE "parties"."id" = ?[0m  [["id", 18]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mParty Destroy (0.2ms)[0m  [1m[31mDELETE FROM "parties" WHERE "parties"."id" = ?[0m  [["id", 19]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mParty Destroy (0.2ms)[0m  [1m[31mDELETE FROM "parties" WHERE "parties"."id" = ?[0m  [["id", 20]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mParty Create (0.3ms)[0m  [1m[32mINSERT INTO "parties" ("name", "founded", "abbr", "leader", "position", "ideology", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Liberal Party"], ["founded", "1944-10-16"], ["abbr", "LP"], ["leader", "Scott Morrision"], ["position", "Centre Right"], ["ideology", "Economic liberalism,Liberal conservatism"], ["created_at", "2018-10-10 23:32:51.912376"], ["updated_at", "2018-10-10 23:32:51.912376"], ["image", "https://cdn.liberal.org.au/headers/LPABanner.png"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mParty Create (0.2ms)[0m  [1m[32mINSERT INTO "parties" ("name", "founded", "abbr", "leader", "position", "ideology", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Australian Labor Party"], ["founded", "1901-05-08"], ["abbr", "ALP"], ["leader", "Bill Shorten"], ["position", "Centre Left"], ["ideology", "Social democracy"], ["created_at", "2018-10-10 23:32:51.914539"], ["updated_at", "2018-10-10 23:32:51.914539"], ["image", "http://www.fridaymash.com/wp-content/uploads/1970/01/ALP-coverage-on-FridayMash.jpg"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mParty Create (0.2ms)[0m  [1m[32mINSERT INTO "parties" ("name", "founded", "abbr", "leader", "position", "ideology", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "National Party Australia"], ["founded", "1920-01-20"], ["abbr", "National"], ["leader", "Michael McCormack"], ["position", "Centre Right"], ["ideology", "Conservatism,Agrarianism"], ["created_at", "2018-10-10 23:32:51.916482"], ["updated_at", "2018-10-10 23:32:51.916482"], ["image", "https://upload.wikimedia.org/wikipedia/commons/a/ab/The_National_Party_of_Australia_Logo.png"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mParty Load (0.1ms)[0m  [1m[34mSELECT "parties".* FROM "parties"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "parties"."name" FROM "parties"[0m
+  ↳ db/seeds.rb:17
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mMember Destroy (0.2ms)[0m  [1m[31mDELETE FROM "members" WHERE "members"."id" = ?[0m  [["id", 13]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mMember Destroy (0.2ms)[0m  [1m[31mDELETE FROM "members" WHERE "members"."id" = ?[0m  [["id", 14]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mMember Destroy (0.2ms)[0m  [1m[31mDELETE FROM "members" WHERE "members"."id" = ?[0m  [["id", 15]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mMember Create (0.5ms)[0m  [1m[32mINSERT INTO "members" ("name", "about", "title", "seat", "image", "created_at", "updated_at", "party_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Scott Morrison"], ["about", "Scott Morrison was sworn in as Prime Minister of Australia on 24 August 2018 after being elected leader of the Liberal Party. He was first elected as the Federal Member for Cook in 2007."], ["title", "Prime Minister"], ["seat", "Cook"], ["image", "https://www.betootaadvocate.com/wp-content/uploads/2018/08/sco-mo-1.png"], ["created_at", "2018-10-10 23:32:51.931482"], ["updated_at", "2018-10-10 23:32:51.931482"], ["party_id", 21]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mMember Create (0.4ms)[0m  [1m[32mINSERT INTO "members" ("name", "about", "title", "seat", "image", "created_at", "updated_at", "party_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Josh Frydenberg "], ["about", "Josh Frydenberg was sworn in as Treasurer on 24 August 2018. He has previously served as the Minister for the Environment and Energy, and Assistant Treasurer"], ["title", "Treasurer"], ["seat", "Kooyong"], ["image", "https://1v1d1e1lmiki1lgcvx32p49h8fe-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/josh-frydenberg-960x540.jpg"], ["created_at", "2018-10-10 23:32:51.934363"], ["updated_at", "2018-10-10 23:32:51.934363"], ["party_id", 21]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[36mMember Create (0.7ms)[0m  [1m[32mINSERT INTO "members" ("name", "about", "title", "seat", "image", "created_at", "updated_at", "party_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Michael McCormack"], ["about", "Michael McCormack is the Deputy Prime Minister, Leader of The Nationals and Nationals Federal Member for Riverina."], ["title", "Deputy Prime Minister"], ["seat", "Riverina"], ["image", "https://www.betootaadvocate.com/wp-content/uploads/2018/08/sco-mo-1.png"], ["created_at", "2018-10-10 23:32:51.937102"], ["updated_at", "2018-10-10 23:32:51.937102"], ["party_id", 21]]
+  ↳ db/seeds.rb:25
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[36mMember Create (0.4ms)[0m  [1m[32mINSERT INTO "members" ("name", "about", "title", "seat", "image", "created_at", "updated_at", "party_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Julie Bishop"], ["about", "Julie Bishop was sworn in as Foreign Minister of Australia on 24 August 2018 after being elected member of the Liberal Party. From Curtin"], ["title", "Foreign Minister"], ["seat", "Curtin"], ["image", "https://www.betootaadvocate.com/wp-content/uploads/2018/08/sco-mo-1.png"], ["created_at", "2018-10-10 23:32:51.941501"], ["updated_at", "2018-10-10 23:32:51.941501"], ["party_id", 21]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[36mParty Load (0.1ms)[0m  [1m[34mSELECT "parties".* FROM "parties"[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "members"."name" FROM "members"[0m
+  ↳ db/seeds.rb:29
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-10-13 15:41:34 +1100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnquach/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/johnquach/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/johnquach/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [21 times] (5.7ms)
+  Rendered /Users/johnquach/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.2ms)
+  Rendered /Users/johnquach/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 31ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members" for 127.0.0.1 at 2018-10-13 15:42:51 +1100
+Processing by MembersController#index as HTML
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:4
+  Rendered members/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 199ms (Views: 188.9ms | ActiveRecord: 0.9ms)
+
+

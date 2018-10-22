@@ -15,7 +15,7 @@ class PartiesController < ApplicationController
     @parties = Party.all
   end
 
-#Return one politcal Party
+#Return one politcal Party in form
   def show
     @party = Party.find params[:id]
   end

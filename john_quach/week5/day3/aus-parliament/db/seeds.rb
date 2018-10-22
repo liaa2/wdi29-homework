@@ -16,15 +16,14 @@ a3 = Party.create name: 'National Party Australia', founded: '1920/01/20', abbr:
 puts "Created #{ Party.all.length } parties: "
 puts Party.pluck(:name).join(', ')
 
-Member.destroy_all   # remove all rows from the artists table before we seed
+Member.destroy_all   # remove all rows and then insert new ones. I assume we can append if we remove this
 
 puts "Creating members..."
 
 Member.create name: 'Scott Morrison', about: 'Scott Morrison was sworn in as Prime Minister of Australia on 24 August 2018 after being elected leader of the Liberal Party. He was first elected as the Federal Member for Cook in 2007.', title: 'Prime Minister', seat: 'Cook', image: 'https://www.betootaadvocate.com/wp-content/uploads/2018/08/sco-mo-1.png', party: a1
 Member.create name: 'Josh Frydenberg ', about: 'Josh Frydenberg was sworn in as Treasurer on 24 August 2018. He has previously served as the Minister for the Environment and Energy, and Assistant Treasurer', title: 'Treasurer', seat: 'Kooyong', image: 'https://1v1d1e1lmiki1lgcvx32p49h8fe-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/josh-frydenberg-960x540.jpg', party: a1
 Member.create name: 'Michael McCormack', about: 'Michael McCormack is the Deputy Prime Minister, Leader of The Nationals and Nationals Federal Member for Riverina.', title: 'Deputy Prime Minister', seat: 'Riverina', image: 'https://www.betootaadvocate.com/wp-content/uploads/2018/08/sco-mo-1.png', party: a1
-Member.create name: 'Scott Morrison', about: 'Scott Morrison was sworn in as Prime Minister of Australia on 24 August 2018 after being elected leader of the Liberal Party. He was first elected as the Federal Member for Cook in 2007.', title: 'Prime Minister', seat: 'Cook', position: 'Prime Minister', image: 'https://www.betootaadvocate.com/wp-content/uploads/2018/08/sco-mo-1.png', party: a1
-
+Member.create name: 'Julie Bishop', about: 'Julie Bishop was sworn in as Foreign Minister of Australia on 24 August 2018 after being elected member of the Liberal Party. From Curtin', title: 'Foreign Minister', seat: 'Curtin', image: 'https://www.betootaadvocate.com/wp-content/uploads/2018/08/sco-mo-1.png', party: a1
 
 puts "Created #{ Party.all.length } members: "
 puts Member.pluck(:name).join(', ')
