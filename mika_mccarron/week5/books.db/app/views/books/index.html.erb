@@ -1,14 +1,9 @@
-<h2>Index of Books</h2>
+<h2 class="index">Index of Books</h2>
 <ul>
 <% @books.each do |book| %>
-<li>
+
   <a href="<%= book_path(book.id) %>">
-    <img src="https://images.livrariasaraiva.com.br/imagemnet/imagem.aspx/?pro_id=4889472&qld=90&l=430&a=-1"></br>
-    <img src="https://images-na.ssl-images-amazon.com/images/I/51f3cSF1djL._SX327_BO1,204,203,200_.jpg">/br>
-    <img src="https://www.powerhousearena.com/shop/media/catalog/product/cache/1/image/940x587/9df78eab33525d08d6e5fb8d27136e95/w/o/wonder-book-cover.jpg"></br>
-    <img src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9783/2572/9783257227000.jpg"></br>
-    <!-- <%= book.title %> -->
+    <%= image_tag book.image, alt: book.title, class: 'cover' %>
   </a>
-</li>
 <% end %>
 </ul>

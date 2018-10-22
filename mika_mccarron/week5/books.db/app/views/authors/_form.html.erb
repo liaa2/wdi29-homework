@@ -1,0 +1,22 @@
+
+<%= form_for  @author do |f| %>
+<fieldset>
+  <%= f.label :name %><!--gives us a <lable> tag -->
+  <%= f.text_field :name %> <!--gives us <inpute type = "text" -->
+</fieldset>
+<fieldset>
+  <%= f.label :nationality %>
+  <%= f.text_field :nationality %>
+</fieldset>
+<fieldset>
+  <%= f.label :dob, 'Date of birth' %>
+  <%= f.text_field :dob  %>
+</fieldset>
+<%= f.submit %>
+<% end %>
+
+
+<!-- <form action="">
+
+
+</form> -->
