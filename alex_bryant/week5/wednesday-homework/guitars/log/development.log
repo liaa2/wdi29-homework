@@ -4314,3 +4314,1489 @@ Processing by GuitarsController#index as HTML
 Completed 200 OK in 30ms (Views: 26.2ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/guitars" for 127.0.0.1 at 2018-10-10 22:39:04 +1100
+Processing by GuitarsController#index as HTML
+  Rendering guitars/index.html.erb within layouts/application
+  [1m[36mGuitar Load (0.3ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars"[0m
+  ↳ app/views/guitars/index.html.erb:4
+  Rendered guitars/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 31ms (Views: 25.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/guitars/5" for 127.0.0.1 at 2018-10-10 22:39:05 +1100
+Processing by GuitarsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT  "guitars".* FROM "guitars" WHERE "guitars"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/guitars_controller.rb:37
+  Rendering guitars/show.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/guitars/show.html.erb:1
+  Rendered guitars/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 28ms (Views: 24.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/guitars" for 127.0.0.1 at 2018-10-10 22:39:09 +1100
+Processing by GuitarsController#index as HTML
+  Rendering guitars/index.html.erb within layouts/application
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars"[0m
+  ↳ app/views/guitars/index.html.erb:4
+  Rendered guitars/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 26ms (Views: 21.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/guitars/8" for 127.0.0.1 at 2018-10-10 22:39:10 +1100
+Processing by GuitarsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGuitar Load (0.1ms)[0m  [1m[34mSELECT  "guitars".* FROM "guitars" WHERE "guitars"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/guitars_controller.rb:37
+  Rendering guitars/show.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/guitars/show.html.erb:1
+  Rendered guitars/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 26ms (Views: 21.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/manufacturers/11" for 127.0.0.1 at 2018-10-10 22:39:14 +1100
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:37
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mGuitar Load (0.1ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars" WHERE "guitars"."manufacturer_id" = ?[0m  [["manufacturer_id", 11]]
+  ↳ app/views/manufacturers/show.html.erb:11
+  Rendered manufacturers/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 30ms (Views: 24.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/guitars/8" for 127.0.0.1 at 2018-10-10 22:39:18 +1100
+Processing by GuitarsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT  "guitars".* FROM "guitars" WHERE "guitars"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/guitars_controller.rb:37
+  Rendering guitars/show.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/guitars/show.html.erb:1
+  Rendered guitars/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 30ms (Views: 24.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/guitars/8/edit" for 127.0.0.1 at 2018-10-10 22:47:49 +1100
+Processing by GuitarsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT  "guitars".* FROM "guitars" WHERE "guitars"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/guitars_controller.rb:18
+  Rendering guitars/edit.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/guitars/_form.html.erb:20
+  Rendered guitars/_form.html.erb (6.5ms)
+  Rendered guitars/edit.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 39ms (Views: 34.0ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/guitars/8" for 127.0.0.1 at 2018-10-10 22:47:54 +1100
+Processing by GuitarsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bir5zmssvHO8TnmhCIwdDmfmKD52njFGpDL20EtYBe1H5VLqaHL3lL7y6Y8VhmukXVrDFNDUWRQEGg2+YDzESQ==", "guitar"=>{"name"=>"RGX 312", "guitar_type"=>"Electric", "price"=>"550", "image"=>"https://webshop.cashconverters.com.au/thumbnail/425x260/2420715-yamaha-left-handed-electric-guitar-rgx312-0.jpg", "manufacturer_id"=>"11"}, "commit"=>"Update Guitar", "id"=>"8"}
+  [1m[36mGuitar Load (0.3ms)[0m  [1m[34mSELECT  "guitars".* FROM "guitars" WHERE "guitars"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/guitars_controller.rb:12
+Unpermitted parameter: :manufacturer_id
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guitars_controller.rb:13
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/guitars_controller.rb:13
+  [1m[36mGuitar Update (0.5ms)[0m  [1m[33mUPDATE "guitars" SET "price" = ?, "updated_at" = ? WHERE "guitars"."id" = ?[0m  [["price", 550], ["updated_at", "2018-10-10 11:47:54.221981"], ["id", 8]]
+  ↳ app/controllers/guitars_controller.rb:13
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guitars_controller.rb:13
+Redirected to http://localhost:3000/guitars/8
+Completed 302 Found in 14ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/guitars/8" for 127.0.0.1 at 2018-10-10 22:47:54 +1100
+Processing by GuitarsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT  "guitars".* FROM "guitars" WHERE "guitars"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/guitars_controller.rb:37
+  Rendering guitars/show.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/guitars/show.html.erb:1
+  Rendered guitars/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 32ms (Views: 27.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manufacturers" for 127.0.0.1 at 2018-10-10 22:47:56 +1100
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:4
+  Rendered manufacturers/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 30ms (Views: 21.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/manufacturers/9" for 127.0.0.1 at 2018-10-10 22:47:58 +1100
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:37
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars" WHERE "guitars"."manufacturer_id" = ?[0m  [["manufacturer_id", 9]]
+  ↳ app/views/manufacturers/show.html.erb:11
+  Rendered manufacturers/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 29ms (Views: 20.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manufacturers/9/edit" for 127.0.0.1 at 2018-10-10 22:48:00 +1100
+Processing by ManufacturersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:18
+  Rendering manufacturers/edit.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (2.4ms)
+  Rendered manufacturers/edit.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 32ms (Views: 23.1ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/manufacturers/9" for 127.0.0.1 at 2018-10-10 22:48:06 +1100
+Processing by ManufacturersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JFBDKLcXR7Ax/AfCuIs92b6t1t2+2ncnlOB5fYCuEy8Nn+gMtEkMVzNAl+ylgUtzhBE99xiQH3U0yIITq8rSiw==", "manufacturer"=>{"name"=>"Gibson", "country"=>"USA", "founded"=>"1444", "image"=>"https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Gibson%2C_Inc.%2C_Kalamazoo%2C_1936.jpg/1920px-Gibson%2C_Inc.%2C_Kalamazoo%2C_1936.jpg"}, "commit"=>"Update Manufacturer", "id"=>"9"}
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:12
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:13
+Redirected to http://localhost:3000/manufacturers/9
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/manufacturers/9" for 127.0.0.1 at 2018-10-10 22:48:06 +1100
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:37
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mGuitar Load (0.3ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars" WHERE "guitars"."manufacturer_id" = ?[0m  [["manufacturer_id", 9]]
+  ↳ app/views/manufacturers/show.html.erb:11
+  Rendered manufacturers/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 32ms (Views: 26.7ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+Started GET "/manufacturers" for 127.0.0.1 at 2018-10-10 22:49:30 +1100
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.3ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:4
+  Rendered manufacturers/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 30ms (Views: 24.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manufacturers/11" for 127.0.0.1 at 2018-10-10 22:49:31 +1100
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:37
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mGuitar Load (0.1ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars" WHERE "guitars"."manufacturer_id" = ?[0m  [["manufacturer_id", 11]]
+  ↳ app/views/manufacturers/show.html.erb:11
+  Rendered manufacturers/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 28ms (Views: 23.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manufacturers/11/edit" for 127.0.0.1 at 2018-10-10 22:49:34 +1100
+Processing by ManufacturersController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:18
+  Rendering manufacturers/edit.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (2.0ms)
+  Rendered manufacturers/edit.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 31ms (Views: 26.6ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/manufacturers/11" for 127.0.0.1 at 2018-10-10 22:49:38 +1100
+Processing by ManufacturersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vi/5RE030AxmBgbCfPoBRaQK+b+q843HZuInjXeHvv9/4FJgTmmb62S6luxh8HfvnrYSlQy55ZXGytzjXON/Ww==", "manufacturer"=>{"name"=>"Yamaha", "country"=>"Japan", "founded"=>"1888", "image"=>"https://upload.wikimedia.org/wikipedia/commons/2/21/YAMAHA_%28headquarters_1%29.jpg"}, "commit"=>"Update Manufacturer", "id"=>"11"}
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:13
+  [1m[36mManufacturer Update (0.5ms)[0m  [1m[33mUPDATE "manufacturers" SET "founded" = ?, "updated_at" = ? WHERE "manufacturers"."id" = ?[0m  [["founded", nil], ["updated_at", "2018-10-10 11:49:38.231623"], ["id", 11]]
+  ↳ app/controllers/manufacturers_controller.rb:13
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:13
+Redirected to http://localhost:3000/manufacturers/11
+Completed 302 Found in 10ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/manufacturers/11" for 127.0.0.1 at 2018-10-10 22:49:38 +1100
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:37
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mGuitar Load (0.1ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars" WHERE "guitars"."manufacturer_id" = ?[0m  [["manufacturer_id", 11]]
+  ↳ app/views/manufacturers/show.html.erb:11
+  Rendered manufacturers/show.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 59ms (Views: 53.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manufacturers/11/edit" for 127.0.0.1 at 2018-10-10 22:49:49 +1100
+Processing by ManufacturersController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:18
+  Rendering manufacturers/edit.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (2.8ms)
+  Rendered manufacturers/edit.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 35ms (Views: 31.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/guitars" for 127.0.0.1 at 2018-10-10 22:49:53 +1100
+Processing by GuitarsController#index as HTML
+  Rendering guitars/index.html.erb within layouts/application
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars"[0m
+  ↳ app/views/guitars/index.html.erb:4
+  Rendered guitars/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 35ms (Views: 25.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/guitars/5" for 127.0.0.1 at 2018-10-10 22:49:54 +1100
+Processing by GuitarsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mGuitar Load (0.1ms)[0m  [1m[34mSELECT  "guitars".* FROM "guitars" WHERE "guitars"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/guitars_controller.rb:37
+  Rendering guitars/show.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/guitars/show.html.erb:1
+  Rendered guitars/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 34ms (Views: 29.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/manufacturers" for 127.0.0.1 at 2018-10-10 22:51:53 +1100
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.3ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:4
+  Rendered manufacturers/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 61ms (Views: 49.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/manufacturers/10" for 127.0.0.1 at 2018-10-10 22:51:56 +1100
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mManufacturer Load (0.3ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:39
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mGuitar Load (0.1ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars" WHERE "guitars"."manufacturer_id" = ?[0m  [["manufacturer_id", 10]]
+  ↳ app/views/manufacturers/show.html.erb:11
+  Rendered manufacturers/show.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 39ms (Views: 28.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/manufacturers/10/edit" for 127.0.0.1 at 2018-10-10 22:51:57 +1100
+Processing by ManufacturersController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:18
+  Rendering manufacturers/edit.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (2.4ms)
+  Rendered manufacturers/edit.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 35ms (Views: 24.7ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/manufacturers/10" for 127.0.0.1 at 2018-10-10 22:52:02 +1100
+Processing by ManufacturersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CT+V+hULR86UwpfgzVCZeb8RtrlS9wAu8YyN4+I3YE8g8D7eFlUMKZZ+B87QWu/Tha1dk/S9aHxRpHaNyVOh6w==", "manufacturer"=>{"name"=>"Fender", "country"=>"USA", "founded"=>"1943", "image"=>"https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/FGF_museum_01._Leo_and_early_models.jpg/1920px-FGF_museum_01._Leo_and_early_models.jpg"}, "commit"=>"Update Manufacturer", "id"=>"10"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:13
+  [1m[36mManufacturer Update (0.7ms)[0m  [1m[33mUPDATE "manufacturers" SET "founded" = ?, "updated_at" = ? WHERE "manufacturers"."id" = ?[0m  [["founded", nil], ["updated_at", "2018-10-10 11:52:02.993426"], ["id", 10]]
+  ↳ app/controllers/manufacturers_controller.rb:13
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:13
+Redirected to http://localhost:3000/manufacturers/10
+Completed 302 Found in 9ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/manufacturers/10" for 127.0.0.1 at 2018-10-10 22:52:03 +1100
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:39
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mGuitar Load (0.1ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars" WHERE "guitars"."manufacturer_id" = ?[0m  [["manufacturer_id", 10]]
+  ↳ app/views/manufacturers/show.html.erb:11
+  Rendered manufacturers/show.html.erb within layouts/application (70.1ms)
+Completed 200 OK in 100ms (Views: 94.6ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mManufacturer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "manufacturers" WHERE "manufacturers"."id" = ?[0m  [["id", 9]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mManufacturer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "manufacturers" WHERE "manufacturers"."id" = ?[0m  [["id", 10]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mManufacturer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "manufacturers" WHERE "manufacturers"."id" = ?[0m  [["id", 11]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mManufacturer Create (0.4ms)[0m  [1m[32mINSERT INTO "manufacturers" ("name", "country", "founded", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Gibson"], ["country", "USA"], ["founded", 1902], ["image", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Gibson%2C_Inc.%2C_Kalamazoo%2C_1936.jpg/1920px-Gibson%2C_Inc.%2C_Kalamazoo%2C_1936.jpg"], ["created_at", "2018-10-10 11:53:32.309361"], ["updated_at", "2018-10-10 11:53:32.309361"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mManufacturer Create (0.4ms)[0m  [1m[32mINSERT INTO "manufacturers" ("name", "country", "founded", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Fender"], ["country", "USA"], ["founded", 1946], ["image", "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/FGF_museum_01._Leo_and_early_models.jpg/1920px-FGF_museum_01._Leo_and_early_models.jpg"], ["created_at", "2018-10-10 11:53:32.312714"], ["updated_at", "2018-10-10 11:53:32.312714"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mManufacturer Create (0.4ms)[0m  [1m[32mINSERT INTO "manufacturers" ("name", "country", "founded", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Yamaha"], ["country", "Japan"], ["founded", 1887], ["image", "https://upload.wikimedia.org/wikipedia/commons/2/21/YAMAHA_%28headquarters_1%29.jpg"], ["created_at", "2018-10-10 11:53:32.315533"], ["updated_at", "2018-10-10 11:53:32.315533"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "manufacturers"."name" FROM "manufacturers"[0m
+  ↳ db/seeds.rb:15
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars"[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mGuitar Destroy (0.4ms)[0m  [1m[31mDELETE FROM "guitars" WHERE "guitars"."id" = ?[0m  [["id", 5]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mGuitar Destroy (0.4ms)[0m  [1m[31mDELETE FROM "guitars" WHERE "guitars"."id" = ?[0m  [["id", 6]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mGuitar Destroy (0.3ms)[0m  [1m[31mDELETE FROM "guitars" WHERE "guitars"."id" = ?[0m  [["id", 7]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mGuitar Destroy (0.3ms)[0m  [1m[31mDELETE FROM "guitars" WHERE "guitars"."id" = ?[0m  [["id", 8]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[36mGuitar Create (0.4ms)[0m  [1m[32mINSERT INTO "guitars" ("name", "guitar_type", "price", "image", "created_at", "updated_at", "manufacturer_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Les Paul"], ["guitar_type", "Electric"], ["price", 3000], ["image", "https://images.samash.com/sa/ENS/ENSLPSTD.fpx?cvt=jpg"], ["created_at", "2018-10-10 11:53:32.344612"], ["updated_at", "2018-10-10 11:53:32.344612"], ["manufacturer_id", 12]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mGuitar Create (0.3ms)[0m  [1m[32mINSERT INTO "guitars" ("name", "guitar_type", "price", "image", "created_at", "updated_at", "manufacturer_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "J200"], ["guitar_type", "Acoustic"], ["price", 5000], ["image", "https://images.gibson.com/Products/Acoustic-Guitars/New-Vintage/New-Vintage-J-200/Gallery-Images/SJ2TPANGH1-Finish-Shot.jpg"], ["created_at", "2018-10-10 11:53:32.347803"], ["updated_at", "2018-10-10 11:53:32.347803"], ["manufacturer_id", 12]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mGuitar Create (0.3ms)[0m  [1m[32mINSERT INTO "guitars" ("name", "guitar_type", "price", "image", "created_at", "updated_at", "manufacturer_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Telecaster"], ["guitar_type", "Electric"], ["price", 2000], ["image", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYBFrjb1pq6sYOHDvjlRFZo0aFHQgn49kzYffHzxVBtl01EQSnVw"], ["created_at", "2018-10-10 11:53:32.350290"], ["updated_at", "2018-10-10 11:53:32.350290"], ["manufacturer_id", 13]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mGuitar Create (0.3ms)[0m  [1m[32mINSERT INTO "guitars" ("name", "guitar_type", "price", "image", "created_at", "updated_at", "manufacturer_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "RGX 312"], ["guitar_type", "Electric"], ["price", 500], ["image", "https://webshop.cashconverters.com.au/thumbnail/425x260/2420715-yamaha-left-handed-electric-guitar-rgx312-0.jpg"], ["created_at", "2018-10-10 11:53:32.352994"], ["updated_at", "2018-10-10 11:53:32.352994"], ["manufacturer_id", 14]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars"[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "guitars"."name" FROM "guitars"[0m
+  ↳ db/seeds.rb:25
+Started GET "/manufacturers" for 127.0.0.1 at 2018-10-10 22:54:33 +1100
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:4
+  Rendered manufacturers/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 47ms (Views: 40.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/manufacturers/12" for 127.0.0.1 at 2018-10-10 22:54:34 +1100
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:41
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mGuitar Load (0.1ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars" WHERE "guitars"."manufacturer_id" = ?[0m  [["manufacturer_id", 12]]
+  ↳ app/views/manufacturers/show.html.erb:11
+  Rendered manufacturers/show.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 46ms (Views: 29.5ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/manufacturers/12/edit" for 127.0.0.1 at 2018-10-10 22:54:36 +1100
+Processing by ManufacturersController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:21
+  Rendering manufacturers/edit.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (2.4ms)
+  Rendered manufacturers/edit.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 33ms (Views: 24.3ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/manufacturers/12" for 127.0.0.1 at 2018-10-10 22:54:40 +1100
+Processing by ManufacturersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"woQsaqmZsejuUAALnCWKG4cHBdlMTGRYA2EIMv6RoE/rS4dOqsf6D+zskCWBL/yxvbvu8+oGDAqjSfNc1fVh6w==", "manufacturer"=>{"name"=>"Gibson", "country"=>"USA", "founded"=>"1901", "image"=>"https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Gibson%2C_Inc.%2C_Kalamazoo%2C_1936.jpg/1920px-Gibson%2C_Inc.%2C_Kalamazoo%2C_1936.jpg"}, "commit"=>"Update Manufacturer", "id"=>"12"}
+  [1m[36mManufacturer Load (0.3ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:16
+  [1m[36mManufacturer Update (0.8ms)[0m  [1m[33mUPDATE "manufacturers" SET "founded" = ?, "updated_at" = ? WHERE "manufacturers"."id" = ?[0m  [["founded", nil], ["updated_at", "2018-10-10 11:54:40.451090"], ["id", 12]]
+  ↳ app/controllers/manufacturers_controller.rb:16
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:16
+Redirected to http://localhost:3000/manufacturers/12
+Completed 302 Found in 9ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/manufacturers/12" for 127.0.0.1 at 2018-10-10 22:54:40 +1100
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:41
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars" WHERE "guitars"."manufacturer_id" = ?[0m  [["manufacturer_id", 12]]
+  ↳ app/views/manufacturers/show.html.erb:11
+  Rendered manufacturers/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 29ms (Views: 25.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/manufacturers/12/edit" for 127.0.0.1 at 2018-10-10 22:55:16 +1100
+Processing by ManufacturersController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mManufacturer Load (0.3ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:21
+  Rendering manufacturers/edit.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (3.7ms)
+  Rendered manufacturers/edit.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 34ms (Views: 29.0ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/manufacturers/12" for 127.0.0.1 at 2018-10-10 22:55:23 +1100
+Processing by ManufacturersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IS1Wk4biH9vsBX1yK4XxWYo/RFvIESuyOIyn2Un1xZcI4v23hbxUPO657Vw2j4fzsIOvcW5bQ+CYpFy3YpEEMw==", "manufacturer"=>{"name"=>"Gibson", "country"=>"USA", "founded"=>"", "image"=>"http://placekitten.com/300/300"}, "commit"=>"Update Manufacturer", "id"=>"12"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:12
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:16
+  [1m[36mManufacturer Update (0.5ms)[0m  [1m[33mUPDATE "manufacturers" SET "image" = ?, "updated_at" = ? WHERE "manufacturers"."id" = ?[0m  [["image", "http://placekitten.com/300/300"], ["updated_at", "2018-10-10 11:55:23.695696"], ["id", 12]]
+  ↳ app/controllers/manufacturers_controller.rb:16
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:16
+Redirected to http://localhost:3000/manufacturers/12
+Completed 302 Found in 7ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/manufacturers/12" for 127.0.0.1 at 2018-10-10 22:55:23 +1100
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mManufacturer Load (0.3ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:41
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mGuitar Load (0.1ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars" WHERE "guitars"."manufacturer_id" = ?[0m  [["manufacturer_id", 12]]
+  ↳ app/views/manufacturers/show.html.erb:11
+  Rendered manufacturers/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 96ms (Views: 91.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/manufacturers/12/edit" for 127.0.0.1 at 2018-10-10 22:55:26 +1100
+Processing by ManufacturersController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:21
+  Rendering manufacturers/edit.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (1.9ms)
+  Rendered manufacturers/edit.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 29ms (Views: 25.0ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/manufacturers/12" for 127.0.0.1 at 2018-10-10 22:55:31 +1100
+Processing by ManufacturersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q5awoDxZWJeE3vEES4yzCsObtNi/CSAnf1aOoqNNyB+CWRuEPwcTcIZiYSpWhsWg+Sdf8hlDSHXffnXMiCkJuw==", "manufacturer"=>{"name"=>"Gibsone", "country"=>"UK", "founded"=>"", "image"=>"http://placekitten.com/300/300"}, "commit"=>"Update Manufacturer", "id"=>"12"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:16
+  [1m[36mManufacturer Update (0.5ms)[0m  [1m[33mUPDATE "manufacturers" SET "name" = ?, "country" = ?, "updated_at" = ? WHERE "manufacturers"."id" = ?[0m  [["name", "Gibsone"], ["country", "UK"], ["updated_at", "2018-10-10 11:55:31.882814"], ["id", 12]]
+  ↳ app/controllers/manufacturers_controller.rb:16
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:16
+Redirected to http://localhost:3000/manufacturers/12
+Completed 302 Found in 8ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/manufacturers/12" for 127.0.0.1 at 2018-10-10 22:55:31 +1100
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mManufacturer Load (0.3ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:41
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mGuitar Load (0.1ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars" WHERE "guitars"."manufacturer_id" = ?[0m  [["manufacturer_id", 12]]
+  ↳ app/views/manufacturers/show.html.erb:11
+  Rendered manufacturers/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 41ms (Views: 35.5ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/manufacturers/12" for 127.0.0.1 at 2018-10-10 22:55:37 +1100
+Processing by ManufacturersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6G0WeUfQODVNxvoKwx5NaDuv7M9UFS0uzAMFg6N3NMHBor1dRI5z0k96aiTeFDvCARMH5fJfRXxsK/7tiBP1ZQ==", "id"=>"12"}
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:6
+  [1m[36mManufacturer Destroy (0.5ms)[0m  [1m[31mDELETE FROM "manufacturers" WHERE "manufacturers"."id" = ?[0m  [["id", 12]]
+  ↳ app/controllers/manufacturers_controller.rb:6
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:6
+Redirected to http://localhost:3000/manufacturers
+Completed 302 Found in 11ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/manufacturers" for 127.0.0.1 at 2018-10-10 22:55:37 +1100
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:4
+  Rendered manufacturers/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 33ms (Views: 29.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/manufacturers/new" for 127.0.0.1 at 2018-10-10 22:55:43 +1100
+Processing by ManufacturersController#new as HTML
+  Rendering manufacturers/new.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (2.2ms)
+  Rendered manufacturers/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 39ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/manufacturers" for 127.0.0.1 at 2018-10-10 22:55:52 +1100
+Processing by ManufacturersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4dpTQiKwwnNgCERKPTO7mIm/toElP36NVoXzAdxZZ7/IFfhmIe6JlGK01GQgOc0yswNdq4N1Ft/2rQhv9z2mGw==", "manufacturer"=>{"name"=>"Gibson", "country"=>"UK", "founded"=>"1222", "image"=>"http://placekitten.com/300/300"}, "commit"=>"Create Manufacturer"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:31
+  [1m[36mManufacturer Create (0.6ms)[0m  [1m[32mINSERT INTO "manufacturers" ("name", "country", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Gibson"], ["country", "UK"], ["image", "http://placekitten.com/300/300"], ["created_at", "2018-10-10 11:55:52.840507"], ["updated_at", "2018-10-10 11:55:52.840507"]]
+  ↳ app/controllers/manufacturers_controller.rb:31
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:31
+Redirected to http://localhost:3000/manufacturers
+Completed 302 Found in 6ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/manufacturers" for 127.0.0.1 at 2018-10-10 22:55:52 +1100
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.3ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:4
+  Rendered manufacturers/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 26ms (Views: 21.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manufacturers/15" for 127.0.0.1 at 2018-10-10 22:55:54 +1100
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:41
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mGuitar Load (0.1ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars" WHERE "guitars"."manufacturer_id" = ?[0m  [["manufacturer_id", 15]]
+  ↳ app/views/manufacturers/show.html.erb:11
+  Rendered manufacturers/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 33ms (Views: 28.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/guitars" for 127.0.0.1 at 2018-10-10 22:55:57 +1100
+Processing by GuitarsController#index as HTML
+  Rendering guitars/index.html.erb within layouts/application
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars"[0m
+  ↳ app/views/guitars/index.html.erb:4
+  Rendered guitars/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 23ms (Views: 19.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/guitars/12" for 127.0.0.1 at 2018-10-10 22:55:59 +1100
+Processing by GuitarsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT  "guitars".* FROM "guitars" WHERE "guitars"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/guitars_controller.rb:37
+  Rendering guitars/show.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/guitars/show.html.erb:1
+  Rendered guitars/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 30ms (Views: 20.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/guitars/12/edit" for 127.0.0.1 at 2018-10-10 22:56:01 +1100
+Processing by GuitarsController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mGuitar Load (0.1ms)[0m  [1m[34mSELECT  "guitars".* FROM "guitars" WHERE "guitars"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/guitars_controller.rb:18
+  Rendering guitars/edit.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/guitars/_form.html.erb:20
+  Rendered guitars/_form.html.erb (3.8ms)
+  Rendered guitars/edit.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 31ms (Views: 26.6ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/guitars/12" for 127.0.0.1 at 2018-10-10 22:56:20 +1100
+Processing by GuitarsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HN2WzPWvD26cbFXuso3GNvhIfZdnouCSLfJo2HBQyO01Ej3o9vFEiZ7QxcCvh7CcwvSWvcHoiMCN2pO2WzQJSQ==", "guitar"=>{"name"=>"RGX 4444", "guitar_type"=>"A", "price"=>"600", "image"=>"https://images.gibson.com/Products/Electric-Guitars/2017/USA/SG-S-Series/SGSS17CHCH3_MAIN_HERO_01.jpg", "manufacturer_id"=>"15"}, "commit"=>"Update Guitar", "id"=>"12"}
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT  "guitars".* FROM "guitars" WHERE "guitars"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/guitars_controller.rb:12
+Unpermitted parameter: :manufacturer_id
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guitars_controller.rb:13
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/guitars_controller.rb:13
+  [1m[36mGuitar Update (0.7ms)[0m  [1m[33mUPDATE "guitars" SET "name" = ?, "guitar_type" = ?, "price" = ?, "image" = ?, "updated_at" = ? WHERE "guitars"."id" = ?[0m  [["name", "RGX 4444"], ["guitar_type", "A"], ["price", 600], ["image", "https://images.gibson.com/Products/Electric-Guitars/2017/USA/SG-S-Series/SGSS17CHCH3_MAIN_HERO_01.jpg"], ["updated_at", "2018-10-10 11:56:20.681677"], ["id", 12]]
+  ↳ app/controllers/guitars_controller.rb:13
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guitars_controller.rb:13
+Redirected to http://localhost:3000/guitars/12
+Completed 302 Found in 11ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/guitars/12" for 127.0.0.1 at 2018-10-10 22:56:20 +1100
+Processing by GuitarsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT  "guitars".* FROM "guitars" WHERE "guitars"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/guitars_controller.rb:37
+  Rendering guitars/show.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/guitars/show.html.erb:1
+  Rendered guitars/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 26ms (Views: 22.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/guitars" for 127.0.0.1 at 2018-10-10 22:56:36 +1100
+Processing by GuitarsController#index as HTML
+  Rendering guitars/index.html.erb within layouts/application
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars"[0m
+  ↳ app/views/guitars/index.html.erb:4
+  Rendered guitars/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 28ms (Views: 23.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/guitars/12" for 127.0.0.1 at 2018-10-10 22:56:38 +1100
+Processing by GuitarsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mGuitar Load (0.1ms)[0m  [1m[34mSELECT  "guitars".* FROM "guitars" WHERE "guitars"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/guitars_controller.rb:37
+  Rendering guitars/show.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/guitars/show.html.erb:1
+  Rendered guitars/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 24ms (Views: 19.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/guitars" for 127.0.0.1 at 2018-10-10 22:56:42 +1100
+Processing by GuitarsController#index as HTML
+  Rendering guitars/index.html.erb within layouts/application
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars"[0m
+  ↳ app/views/guitars/index.html.erb:4
+  Rendered guitars/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 31ms (Views: 28.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/guitars/12" for 127.0.0.1 at 2018-10-10 22:56:44 +1100
+Processing by GuitarsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mGuitar Load (0.1ms)[0m  [1m[34mSELECT  "guitars".* FROM "guitars" WHERE "guitars"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/guitars_controller.rb:37
+  Rendering guitars/show.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/guitars/show.html.erb:1
+  Rendered guitars/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 26ms (Views: 21.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/guitars/12/edit" for 127.0.0.1 at 2018-10-10 22:56:50 +1100
+Processing by GuitarsController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT  "guitars".* FROM "guitars" WHERE "guitars"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/guitars_controller.rb:18
+  Rendering guitars/edit.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/guitars/_form.html.erb:20
+  Rendered guitars/_form.html.erb (3.8ms)
+  Rendered guitars/edit.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 29ms (Views: 24.8ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/guitars/12" for 127.0.0.1 at 2018-10-10 22:56:53 +1100
+Processing by GuitarsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FKfjHcnuDL30nyC+b7hgNphX0DEeoSzVTe0YbU3oe889aEg5yrBHWvYjsJByshacous7G7jrRIftxeMDZoy6aw==", "guitar"=>{"name"=>"RGX 4444", "guitar_type"=>"A", "price"=>"600", "image"=>"https://images.gibson.com/Products/Electric-Guitars/2017/USA/SG-S-Series/SGSS17CHCH3_MAIN_HERO_01.jpg", "manufacturer_id"=>"15"}, "commit"=>"Update Guitar", "id"=>"12"}
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT  "guitars".* FROM "guitars" WHERE "guitars"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/guitars_controller.rb:12
+Unpermitted parameter: :manufacturer_id
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guitars_controller.rb:13
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/guitars_controller.rb:13
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guitars_controller.rb:13
+Redirected to http://localhost:3000/guitars/12
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/guitars/12" for 127.0.0.1 at 2018-10-10 22:56:53 +1100
+Processing by GuitarsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mGuitar Load (0.1ms)[0m  [1m[34mSELECT  "guitars".* FROM "guitars" WHERE "guitars"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/guitars_controller.rb:37
+  Rendering guitars/show.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/guitars/show.html.erb:1
+  Rendered guitars/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 24ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/guitars/12" for 127.0.0.1 at 2018-10-10 22:56:59 +1100
+Processing by GuitarsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kROQhjeGdt6XDLsBi2Tmkc1A5sXZBLQSWvLOQMQ4Tlm43DuiNNg9OZWwKy+WbpA79/wN739O3ED62jUu71yP/Q==", "id"=>"12"}
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT  "guitars".* FROM "guitars" WHERE "guitars"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/guitars_controller.rb:5
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/guitars_controller.rb:6
+  [1m[36mGuitar Destroy (0.3ms)[0m  [1m[31mDELETE FROM "guitars" WHERE "guitars"."id" = ?[0m  [["id", 12]]
+  ↳ app/controllers/guitars_controller.rb:6
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/guitars_controller.rb:6
+Redirected to http://localhost:3000/guitars
+Completed 302 Found in 10ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/guitars" for 127.0.0.1 at 2018-10-10 22:56:59 +1100
+Processing by GuitarsController#index as HTML
+  Rendering guitars/index.html.erb within layouts/application
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars"[0m
+  ↳ app/views/guitars/index.html.erb:4
+  Rendered guitars/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 29ms (Views: 26.0ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mManufacturer Destroy (0.6ms)[0m  [1m[31mDELETE FROM "manufacturers" WHERE "manufacturers"."id" = ?[0m  [["id", 13]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mManufacturer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "manufacturers" WHERE "manufacturers"."id" = ?[0m  [["id", 14]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mManufacturer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "manufacturers" WHERE "manufacturers"."id" = ?[0m  [["id", 15]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mManufacturer Create (0.4ms)[0m  [1m[32mINSERT INTO "manufacturers" ("name", "country", "founded", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Gibson"], ["country", "USA"], ["founded", 1902], ["image", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Gibson%2C_Inc.%2C_Kalamazoo%2C_1936.jpg/1920px-Gibson%2C_Inc.%2C_Kalamazoo%2C_1936.jpg"], ["created_at", "2018-10-10 11:57:15.237927"], ["updated_at", "2018-10-10 11:57:15.237927"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mManufacturer Create (0.4ms)[0m  [1m[32mINSERT INTO "manufacturers" ("name", "country", "founded", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Fender"], ["country", "USA"], ["founded", 1946], ["image", "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/FGF_museum_01._Leo_and_early_models.jpg/1920px-FGF_museum_01._Leo_and_early_models.jpg"], ["created_at", "2018-10-10 11:57:15.241292"], ["updated_at", "2018-10-10 11:57:15.241292"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mManufacturer Create (0.3ms)[0m  [1m[32mINSERT INTO "manufacturers" ("name", "country", "founded", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Yamaha"], ["country", "Japan"], ["founded", 1887], ["image", "https://upload.wikimedia.org/wikipedia/commons/2/21/YAMAHA_%28headquarters_1%29.jpg"], ["created_at", "2018-10-10 11:57:15.244153"], ["updated_at", "2018-10-10 11:57:15.244153"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "manufacturers"."name" FROM "manufacturers"[0m
+  ↳ db/seeds.rb:15
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars"[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mGuitar Destroy (0.3ms)[0m  [1m[31mDELETE FROM "guitars" WHERE "guitars"."id" = ?[0m  [["id", 9]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mGuitar Destroy (0.4ms)[0m  [1m[31mDELETE FROM "guitars" WHERE "guitars"."id" = ?[0m  [["id", 10]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mGuitar Destroy (0.4ms)[0m  [1m[31mDELETE FROM "guitars" WHERE "guitars"."id" = ?[0m  [["id", 11]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[36mGuitar Create (0.5ms)[0m  [1m[32mINSERT INTO "guitars" ("name", "guitar_type", "price", "image", "created_at", "updated_at", "manufacturer_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Les Paul"], ["guitar_type", "Electric"], ["price", 3000], ["image", "https://images.samash.com/sa/ENS/ENSLPSTD.fpx?cvt=jpg"], ["created_at", "2018-10-10 11:57:15.274280"], ["updated_at", "2018-10-10 11:57:15.274280"], ["manufacturer_id", 16]]
+  ↳ db/seeds.rb:20
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mGuitar Create (0.4ms)[0m  [1m[32mINSERT INTO "guitars" ("name", "guitar_type", "price", "image", "created_at", "updated_at", "manufacturer_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "J200"], ["guitar_type", "Acoustic"], ["price", 5000], ["image", "https://images.gibson.com/Products/Acoustic-Guitars/New-Vintage/New-Vintage-J-200/Gallery-Images/SJ2TPANGH1-Finish-Shot.jpg"], ["created_at", "2018-10-10 11:57:15.278259"], ["updated_at", "2018-10-10 11:57:15.278259"], ["manufacturer_id", 16]]
+  ↳ db/seeds.rb:21
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mGuitar Create (0.4ms)[0m  [1m[32mINSERT INTO "guitars" ("name", "guitar_type", "price", "image", "created_at", "updated_at", "manufacturer_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Telecaster"], ["guitar_type", "Electric"], ["price", 2000], ["image", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYBFrjb1pq6sYOHDvjlRFZo0aFHQgn49kzYffHzxVBtl01EQSnVw"], ["created_at", "2018-10-10 11:57:15.288353"], ["updated_at", "2018-10-10 11:57:15.288353"], ["manufacturer_id", 17]]
+  ↳ db/seeds.rb:22
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mGuitar Create (0.4ms)[0m  [1m[32mINSERT INTO "guitars" ("name", "guitar_type", "price", "image", "created_at", "updated_at", "manufacturer_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "RGX 312"], ["guitar_type", "Electric"], ["price", 500], ["image", "https://webshop.cashconverters.com.au/thumbnail/425x260/2420715-yamaha-left-handed-electric-guitar-rgx312-0.jpg"], ["created_at", "2018-10-10 11:57:15.296543"], ["updated_at", "2018-10-10 11:57:15.296543"], ["manufacturer_id", 18]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mGuitar Load (0.1ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars"[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "guitars"."name" FROM "guitars"[0m
+  ↳ db/seeds.rb:25
+Started GET "/guitars" for 127.0.0.1 at 2018-10-10 22:57:19 +1100
+Processing by GuitarsController#index as HTML
+  Rendering guitars/index.html.erb within layouts/application
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars"[0m
+  ↳ app/views/guitars/index.html.erb:4
+  Rendered guitars/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 27ms (Views: 22.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/guitars" for 127.0.0.1 at 2018-10-11 09:19:14 +1100
+Processing by GuitarsController#index as HTML
+  Rendering guitars/index.html.erb within layouts/application
+  [1m[36mGuitar Load (0.8ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars"[0m
+  ↳ app/views/guitars/index.html.erb:4
+  Rendered guitars/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 137ms (Views: 130.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/guitars" for 127.0.0.1 at 2018-10-11 09:19:34 +1100
+Processing by GuitarsController#index as HTML
+  Rendering guitars/index.html.erb within layouts/application
+  [1m[36mGuitar Load (0.6ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars"[0m
+  ↳ app/views/guitars/index.html.erb:4
+  Rendered guitars/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 89ms (Views: 84.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/guitars" for 127.0.0.1 at 2018-10-11 09:19:51 +1100
+Processing by GuitarsController#index as HTML
+  Rendering guitars/index.html.erb within layouts/application
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars"[0m
+  ↳ app/views/guitars/index.html.erb:4
+  Rendered guitars/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 57ms (Views: 53.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/guitars" for 127.0.0.1 at 2018-10-11 09:19:52 +1100
+Processing by GuitarsController#index as HTML
+  Rendering guitars/index.html.erb within layouts/application
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars"[0m
+  ↳ app/views/guitars/index.html.erb:4
+  Rendered guitars/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 25ms (Views: 20.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/guitars" for 127.0.0.1 at 2018-10-11 09:20:35 +1100
+Processing by GuitarsController#index as HTML
+  Rendering guitars/index.html.erb within layouts/application
+  [1m[36mGuitar Load (0.7ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars"[0m
+  ↳ app/views/guitars/index.html.erb:4
+  Rendered guitars/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 47ms (Views: 42.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/guitars/13" for 127.0.0.1 at 2018-10-11 09:20:44 +1100
+Processing by GuitarsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT  "guitars".* FROM "guitars" WHERE "guitars"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/guitars_controller.rb:37
+  Rendering guitars/show.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/guitars/show.html.erb:1
+  Rendered guitars/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 32ms (Views: 22.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/manufacturers" for 127.0.0.1 at 2018-10-11 10:14:58 +1100
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:4
+  Rendered manufacturers/index.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 92ms (Views: 81.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/manufacturers/16" for 127.0.0.1 at 2018-10-11 10:15:02 +1100
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:39
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mGuitar Load (0.5ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars" WHERE "guitars"."manufacturer_id" = ?[0m  [["manufacturer_id", 16]]
+  ↳ app/views/manufacturers/show.html.erb:11
+  Rendered manufacturers/show.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 49ms (Views: 35.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/manufacturers/16/edit" for 127.0.0.1 at 2018-10-11 10:15:05 +1100
+Processing by ManufacturersController#edit as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:19
+  Rendering manufacturers/edit.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (6.6ms)
+  Rendered manufacturers/edit.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 40ms (Views: 30.9ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/manufacturers/16" for 127.0.0.1 at 2018-10-11 10:15:08 +1100
+Processing by ManufacturersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XNDZnU+9evH/uY2Q4lVKvbhu4VAQowokLLTtYW8cKnB1H3K5TOMxFv0FHb7/XzwXgtIKerbpYnaMnBYPRHjr1A==", "manufacturer"=>{"name"=>"Gibson", "country"=>"USA", "founded"=>"1903", "image"=>"https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Gibson%2C_Inc.%2C_Kalamazoo%2C_1936.jpg/1920px-Gibson%2C_Inc.%2C_Kalamazoo%2C_1936.jpg"}, "commit"=>"Update Manufacturer", "id"=>"16"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:14
+  [1m[36mManufacturer Update (1.2ms)[0m  [1m[33mUPDATE "manufacturers" SET "founded" = ?, "updated_at" = ? WHERE "manufacturers"."id" = ?[0m  [["founded", nil], ["updated_at", "2018-10-10 23:15:08.995168"], ["id", 16]]
+  ↳ app/controllers/manufacturers_controller.rb:14
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:14
+Redirected to http://localhost:3000/manufacturers/16
+Completed 302 Found in 17ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/manufacturers/16" for 127.0.0.1 at 2018-10-11 10:15:09 +1100
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mManufacturer Load (0.4ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:39
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mGuitar Load (0.1ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars" WHERE "guitars"."manufacturer_id" = ?[0m  [["manufacturer_id", 16]]
+  ↳ app/views/manufacturers/show.html.erb:11
+  Rendered manufacturers/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 38ms (Views: 32.6ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mManufacturer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "manufacturers" WHERE "manufacturers"."id" = ?[0m  [["id", 16]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mManufacturer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "manufacturers" WHERE "manufacturers"."id" = ?[0m  [["id", 17]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mManufacturer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "manufacturers" WHERE "manufacturers"."id" = ?[0m  [["id", 18]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mManufacturer Create (0.3ms)[0m  [1m[32mINSERT INTO "manufacturers" ("name", "country", "founded", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Gibson"], ["country", "USA"], ["founded", 1902], ["image", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Gibson%2C_Inc.%2C_Kalamazoo%2C_1936.jpg/1920px-Gibson%2C_Inc.%2C_Kalamazoo%2C_1936.jpg"], ["created_at", "2018-10-10 23:16:58.685408"], ["updated_at", "2018-10-10 23:16:58.685408"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mManufacturer Create (0.4ms)[0m  [1m[32mINSERT INTO "manufacturers" ("name", "country", "founded", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Fender"], ["country", "USA"], ["founded", 1946], ["image", "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/FGF_museum_01._Leo_and_early_models.jpg/1920px-FGF_museum_01._Leo_and_early_models.jpg"], ["created_at", "2018-10-10 23:16:58.688529"], ["updated_at", "2018-10-10 23:16:58.688529"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mManufacturer Create (0.3ms)[0m  [1m[32mINSERT INTO "manufacturers" ("name", "country", "founded", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Yamaha"], ["country", "Japan"], ["founded", 1887], ["image", "https://upload.wikimedia.org/wikipedia/commons/2/21/YAMAHA_%28headquarters_1%29.jpg"], ["created_at", "2018-10-10 23:16:58.691338"], ["updated_at", "2018-10-10 23:16:58.691338"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "manufacturers"."name" FROM "manufacturers"[0m
+  ↳ db/seeds.rb:15
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars"[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mGuitar Destroy (0.3ms)[0m  [1m[31mDELETE FROM "guitars" WHERE "guitars"."id" = ?[0m  [["id", 13]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mGuitar Destroy (0.4ms)[0m  [1m[31mDELETE FROM "guitars" WHERE "guitars"."id" = ?[0m  [["id", 14]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mGuitar Destroy (0.3ms)[0m  [1m[31mDELETE FROM "guitars" WHERE "guitars"."id" = ?[0m  [["id", 15]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mGuitar Destroy (0.4ms)[0m  [1m[31mDELETE FROM "guitars" WHERE "guitars"."id" = ?[0m  [["id", 16]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[36mGuitar Create (0.4ms)[0m  [1m[32mINSERT INTO "guitars" ("name", "guitar_type", "price", "image", "created_at", "updated_at", "manufacturer_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Les Paul"], ["guitar_type", "Electric"], ["price", 3000], ["image", "https://images.samash.com/sa/ENS/ENSLPSTD.fpx?cvt=jpg"], ["created_at", "2018-10-10 23:16:58.718628"], ["updated_at", "2018-10-10 23:16:58.718628"], ["manufacturer_id", 19]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mGuitar Create (0.4ms)[0m  [1m[32mINSERT INTO "guitars" ("name", "guitar_type", "price", "image", "created_at", "updated_at", "manufacturer_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "J200"], ["guitar_type", "Acoustic"], ["price", 5000], ["image", "https://images.gibson.com/Products/Acoustic-Guitars/New-Vintage/New-Vintage-J-200/Gallery-Images/SJ2TPANGH1-Finish-Shot.jpg"], ["created_at", "2018-10-10 23:16:58.721512"], ["updated_at", "2018-10-10 23:16:58.721512"], ["manufacturer_id", 19]]
+  ↳ db/seeds.rb:21
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mGuitar Create (0.3ms)[0m  [1m[32mINSERT INTO "guitars" ("name", "guitar_type", "price", "image", "created_at", "updated_at", "manufacturer_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Telecaster"], ["guitar_type", "Electric"], ["price", 2000], ["image", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYBFrjb1pq6sYOHDvjlRFZo0aFHQgn49kzYffHzxVBtl01EQSnVw"], ["created_at", "2018-10-10 23:16:58.725118"], ["updated_at", "2018-10-10 23:16:58.725118"], ["manufacturer_id", 20]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mGuitar Create (0.3ms)[0m  [1m[32mINSERT INTO "guitars" ("name", "guitar_type", "price", "image", "created_at", "updated_at", "manufacturer_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "RGX 312"], ["guitar_type", "Electric"], ["price", 500], ["image", "https://webshop.cashconverters.com.au/thumbnail/425x260/2420715-yamaha-left-handed-electric-guitar-rgx312-0.jpg"], ["created_at", "2018-10-10 23:16:58.727823"], ["updated_at", "2018-10-10 23:16:58.727823"], ["manufacturer_id", 21]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars"[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "guitars"."name" FROM "guitars"[0m
+  ↳ db/seeds.rb:25
+Started GET "/manufacturers" for 127.0.0.1 at 2018-10-11 10:17:04 +1100
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:4
+  Rendered manufacturers/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 25ms (Views: 21.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/manufacturers/19" for 127.0.0.1 at 2018-10-11 10:17:06 +1100
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:39
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars" WHERE "guitars"."manufacturer_id" = ?[0m  [["manufacturer_id", 19]]
+  ↳ app/views/manufacturers/show.html.erb:11
+  Rendered manufacturers/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 28ms (Views: 22.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manufacturers/19/edit" for 127.0.0.1 at 2018-10-11 10:17:11 +1100
+Processing by ManufacturersController#edit as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:19
+  Rendering manufacturers/edit.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (2.2ms)
+  Rendered manufacturers/edit.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 39ms (Views: 32.5ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/manufacturers/19" for 127.0.0.1 at 2018-10-11 10:17:15 +1100
+Processing by ManufacturersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MXYiYO/4vo3Kz20Pfjl/upVaDxS074t1d6QVeRGeUSQYuYlE7Kb1ashz/SFjMwkQr+bkPhKl4yfXjO4XOvqQgA==", "manufacturer"=>{"name"=>"Gibson", "country"=>"USAl", "founded"=>"1902", "image"=>"https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Gibson%2C_Inc.%2C_Kalamazoo%2C_1936.jpg/1920px-Gibson%2C_Inc.%2C_Kalamazoo%2C_1936.jpg"}, "commit"=>"Update Manufacturer", "id"=>"19"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:14
+  [1m[36mManufacturer Update (0.6ms)[0m  [1m[33mUPDATE "manufacturers" SET "country" = ?, "founded" = ?, "updated_at" = ? WHERE "manufacturers"."id" = ?[0m  [["country", "USAl"], ["founded", nil], ["updated_at", "2018-10-10 23:17:15.968569"], ["id", 19]]
+  ↳ app/controllers/manufacturers_controller.rb:14
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:14
+Redirected to http://localhost:3000/manufacturers/19
+Completed 302 Found in 12ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/manufacturers/19" for 127.0.0.1 at 2018-10-11 10:17:15 +1100
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:39
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars" WHERE "guitars"."manufacturer_id" = ?[0m  [["manufacturer_id", 19]]
+  ↳ app/views/manufacturers/show.html.erb:11
+  Rendered manufacturers/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 52ms (Views: 47.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/manufacturers/19/edit" for 127.0.0.1 at 2018-10-11 10:36:10 +1100
+Processing by ManufacturersController#edit as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mManufacturer Load (0.3ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:19
+  Rendering manufacturers/edit.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (2.4ms)
+  Rendered manufacturers/edit.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 42ms (Views: 37.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manufacturers/19/edit" for 127.0.0.1 at 2018-10-11 10:37:48 +1100
+Processing by ManufacturersController#edit as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:24
+  Rendering manufacturers/edit.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (4.5ms)
+  Rendered manufacturers/edit.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 64ms (Views: 41.6ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/manufacturers/19" for 127.0.0.1 at 2018-10-11 10:37:52 +1100
+Processing by ManufacturersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YGqGc9kzWvxHEOpuMGN3csVPXItHoSLn15HnzmJpSghJpS1X2m0RG0WsekAtaQHY//O3oeHrSrV3uRygSQ2LrA==", "manufacturer"=>{"name"=>"Gibson", "country"=>"USAl", "founded"=>"2009", "image"=>"https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Gibson%2C_Inc.%2C_Kalamazoo%2C_1936.jpg/1920px-Gibson%2C_Inc.%2C_Kalamazoo%2C_1936.jpg"}, "commit"=>"Update Manufacturer", "id"=>"19"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:14
+  [1m[36mManufacturer Update (0.6ms)[0m  [1m[33mUPDATE "manufacturers" SET "name" = ?, "country" = ?, "founded" = ?, "image" = ?, "updated_at" = ? WHERE "manufacturers"."id" = ?[0m  [["name", nil], ["country", nil], ["founded", 0], ["image", nil], ["updated_at", "2018-10-10 23:37:52.852922"], ["id", 19]]
+  ↳ app/controllers/manufacturers_controller.rb:14
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:14
+Redirected to http://localhost:3000/manufacturers/19
+Completed 302 Found in 10ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/manufacturers/19" for 127.0.0.1 at 2018-10-11 10:37:52 +1100
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:49
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars" WHERE "guitars"."manufacturer_id" = ?[0m  [["manufacturer_id", 19]]
+  ↳ app/views/manufacturers/show.html.erb:11
+  Rendered manufacturers/show.html.erb within layouts/application (15.7ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (Nil location provided. Can't build URI.):
+    15: <% end %>
+    16: </ul>
+    17: 
+    18: <%= image_tag(@manufacturer.image, alt: @manufacturer.name) %>
+  
+app/views/manufacturers/show.html.erb:18:in `_app_views_manufacturers_show_html_erb___673388991110045905_70215006042900'
+Started GET "/manufacturers/19" for 127.0.0.1 at 2018-10-11 10:38:32 +1100
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:49
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars" WHERE "guitars"."manufacturer_id" = ?[0m  [["manufacturer_id", 19]]
+  ↳ app/views/manufacturers/show.html.erb:11
+  Rendered manufacturers/show.html.erb within layouts/application (22.1ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (Nil location provided. Can't build URI.):
+    15: <% end %>
+    16: </ul>
+    17: 
+    18: <%= image_tag(@manufacturer.image, alt: @manufacturer.name) %>
+  
+app/views/manufacturers/show.html.erb:18:in `_app_views_manufacturers_show_html_erb___673388991110045905_70215005646600'
+Started GET "/manufacturers/19" for 127.0.0.1 at 2018-10-11 10:38:34 +1100
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:49
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mGuitar Load (0.1ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars" WHERE "guitars"."manufacturer_id" = ?[0m  [["manufacturer_id", 19]]
+  ↳ app/views/manufacturers/show.html.erb:11
+  Rendered manufacturers/show.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (Nil location provided. Can't build URI.):
+    15: <% end %>
+    16: </ul>
+    17: 
+    18: <%= image_tag(@manufacturer.image, alt: @manufacturer.name) %>
+  
+app/views/manufacturers/show.html.erb:18:in `_app_views_manufacturers_show_html_erb___673388991110045905_70215022959160'
+Started PATCH "/manufacturers/19" for 127.0.0.1 at 2018-10-11 10:38:38 +1100
+Processing by ManufacturersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YGqGc9kzWvxHEOpuMGN3csVPXItHoSLn15HnzmJpSghJpS1X2m0RG0WsekAtaQHY//O3oeHrSrV3uRygSQ2LrA==", "manufacturer"=>{"name"=>"Gibson", "country"=>"USAl", "founded"=>"2009", "image"=>"https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Gibson%2C_Inc.%2C_Kalamazoo%2C_1936.jpg/1920px-Gibson%2C_Inc.%2C_Kalamazoo%2C_1936.jpg"}, "commit"=>"Update Manufacturer", "id"=>"19"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:14
+Redirected to http://localhost:3000/manufacturers/19
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/manufacturers/19" for 127.0.0.1 at 2018-10-11 10:38:38 +1100
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:49
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars" WHERE "guitars"."manufacturer_id" = ?[0m  [["manufacturer_id", 19]]
+  ↳ app/views/manufacturers/show.html.erb:11
+  Rendered manufacturers/show.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (Nil location provided. Can't build URI.):
+    15: <% end %>
+    16: </ul>
+    17: 
+    18: <%= image_tag(@manufacturer.image, alt: @manufacturer.name) %>
+  
+app/views/manufacturers/show.html.erb:18:in `_app_views_manufacturers_show_html_erb___673388991110045905_70214980286580'
+Started GET "/manufacturers/19" for 127.0.0.1 at 2018-10-11 10:43:45 +1100
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:41
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mGuitar Load (0.3ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars" WHERE "guitars"."manufacturer_id" = ?[0m  [["manufacturer_id", 19]]
+  ↳ app/views/manufacturers/show.html.erb:11
+  Rendered manufacturers/show.html.erb within layouts/application (20.4ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (Nil location provided. Can't build URI.):
+    15: <% end %>
+    16: </ul>
+    17: 
+    18: <%= image_tag(@manufacturer.image, alt: @manufacturer.name) %>
+  
+app/views/manufacturers/show.html.erb:18:in `_app_views_manufacturers_show_html_erb___673388991110045905_70215023123740'
+Started GET "/manufacturers" for 127.0.0.1 at 2018-10-11 10:43:49 +1100
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.6ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:4
+  Rendered manufacturers/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 65ms (Views: 58.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/manufacturers/19" for 127.0.0.1 at 2018-10-11 10:43:52 +1100
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:41
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mGuitar Load (0.1ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars" WHERE "guitars"."manufacturer_id" = ?[0m  [["manufacturer_id", 19]]
+  ↳ app/views/manufacturers/show.html.erb:11
+  Rendered manufacturers/show.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Nil location provided. Can't build URI.):
+    15: <% end %>
+    16: </ul>
+    17: 
+    18: <%= image_tag(@manufacturer.image, alt: @manufacturer.name) %>
+  
+app/views/manufacturers/show.html.erb:18:in `_app_views_manufacturers_show_html_erb___673388991110045905_70214986699040'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mManufacturer Destroy (0.6ms)[0m  [1m[31mDELETE FROM "manufacturers" WHERE "manufacturers"."id" = ?[0m  [["id", 19]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mManufacturer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "manufacturers" WHERE "manufacturers"."id" = ?[0m  [["id", 20]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mManufacturer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "manufacturers" WHERE "manufacturers"."id" = ?[0m  [["id", 21]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mManufacturer Create (0.3ms)[0m  [1m[32mINSERT INTO "manufacturers" ("name", "country", "founded", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Gibson"], ["country", "USA"], ["founded", 1902], ["image", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Gibson%2C_Inc.%2C_Kalamazoo%2C_1936.jpg/1920px-Gibson%2C_Inc.%2C_Kalamazoo%2C_1936.jpg"], ["created_at", "2018-10-10 23:44:04.320348"], ["updated_at", "2018-10-10 23:44:04.320348"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mManufacturer Create (0.3ms)[0m  [1m[32mINSERT INTO "manufacturers" ("name", "country", "founded", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Fender"], ["country", "USA"], ["founded", 1946], ["image", "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/FGF_museum_01._Leo_and_early_models.jpg/1920px-FGF_museum_01._Leo_and_early_models.jpg"], ["created_at", "2018-10-10 23:44:04.323103"], ["updated_at", "2018-10-10 23:44:04.323103"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mManufacturer Create (0.5ms)[0m  [1m[32mINSERT INTO "manufacturers" ("name", "country", "founded", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Yamaha"], ["country", "Japan"], ["founded", 1887], ["image", "https://upload.wikimedia.org/wikipedia/commons/2/21/YAMAHA_%28headquarters_1%29.jpg"], ["created_at", "2018-10-10 23:44:04.325774"], ["updated_at", "2018-10-10 23:44:04.325774"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "manufacturers"."name" FROM "manufacturers"[0m
+  ↳ db/seeds.rb:15
+  [1m[36mGuitar Load (0.2ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars"[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mGuitar Destroy (0.3ms)[0m  [1m[31mDELETE FROM "guitars" WHERE "guitars"."id" = ?[0m  [["id", 17]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mGuitar Destroy (0.4ms)[0m  [1m[31mDELETE FROM "guitars" WHERE "guitars"."id" = ?[0m  [["id", 18]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mGuitar Destroy (0.2ms)[0m  [1m[31mDELETE FROM "guitars" WHERE "guitars"."id" = ?[0m  [["id", 19]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mGuitar Destroy (0.4ms)[0m  [1m[31mDELETE FROM "guitars" WHERE "guitars"."id" = ?[0m  [["id", 20]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[36mGuitar Create (1.1ms)[0m  [1m[32mINSERT INTO "guitars" ("name", "guitar_type", "price", "image", "created_at", "updated_at", "manufacturer_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Les Paul"], ["guitar_type", "Electric"], ["price", 3000], ["image", "https://images.samash.com/sa/ENS/ENSLPSTD.fpx?cvt=jpg"], ["created_at", "2018-10-10 23:44:04.355819"], ["updated_at", "2018-10-10 23:44:04.355819"], ["manufacturer_id", 22]]
+  ↳ db/seeds.rb:20
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mGuitar Create (0.4ms)[0m  [1m[32mINSERT INTO "guitars" ("name", "guitar_type", "price", "image", "created_at", "updated_at", "manufacturer_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "J200"], ["guitar_type", "Acoustic"], ["price", 5000], ["image", "https://images.gibson.com/Products/Acoustic-Guitars/New-Vintage/New-Vintage-J-200/Gallery-Images/SJ2TPANGH1-Finish-Shot.jpg"], ["created_at", "2018-10-10 23:44:04.361464"], ["updated_at", "2018-10-10 23:44:04.361464"], ["manufacturer_id", 22]]
+  ↳ db/seeds.rb:21
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mGuitar Create (0.4ms)[0m  [1m[32mINSERT INTO "guitars" ("name", "guitar_type", "price", "image", "created_at", "updated_at", "manufacturer_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Telecaster"], ["guitar_type", "Electric"], ["price", 2000], ["image", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYBFrjb1pq6sYOHDvjlRFZo0aFHQgn49kzYffHzxVBtl01EQSnVw"], ["created_at", "2018-10-10 23:44:04.368224"], ["updated_at", "2018-10-10 23:44:04.368224"], ["manufacturer_id", 23]]
+  ↳ db/seeds.rb:22
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mGuitar Create (1.0ms)[0m  [1m[32mINSERT INTO "guitars" ("name", "guitar_type", "price", "image", "created_at", "updated_at", "manufacturer_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "RGX 312"], ["guitar_type", "Electric"], ["price", 500], ["image", "https://webshop.cashconverters.com.au/thumbnail/425x260/2420715-yamaha-left-handed-electric-guitar-rgx312-0.jpg"], ["created_at", "2018-10-10 23:44:04.373181"], ["updated_at", "2018-10-10 23:44:04.373181"], ["manufacturer_id", 24]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mGuitar Load (0.1ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars"[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "guitars"."name" FROM "guitars"[0m
+  ↳ db/seeds.rb:25
+Started GET "/manufacturers" for 127.0.0.1 at 2018-10-11 10:44:07 +1100
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:4
+  Rendered manufacturers/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 44ms (Views: 38.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/manufacturers/22" for 127.0.0.1 at 2018-10-11 10:44:09 +1100
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:41
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mGuitar Load (0.1ms)[0m  [1m[34mSELECT "guitars".* FROM "guitars" WHERE "guitars"."manufacturer_id" = ?[0m  [["manufacturer_id", 22]]
+  ↳ app/views/manufacturers/show.html.erb:11
+  Rendered manufacturers/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 35ms (Views: 26.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manufacturers/22/edit" for 127.0.0.1 at 2018-10-11 10:44:11 +1100
+Processing by ManufacturersController#edit as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:21
+  Rendering manufacturers/edit.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (2.2ms)
+  Rendered manufacturers/edit.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 31ms (Views: 26.5ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/manufacturers/22" for 127.0.0.1 at 2018-10-11 10:44:14 +1100
+Processing by ManufacturersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"67G4mOA4yVZagkLxk7FQBMqJMvCMhNq9yvjMzqbRoYHCfhO842aCsVg+0t+Ouyau8DXZ2irOsu9q0DegjbVgJQ==", "manufacturer"=>{"name"=>"Gibson", "country"=>"USA", "founded"=>"1908", "image"=>"https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Gibson%2C_Inc.%2C_Kalamazoo%2C_1936.jpg/1920px-Gibson%2C_Inc.%2C_Kalamazoo%2C_1936.jpg"}, "commit"=>"Update Manufacturer", "id"=>"22"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:16
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms)
+
+
+  
+ArgumentError (When assigning attributes, you must pass a hash as an argument.):
+  
+app/controllers/manufacturers_controller.rb:16:in `update'

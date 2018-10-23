@@ -10,6 +10,10 @@ class ManufacturersController < ApplicationController
   #UPDATE
   def update
     @manufacturer = Manufacturer.find params[:id]
+    puts "=" * 50
+    puts @manufacturer.founded
+    puts params[:founded]
+    params[:founded] = params[:founded].to_i
     @manufacturer.update(manufacturer_params)
     redirect_to manufacturer_path(@manufacturer.id)
   end
@@ -24,6 +28,7 @@ class ManufacturersController < ApplicationController
   end
 
   def create
+
     Manufacturer.create(manufacturer_params)
     redirect_to manufacturers_path
   end

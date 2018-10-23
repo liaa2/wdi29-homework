@@ -1,0 +1,34 @@
+<%= form_for @party do |f| %>
+  <fieldset>
+    <%= f.label :name %><!-- gives us a <label> tag -->
+    <%= f.text_field :name %> <!-- gives us <input type="text" name="name"> -->
+  </fieldset>
+  <fieldset>
+    <%= f.label :founded, 'Date Founded' %>
+    <%= f.text_field :founded %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :abbr %>
+    <%= f.text_field :abbr %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :leader %>
+    <%= f.text_field :leader %>
+  </fieldset>
+
+  <fieldset>
+    <%= f.label :position %>
+    <%= f.text_field :position %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :ideology %>
+    <%= f.text_field :ideology %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :image, 'Image URL'  %>
+    <%= f.text_field :image%>
+  </fieldset>
+
+  <%= f.submit %>
+
+<% end %>

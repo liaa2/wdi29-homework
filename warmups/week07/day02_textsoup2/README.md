@@ -8,7 +8,7 @@ Using the solution for the original text soup, and the [dat.gui](https://worksho
 
 #### BONUS:
 
-- add a controller to change the add word interval (consider [example#7](https://workshop.chromeexperiments.com/examples/gui/#7--Events) from the page above, and remember [this](https://github.com/wofockham/wdi-17/blob/master/04-jquery/slots/js/slots.js) example from class)
+- add a controller to change the add word interval (consider [example#7](https://workshop.chromeexperiments.com/examples/gui/#7--Events) from the page above, and [this](https://github.com/wofockham/wdi-17/blob/master/04-jquery/slots/js/slots.js) example)
 - add a controller to change the text colour using the colour controller ([example#4](https://workshop.chromeexperiments.com/examples/gui/#4--Color-Controllers))
 - add a text field controller, and use the word(s) from the text field in between every other random word that is added
 - add a button controller which clears all words off the screen when pressed

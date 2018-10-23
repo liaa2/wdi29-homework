@@ -1,0 +1,24 @@
+<h2>
+  <%= @issue['name'] %>
+
+</h2>
+
+
+<a href="/issues/<%= @issue['id'] %>/edit">Edit This Issue</a> |
+<a href="/issues/<%= @issue['id'] %>/delete">Delete This Issue</a>
+<hr>
+<p>Problem Summary: <%= @issue.summary %></p>
+<p>Problem Type: <%= @issue.category %></p>
+<p>Problem Detail: <%= @issue.description %></p>
+<p>Caller Name: <%= @issue.cust_name %></p>
+<p>Priority: <%= @issue.priority %></p>
+<p>Business Unit: <%= @issue.business_unit %></p>
+<p>Resolved?: <%= @issue.resolved == true ? 'Yes' : 'No'%></p>
+<hr>
+
+<p>
+  Technician:
+  <a href="/technicians/<%= @issue.technician_id %>">
+    <%= @issue.technician.name %>
+  </a>
+</p>

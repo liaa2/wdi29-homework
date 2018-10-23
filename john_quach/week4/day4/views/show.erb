@@ -1,0 +1,14 @@
+<h2>
+  <%= @campsite['name'] %>
+  <%= @campsite['description'] %>
+</h2>
+
+<a href="/campsites/<%= @campsite['id'] %>/edit">Edit This Camp Site</a> |
+<a href="/campsites/<%= @campsite['id'] %>/delete">Delete This Camp Site</a>
+
+<p>Location: <%= @campsite['location'] %></p>
+<p>Campsite Type : <%= @campsite['type'] %></p>
+<p>Daily Entry Fee: <%= @campsite['entry_fee'] %></p>
+<p>Booking Needed: <%= @campsite['booking'] == 1 ? 'Yes' : 'No'%></p>
+
+<img src="<%= @campsite['image_url'] %>" alt="<%= @campsite['name'] %>">

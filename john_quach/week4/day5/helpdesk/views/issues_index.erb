@@ -1,0 +1,7 @@
+<h2>All Issues:</h2>
+
+<ul>
+  <% @issues.each do |issue| %>
+    <li> <a href="/issues/<%= issue.id %>"><%= issue.summary %></a> </li>
+  <% end %>
+</ul>
