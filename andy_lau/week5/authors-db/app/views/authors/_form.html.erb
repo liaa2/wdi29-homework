@@ -1,0 +1,24 @@
+<%= form_for @author do |f| %>
+<fieldset>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+</fieldset>
+<fieldset>
+  <%= f.label :country %>
+  <%= f.text_field :country %>
+</fieldset>
+<fieldset>
+  <%= f.label :dob %>
+  <%= f.text_field :dob %>
+</fieldset>
+<fieldset>
+  <%= f.label :genre %>
+  <%= f.text_field :genre %>
+</fieldset>
+<fieldset>
+  <%= f.label :image %>
+  <%= f.text_field :image %>
+</fieldset>
+
+<%= f.submit %>
+<% end %>
