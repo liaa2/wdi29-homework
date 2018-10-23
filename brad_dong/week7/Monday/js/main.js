@@ -13,12 +13,14 @@ $(document).ready(function(){
     xhr.send(); //send request
 
     xhr.onload = function(){
-      const respo= JSON.parse(xhr.response);  //stores response, an object containing anarray of JS objects
-      let resu= respo.results;
+      const respo= JSON.parse(xhr.response);  //stores response, an object containing an array of JS objects
+      let resu= respo.results;  //just get results from the response
       console.log(resu);
-      for (let i=0; i<resu.length; i++){
+      for (let i=0; i<resu.length; i++){  //loop through the results, get info and append to page
         $('#ul').append(`<p>${resu[i].title} (${resu[i].release_date})</p>`);
         $('#ul').append(`<li id="li${resu[i].id}"><img id="${resu[i].id}" src='http://image.tmdb.org/t/p/w185${resu[i].poster_path}'></li>`);
+
+        //for click on image
         $(`#${resu[i].id}`).on('click', function(){
           $(`#li${resu[i].id}`).append('<div class="oneMovie"></div>')
           const xhr1 = new XMLHttpRequest();
