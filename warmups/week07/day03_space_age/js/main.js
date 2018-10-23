@@ -104,3 +104,32 @@ allergens.diagnosis(0);
 //
 // allergens(34);
 // allergens(0);
+
+
+//version 3 - Alex Scriven's solution
+const allergies = {
+  "cats": 128,
+  "pollen": 64,
+  "chocolate": 32,
+  "tomatoes": 16,
+  "strawberries": 8,
+  "shellfish": 4,
+  "peanuts": 2,
+  "eggs": 1
+}
+
+allergiesList = [];
+number = 121;
+
+Object.keys(allergies).forEach(function (key) {
+   if (number % allergies[key] < number) {
+     allergiesList.push(key)
+     number = number % allergies[key]
+   };
+});
+
+if (allergiesList.length > 0) {
+  console.log(`You are allergic to: ${allergiesList.join(", ")}`)
+} else {
+  console.log("You are amazing")
+};
