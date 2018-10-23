@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  founded: 2018-10-10
+  abbr: MyText
+  leader: MyText
+  position: MyText
+  ideology: MyText
+
+two:
+  name: MyText
+  founded: 2018-10-10
+  abbr: MyText
+  leader: MyText
+  position: MyText
+  ideology: MyText

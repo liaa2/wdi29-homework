@@ -1,0 +1,13 @@
+<h2>Your ABC IT Support Team:</h2>
+
+<ul>
+  <% @technicians.each do |techy| %>
+    <li>
+      <a href="/technicians/<%= techy.id %>"><%= techy.name%> -  <%= techy.department %></a>
+      (
+        <%= techy.location %>,
+        <%= techy.country %>
+      )
+    </li>
+  <% end %>
+</ul>

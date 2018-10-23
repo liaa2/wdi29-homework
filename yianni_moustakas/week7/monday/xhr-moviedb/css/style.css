@@ -1,0 +1,12 @@
+.imageResults {
+  max-width: 100px;
+  max-height: 200px;
+}
+
+.titleResults{
+  padding-bottom: 20px;
+}
+
+#submitButton{
+  margin-bottom: 20px;
+}

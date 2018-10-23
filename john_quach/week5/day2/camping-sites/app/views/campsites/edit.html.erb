@@ -1,0 +1,13 @@
+<h2>Edit: <%= @campsite.name %></h2>
+
+<form action="<%= campsite_path(@campsite.id) %>" method="post">
+Campsite Name: <input type="text" name="name" value="<%= @campsite.name %>"><br/>
+Location: <input type="text" name="location" value="<%= @campsite.location %>"><br/>
+Campsite Type: <input type="text" name="campsite_type" value="<%= @campsite.campsite_type %>"><br/>
+Maximum No of People: <input type="text" name="diameter" value="<%= @campsite.max_people %>"><br/>
+Per Night: <input type="text" name="per_night" value="<%= @campsite.per_night %>"><br/>
+<br>
+<input type="submit" value="Update">
+
+
+</form>

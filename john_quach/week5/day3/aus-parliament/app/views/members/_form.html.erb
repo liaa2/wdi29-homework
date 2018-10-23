@@ -1,0 +1,29 @@
+<%= form_for @member do |f| %>
+  <fieldset>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :about %>
+    <%= f.text_field :about %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :seat %>
+    <%= f.text_field :seat %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :image %>
+    <%= f.text_field :image %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :party_id, 'Party' %>
+    <%= f.collection_select :party_id, Party.all, :id, :name, prompt: 'Please choose the Party:' %>
+  </fieldset>
+
+  <%= f.submit %>
+
+<% end %>

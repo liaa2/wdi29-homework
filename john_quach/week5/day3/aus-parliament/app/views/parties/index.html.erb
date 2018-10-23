@@ -1,0 +1,13 @@
+<div>
+<h2>All Political Parties</h2>
+
+<ul>
+<% @parties.each do |party| %>
+  <li>
+    <a href="<%= party_path(party.id) %>">
+      <%= party.name  %>, (<%= party.abbr %>)
+    </a>
+  </li>
+<% end %>
+</ul>
+</div>
