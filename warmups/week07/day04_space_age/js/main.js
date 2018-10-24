@@ -25,8 +25,8 @@ const SpaceAge =  function( seconds ){
   this.yearsOnAllPlanets = function () {
     // Iterate over our table of planets, and use the conversion factor to work out
     // the age on that planet
-    for( var planet in this.earthToOtherPlanets ){
-      console.log( planet + " years: " + this.yearsOnEarth / this.earthToOtherPlanets[ planet ] );
+    for( let planet in this.earthToOtherPlanets ){
+      console.log( `${planet} years: ${ this.yearsOnEarth / this.earthToOtherPlanets[ planet ] }` );
     }
   };
 
