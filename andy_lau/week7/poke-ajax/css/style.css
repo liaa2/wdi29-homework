@@ -1,0 +1,14 @@
+#resultsContainer {
+  display: none;
+}
+h3, h4, span, #iconContainer {
+  display: inline-block;
+}
+
+#pokeDetailsContainer {
+  display: none;
+}
+
+a:hover, li:hover {
+  cursor: pointer;
+}
