@@ -28,7 +28,7 @@ const pairwise = (arr, sum) => {
     for( let j = i + 1; j < arr.length; j++ ){
 
       // No need to check if ( i !== j ) as i and j will never be the same
-      if (( arr[i] + arr[j] === sum )) {
+      if ( arr[i] + arr[j] === sum ) {
         result += i + j;
 
         //set the used values to empty so they won't be re-used in the next iteration
