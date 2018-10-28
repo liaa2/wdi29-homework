@@ -1,0 +1,21 @@
+#detailsContainer, .title-search, .fiat-buttons, .crypto-buttons{
+  text-align: center;
+  margin: 20px auto;
+}
+
+#chartContainer {
+  height: 350px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.main-heading {
+  border: black 1px solid;
+  border-radius: 2%;
+  margin: 20px 40vw;
+}

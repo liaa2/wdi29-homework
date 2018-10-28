@@ -1,0 +1,35 @@
+body {
+  background-color: darkgray;
+  color: white;
+  padding: 20px;
+}
+
+p {
+  color: darkgreen;
+}
+
+#imageDetails {
+  margin: 10px;
+}
+
+#searchResults img {
+  margin: 3px;
+}
+
+#searchResults {
+  padding-top: 20px;
+}
+
+#individualResult {
+  padding-top: 20px;
+  display: none;
+}
+
+.backLink {
+  cursor: pointer
+  margin: 20px;
+}
+
+.backLink:hover {
+  color: blue;
+}
