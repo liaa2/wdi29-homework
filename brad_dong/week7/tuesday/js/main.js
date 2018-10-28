@@ -22,10 +22,12 @@ $(document).ready(function(){
 
   const displayResults = function(response){
     console.log(response.results);
+
     $('#resultsShow').show();
     if (response.results.length===0){
       $('#resultsShow').append("Your city is not in our database.")
     }else{
+      $('#listCities').empty();
       for (let i=0; i<response.results.length; i++){
         let thisResult = response.results[i];
         $('#listCities').append(`<li>City: ${thisResult.city}<br>
