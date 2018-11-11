@@ -18,6 +18,7 @@ const primeNumbers = function(num){
 console.log(primeNumbers(60));
 
 
+
 //version 2
 /*
 Figure out what a prime number is
