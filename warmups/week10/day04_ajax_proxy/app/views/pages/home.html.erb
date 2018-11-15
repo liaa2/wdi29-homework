@@ -1,0 +1,62 @@
+<h1>pages#jquery</h1>
+
+
+
+
+
+<script>
+// this would give you a cors error
+// $.ajax("http://www.smh.com.au")
+//we get around the cors error by adding a method inside the controller, works like a middleman, the browser won't treat it as a direct ajax request so won't give us cors error
+$.ajax("http://localhost:3000/fetch?url=http://www.smh.com.au")
+.done(response => {
+  console.log(response.data)
+})
+.fail(error => {
+  console.warn(error)
+})
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <script>
+$.ajax('http://localhost:3000/fetch?url=https://www.smh.com.au/')
+.done(response => {
+  console.log(response);
+})
+.fail(error => {
+	console.warn(error)
+})
+</script> -->
