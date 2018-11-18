@@ -1,0 +1,10 @@
+<script type="text/javascript">
+  $.get( "http://localhost:3000/tests", { url: 'http://google.com' } )
+  .done(response => {
+    console.log(response.body);
+
+  }).fail(error => {
+    console.warn(error);
+  });
+
+</script>
