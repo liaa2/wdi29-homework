@@ -3,6 +3,21 @@ $(document).ready(function(){
 
   let timer = null;
   let counter = 0;
+  let words;
+
+  const urlParams = new URLSearchParams(window.location.search); //"?page=Alan+Turing"
+  let page = urlParams.get('page')
+
+  $.getJSON("http://en.wikipedia.org/w/api.php?action=parse&format=json&callback=?", { page })
+  .done(data => {
+    // console.log(data);
+    let wikiHTML = data.parse.text["*"];
+    let text = $('<div>').html(wikiHTML).text();
+    // console.log(text);
+    words = text.split(/[ ,."';\n\-]+/);
+    timer = setInterval(putWord, 100);
+  })
+
 
   // This object will store all the variables we want the GUI controls to change;
   // we need to use an object structure because that is what the dat.gui library expects
@@ -52,7 +67,7 @@ $(document).ready(function(){
   // the string up based on a regular expression which looks for spaces, punctuation and newlines.
   // (That punctuation will not appear in the words that fill our new array.)
   // So, note that .split() will accept a regular expression as well as just a string...
-  const words = $("#words").text().split(/[ ,."';\n\-]+/);
+  // const words = $("#words").text().split(/[ ,."';\n\-]+/);
 
   // store the body in a variable to use later when appending
   const $body = $("body");
@@ -109,5 +124,5 @@ $(document).ready(function(){
 
   // We keep track of the ID returned by setInterval when we first run it here,
   // so we can cancel it later in our onFinishChange event handler for the GUI slider
-  timer = setInterval(putWord, 100);
+  // timer = setInterval(putWord, 100);
 });
