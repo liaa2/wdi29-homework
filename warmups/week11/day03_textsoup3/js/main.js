@@ -6,15 +6,28 @@ $(document).ready(function(){
   let words;
 
   const urlParams = new URLSearchParams(window.location.search); //"?page=Alan+Turing"
+  // get the value of the 'page' querystring key
   let page = urlParams.get('page')
 
+  // API URL example via http://stackoverflow.com/questions/2381642/returning-data-from-wikipedia-using-ajax
   $.getJSON("http://en.wikipedia.org/w/api.php?action=parse&format=json&callback=?", { page })
   .done(data => {
     // console.log(data);
+
+    // this is the shape of the object returned by the Wikipedia API
     let wikiHTML = data.parse.text["*"];
+
+    // A trick to strip the HTML tags out of our response by setting them as the contents of a DIV tag we
+      // create on-the-fly, and then using jQuery's .text() method to get just the text, HTML tags removed.
+      // Note the errors this causes in the console, however, as the browser suddenly tries to parse all that
+      // HTML and load any image files referenced in IMG tags.
     let text = $('<div>').html(wikiHTML).text();
     // console.log(text);
+
+    // split the text into words
     words = text.split(/[ ,."';\n\-]+/);
+
+    // start the word display
     timer = setInterval(putWord, 100);
   })
 
@@ -67,6 +80,8 @@ $(document).ready(function(){
   // the string up based on a regular expression which looks for spaces, punctuation and newlines.
   // (That punctuation will not appear in the words that fill our new array.)
   // So, note that .split() will accept a regular expression as well as just a string...
+
+  // We've commented this out because we're using the Wikipedia API above
   // const words = $("#words").text().split(/[ ,."';\n\-]+/);
 
   // store the body in a variable to use later when appending
@@ -125,4 +140,9 @@ $(document).ready(function(){
   // We keep track of the ID returned by setInterval when we first run it here,
   // so we can cancel it later in our onFinishChange event handler for the GUI slider
   // timer = setInterval(putWord, 100);
+
+  // Wikipedia AJAX version:
+  // We commmented out "timer = setInterval(putWord, 100);" here and MOVED the line into
+  // the .done() handler of our AJAX request, to make sure we don't start displaying
+  // words until the words have actually been loaded via AJAX
 });
