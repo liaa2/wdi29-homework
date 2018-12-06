@@ -48,9 +48,7 @@ const isDivisibleBy = function(num, divisor){
 }
 
 const isLeapYear = function(year){
-  if (typeof year !== "number") {
-    return "Year has to be a number.";
-  } else if ( (isDivisibleBy(year, 4) && !isDivisibleBy(year, 100) ) || isDivisibleBy(year, 400) ) {
+  if ( (isDivisibleBy(year, 4) && !isDivisibleBy(year, 100) ) || isDivisibleBy(year, 400) ) {
     return `${year} is leap year.`;
   }
 
