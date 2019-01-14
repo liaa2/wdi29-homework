@@ -19,18 +19,11 @@ class Robot
   def make_name
     # creating an array with an alphabetical range from A to Z then 'samples' a random letter
     # If select multiple letters, `sample` will select them without repeating
-    letter1 = ("A".."Z").to_a.sample
-    letter2 = ("A".."Z").to_a.sample
-    letter3 = ("A".."Z").to_a.sample
-    # Join the letters
-    letters = letter1.concat(letter2).concat(letter3)
-    # creating an array with a numerical range from 0 to 9 then 'samples' a random number
-    number1 = (0..9).to_a.sample.to_s
-    number2 = (0..9).to_a.sample.to_s
-    number3 = (0..9).to_a.sample.to_s
-    numbers = number1.concat(number2).concat(number3)
-    # Concatinating the letters and numbers
-    letters.concat(numbers)
+    letters = ("A".."Z").to_a.sample(2)
+    # we need repetitive numbers i.e. 777, so the range should be from "000" to "999" and they have to be strings
+    numbers = ("000".."999").to_a.sample
+    # Concatinating the letters and numbers, convert it back to string
+    name_pool = letters.concat(numbers).join
   end
 
   # This is a getter, it returns the name
