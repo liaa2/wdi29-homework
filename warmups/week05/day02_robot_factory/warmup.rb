@@ -22,8 +22,8 @@ class Robot
     letters = ("A".."Z").to_a.sample(2)
     # we need repetitive numbers i.e. 777, so the range should be from "000" to "999" and they have to be strings
     numbers = ("000".."999").to_a.sample
-    # Concatinating the letters and numbers, convert it back to string
-    name_pool = letters.concat(numbers).join
+        # convert the letters to string and concatenate the letters and numbers
+    name_pool = letters.join.concat(numbers)
   end
 
   # This is a getter, it returns the name
