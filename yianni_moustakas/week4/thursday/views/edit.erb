@@ -1,0 +1,15 @@
+<h2>Edit The Shoe: <%= @kick['brand'] %> <%= @kick['silhouette'] %> <%= @kick['colorway'] %></h2>
+
+<form action="/kicks/<%= @kick['id'] %>" method="post">
+  Brand: <input type="text" name="brand" value="<%= @kick['brand'] %>"> <br><br>
+  Silhouette: <input type="text" name="silhouette" value="<%= @kick['silhouette'] %>"> <br><br>
+  Colorway: <input type="text" name="colorway" value="<%= @kick['colorway'] %>"> <br><br>
+  Category: <input type="text" name="category" value="<%= @kick['category'] %>"> <br><br>
+  Description: <input type="text" name="description" value="<%= @kick['description'] %>"> <br><br>
+  Heat Rating: <input type="text" name="heat_rating" value="<%= @kick['heat_rating'] %>"> <br><br>
+  Drip or Drop: <input type="text" name="drip_or_drop" value="<%= @kick['drip_or_drop'] %>"> <br><br>
+  Release Date: <input type="text" name="release_date" value="<%= @kick['release_date'] %>"> <br><br>
+  Image Url: <input type="text" name="image_url" value="<%= @kick['image_url'] %>"> <br><br>
+  <br>
+  <input type="submit" value="Update Flame">
+</form>

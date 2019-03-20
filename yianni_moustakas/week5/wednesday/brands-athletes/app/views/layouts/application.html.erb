@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BrandsAthletes</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <h1>Brands Sponsoring Athletes</h1>
+    <nav>
+      | <%= link_to 'Brands Index', brands_path %> |
+      <%= link_to 'Create New Brand', new_brand_path %> |
+    </nav>
+    <hr>
+    <%= yield %>
+  </body>
+</html>

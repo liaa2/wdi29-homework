@@ -25,4 +25,11 @@
   Stock Price: <%= @brand.stock_price %>
 </p>
 
+<p>
+  Athletes:
+  <% @brand.athletes.each do |athlete| %>
+  <a href="/athletes/<%= athlete.id %>"><%= athlete.full_name %></a>
+  <% end %>
+</p>
+
 <img src="<%= @brand.logo_url %>" alt="<%= @brand.company_name  %>">

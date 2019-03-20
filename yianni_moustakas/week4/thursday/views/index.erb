@@ -1,0 +1,11 @@
+<h2>Crep Select</h2>
+
+<ul>
+  <% @result.each do |kick| %>
+  <li>
+    <a href="/kicks/<%= kick['id'] %>">
+      <%= kick['brand'] %> <%= kick['silhouette'] %></a>
+    (<%= kick['colorway'] %> <%= kick['heat_rating'] %>/10)
+  </li>
+  <% end %>
+</ul>

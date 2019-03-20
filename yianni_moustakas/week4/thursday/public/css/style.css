@@ -1,0 +1,15 @@
+body {
+  font-family: Helvetica;
+  background-color: rgba(228, 228, 228, 0.67)
+  color: rgb(51, 121, 87);
+  text-align: center;
+}
+a {
+  color: rgb(51, 121, 87);
+}
+img {
+  max-width: 400px;
+  min-width: 400px;
+  max-height: 300px;
+  min-height: 300px;
+}

@@ -1,0 +1,31 @@
+<%= form_for @brand do |f| %>
+  <fieldset>
+    <%= f.label :company_name %>
+    <%= f.text_field :company_name %> <!-- gives us an <input type=text name=name> -->
+  </fieldset>
+  <fieldset>
+    <%= f.label :founded %>
+    <%= f.text_field :founded %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :hq, 'Headquarters' %>
+    <%= f.text_field :hq %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :ceo %>
+    <%= f.text_field :ceo %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :website %>
+    <%= f.text_field :website %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :slogan %>
+    <%= f.text_field :slogan %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :logo_url, "Logo Url" %>
+    <%= f.text_field :logo_url %>
+  </fieldset>
+  <%= f.submit %>
+<% end %>

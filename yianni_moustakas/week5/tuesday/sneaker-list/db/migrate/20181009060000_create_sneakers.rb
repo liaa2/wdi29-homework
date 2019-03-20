@@ -8,6 +8,7 @@ class CreateSneakers < ActiveRecord::Migration[5.2]
       t.integer :heat_rating
       t.integer :release_date
       t.text    :image_url
+      t.integer :brand_id
 
 
       t.timestamps

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Cousine');
+
+* {
+  box-sizing: border-box;
+  font-family: "Cousine", sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+#container {
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+nav {
+  background-color: #999966;
+  color: darkslategrey;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 2;
+}
+
+nav div {
+  /* border: 1px solid red; */
+  display: inline-block;
+}
+
+#left {
+  width: 80%;
+}
+
+h1 {
+  padding-top: 40px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  left: 430px;
+  top: 5px;
+}
+
+.sideBar {
+  height: 100%;
+  width: 13%;
+  left: 0;
+  line-height: 42;
+  background: #999966;
+  position: static;
+}
+
+.box {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: left;
+  line-height: 38px;
+}
+
+.subheading {
+  position: relative;
+  text-align: center;
+  left: 295px;
+  top: -935px;
+  height: 57px;
+  width: 369px;
+}
+
+#hometownHeading {
+  top: -1006px;
+}
+
+.mainArticle {
+  position: relative;
+  text-align: center;
+  left: -175px;
+  top: -470px;
+  height: 290px;
+  width: 582px;
+}
+
+#photo1 {
+  position: absolute;
+    top: 78px;
+    right: 265px;
+    height: 220px;
+    width: 220px;
+}
+
+#blackboard {
+  width: 280px;
+  height: 300px;
+}
+
+#photo2 {
+  position: absolute;
+  top: 304px;
+  right: 83px;
+  height: 220px;
+  width: 220px;
+}
+
+#wiener {
+  height: 265px;
+  width: 227px;
+}
+
+footer {
+  display: inline-block;
+  background-color: #999966;
+  color: darkslategrey;
+  padding: 10px 20px;
+  width: 100%;
+  height: 7%;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 2;
+}
