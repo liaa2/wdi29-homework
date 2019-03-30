@@ -6,7 +6,7 @@ const squareNumber = function (num) {
   let result = num**2;
   return `The result of squaring the number ${num} is ${result}`;
 };
-console.log(squareNumber(5));
+console.log(squareNumber(16));
 
 // Write a function called halfNumber that will take one argument (a number), divide it by 2, and return the result. It should also log a string like "Half of 5 is 2.5.".
 
@@ -14,7 +14,7 @@ const halfNumber = function (num){
   let result = num/2;
   return `Half of ${num} is ${result}`;
 };
-console.log(halfNumber(10));
+console.log(halfNumber(13));
 
 // Write a function called percentOf that will take two numbers, figure out what percent the first number represents of the second number, and return the result. It should also log a string like "2 is 50% of 4."
 
@@ -22,7 +22,7 @@ const percentOf = function (num1, num2){
   let result = (num1 / num2)*100;
   return `${num1} is ${result}% of ${num2}`;
 }
-console.log(percentOf(10, 20));
+console.log(percentOf(24, 16));
 
 // Write a function called areaOfCircle that will take one argument (the radius), calculate the area based on that, and return the result. It should also log a string like "The area for a circle with radius 2 is 12.566370614359172."
 // Bonus: Round the result so there are only two digits after the decimal.
@@ -83,7 +83,7 @@ console.log(drEvil(1000000));
 const mixUp = function (str1, str2) {
   return str2[0] + str2[1] + str1.slice(2) + " " + str1[0] + str1[1] + str2.slice(2);
 }
-console.log(mixUp("dog", "canoe"));
+console.log(mixUp("Christina", "Yianni"));
 console.log(mixUp("recorder", "clarionet"));
 console.log(mixUp("mother", "father"));
 
@@ -96,7 +96,7 @@ const fixStart = function(string) {
   let firstChar = string.charAt(0);
   return firstChar + string.slice(1).replace(new RegExp(firstChar, 'g'), '*');
 };
-console.log(fixStart("lollipop"));
+console.log(fixStart("ffffffffffff"));
 console.log(fixStart("biblical"));
 console.log(fixStart("diddly-doodly"));
 
@@ -120,8 +120,8 @@ const verbing = function(str) {
     return str;
   };
 };
-console.log(verbing("lick"));
-console.log(verbing("licking"));
+console.log(verbing("finsh"));
+console.log(verbing("finishing"));
 console.log(verbing("terrifying"));
 
 // Not Bad
@@ -136,15 +136,32 @@ console.log(verbing("terrifying"));
 //   notBad('This movie is not so bad!'): 'This movie is good!'
 //   notBad('This dinner is bad!'): 'This dinner is bad!'
 
-const notBad = function (str) {
-  let not = "not";
-  let bad = "bad";
-  if (str.includes(bad) && str.includes(not)) {
-    if (str.indexOf(bad) > str.indexOf(not)) {
-      return str.splice(0, str.indexOf(not)) + str.replace("not"|"bad", good);
-    };
-  }; {
+// const notBad = function (str) {
+//   let not = "not";
+//   let bad = "bad";
+//   if (str.includes(bad) && str.includes(not)) {
+//     if (str.indexOf(bad) > str.indexOf(not)) {
+//       return str.splice(0, str.indexOf(not)) + str.replace("not"|"bad", good);
+//     };
+//   }; {
+//     return str;
+//   };
+// };
+// console.log(notBad("This kosher breakfast is not too bad"))
+// This was my Attempt
+
+  const notBad = function (str) {
+  if (str.includes("bad") && str.includes("not")) {
+    if (str.indexOf("bad") > str.indexOf("not")) {
+      const notTooBad = str.substring(str.indexOf("not"), str.indexOf("bad") + 3); // +3 is so it doesn't stop at b
+      return str.replace (notTooBad, "good");
+    } else {
+      return str;
+    }
+  } else {
     return str;
-  };
+  }
 };
-console.log(notBad("This kosher breakfast is not too bad"))
+console.log(notBad("This kosher breakfast is not really that bad"))
+console.log(notBad("This kosher breakfast is bad not"))
+// This is Alex's attempt

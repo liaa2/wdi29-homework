@@ -10,7 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_09_060000) do
+ActiveRecord::Schema.define(version: 2018_10_15_045546) do
+
+  create_table "brands", force: :cascade do |t|
+    t.text "company_name"
+    t.text "image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rotates", force: :cascade do |t|
+    t.text "name"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rotates_sneakers", force: :cascade do |t|
+    t.integer "rotate_id"
+    t.integer "sneaker_id"
+  end
 
   create_table "sneakers", force: :cascade do |t|
     t.string "brand"
@@ -20,6 +39,16 @@ ActiveRecord::Schema.define(version: 2018_10_09_060000) do
     t.integer "heat_rating"
     t.integer "release_date"
     t.text "image_url"
+    t.integer "brand_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.text "name"
+    t.text "email"
+    t.text "password_digest"
+    t.text "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

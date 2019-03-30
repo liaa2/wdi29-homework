@@ -21,7 +21,7 @@ class Brand < ActiveRecord::Base
 end
 
 class Athlete < ActiveRecord::Base
-  belongs_to :brands
+  belongs_to :brand
 end
 
 

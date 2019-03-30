@@ -1,0 +1,21 @@
+<h2><%= @kick['brand'] %> <%= @kick['silhouette'] %></h2>
+<h3><%= @kick['colorway'] %></h3>
+<a href="/kicks/<%= @kick['id'] %>/edit">Edit This Shoe</a> <br>
+<a href="/kicks/<%= @kick['id'] %>/delete">Delete This Shoe</a>
+
+<p>
+  Category: <%= @kick['category'] %>
+</p>
+<p>
+  Description: <%= @kick['description'] %>
+</p>
+<p>
+  Heat Rating: <%= @kick['heat_rating'] %>
+</p>
+<p>
+  Drip or Drop?: <%= @kick['drip_or_drop'] %>
+</p>
+<p>
+  Release Date: <%= @kick['release_date'] %>
+</p>
+<img src="<%= @kick['image_url'] %>" alt="<%= @kick['silhouette'] %>">

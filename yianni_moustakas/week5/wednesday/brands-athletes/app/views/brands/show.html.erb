@@ -1,0 +1,12 @@
+<h2><%= @brand.company_name %></h2>
+
+<%= link_to 'Edit This Brand', edit_brand_path(@brand) %>
+<%= link_to 'Delete This Brand', brand_path(@brand), method: 'delete' %>
+
+<p>Slogan: <%= @brand.slogan %></p> <br>
+<p>Founded: <%= @brand.founded %></p><br>
+<p>Headquarters: <%= @brand.hq %></p><br>
+<p>CEO: <%= @brand.ceo %></p><br>
+<p>Website: <%= @brand.website %></p><br>
+<h4>Works</h4>
+<%= image_tag @brand.logo_url, alt: @brand.company_name %>

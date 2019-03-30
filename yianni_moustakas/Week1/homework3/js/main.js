@@ -119,6 +119,25 @@ const cashRegister = function(cartForParty) {
 }; // 60.55
 
 
+// Tried to do again with two for loops. Brad's example.
+const cashRegister = function(input) {
+
+  let totalPrice = 0
+  let prices = []
+
+  for (let k in input) {
+    prices.push(input);
+    let currentPrice = parseFloat(input[k]);
+  }
+  for (let i = 0; i < prices; i++)
+    totalPrice += prices;
+    console.log(currentPrice)
+    console.log(totalPrice)
+  }
+  return `$${totalPrice}`;
+}; // 60.55
+
+
 
 
 
@@ -164,10 +183,23 @@ const bank = {
   },
 
   addAccount: function (name, amount) {
-    let noOfAccounts = this.accounts.length;
-    this.accounts[noOfAccounts] = {};
-    this.accounts[noOfAccounts] = name;
-    this.accounts[noOfAccounts] = currentBalance;
+    // Version 1
+    // let noOfAccounts = this.accounts.length;
+    // this.accounts[noOfAccounts] = {};
+    // this.accounts[noOfAccounts] = name;
+    // this.accounts[noOfAccounts] = currentBalance;
+
+    // Version 2
+    // const newAccount ={
+    //   ownersName: name,
+    //   currentBalance: amount
+    // };
+    // this.accounts.push(newAccount);
+    // console.log(this.accounts)
+
+    //Version 3
+    this.accounts.push({ownersName: name, currentBalance: amount})
+    console.log(this.accounts)
   },
 
 
@@ -201,6 +233,10 @@ const bank = {
         // console.log("YES")
       }
     }
+  },
+
+  transfer: function(name1, name2, amount) {
+
   }
 
 };
